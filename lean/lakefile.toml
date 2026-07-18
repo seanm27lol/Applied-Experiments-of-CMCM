@@ -1,0 +1,15 @@
+name = "RibbonLean"
+defaultTargets = ["Ribbon", "RequestProject"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.28.0"
+
+[[lean_lib]]
+name = "Ribbon"
+globs = ["Ribbon"]
+
+[[lean_lib]]
+name = "RequestProject"
+globs = ["RequestProject.+"]
