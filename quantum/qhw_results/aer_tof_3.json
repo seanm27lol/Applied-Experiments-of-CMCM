@@ -1,0 +1,22 @@
+{
+ "pair": "tof_3",
+ "backend": "aer",
+ "shots": 8192,
+ "noise": 0.01,
+ "mode": "aer",
+ "arms": {
+  "baseline": {
+   "fidelity_vs_ideal": 0.87256,
+   "tvd_vs_ideal": 0.12744,
+   "transpiled_2q": 18,
+   "transpiled_depth": 37
+  },
+  "optimized": {
+   "fidelity_vs_ideal": 0.88306,
+   "tvd_vs_ideal": 0.11694,
+   "transpiled_2q": 16,
+   "transpiled_depth": 34
+  }
+ },
+ "delta_fidelity": 0.0105
+}

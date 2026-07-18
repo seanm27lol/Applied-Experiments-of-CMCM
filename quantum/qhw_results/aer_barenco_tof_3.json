@@ -1,0 +1,22 @@
+{
+ "pair": "barenco_tof_3",
+ "backend": "aer",
+ "shots": 8192,
+ "noise": 0.01,
+ "mode": "aer",
+ "arms": {
+  "baseline": {
+   "fidelity_vs_ideal": 0.84155,
+   "tvd_vs_ideal": 0.15845,
+   "transpiled_2q": 24,
+   "transpiled_depth": 50
+  },
+  "optimized": {
+   "fidelity_vs_ideal": 0.84998,
+   "tvd_vs_ideal": 0.15002,
+   "transpiled_2q": 22,
+   "transpiled_depth": 47
+  }
+ },
+ "delta_fidelity": 0.00843
+}

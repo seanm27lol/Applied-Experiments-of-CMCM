@@ -1,0 +1,22 @@
+{
+ "pair": "barenco_tof_3",
+ "backend": "ibm_fez",
+ "shots": 8192,
+ "opt_level": 1,
+ "mode": "hw",
+ "arms": {
+  "baseline": {
+   "fidelity_vs_ideal": 0.91162,
+   "tvd_vs_ideal": 0.08838,
+   "transpiled_2q": 42,
+   "transpiled_depth": 164
+  },
+  "optimized": {
+   "fidelity_vs_ideal": 0.92834,
+   "tvd_vs_ideal": 0.07166,
+   "transpiled_2q": 34,
+   "transpiled_depth": 126
+  }
+ },
+ "delta_fidelity": 0.01672
+}

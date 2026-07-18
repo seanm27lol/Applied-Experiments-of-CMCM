@@ -1,0 +1,40 @@
+{
+ "pair": "mod5_4",
+ "backend": "aer",
+ "shots": 8192,
+ "opt_level": 1,
+ "noise": 0.0,
+ "arms": {
+  "baseline": {
+   "fidelity_vs_ideal": 1.0,
+   "tvd_vs_ideal": 0.0,
+   "transpiled_2q": 28,
+   "transpiled_depth": 48,
+   "transpiled_ops": {
+    "cx": 28,
+    "t": 13,
+    "tdg": 12,
+    "measure": 5,
+    "u2": 4,
+    "h": 2,
+    "barrier": 1
+   }
+  },
+  "optimized": {
+   "fidelity_vs_ideal": 1.0,
+   "tvd_vs_ideal": 0.0,
+   "transpiled_2q": 20,
+   "transpiled_depth": 21,
+   "transpiled_ops": {
+    "cx": 19,
+    "rz": 7,
+    "measure": 5,
+    "cz": 1,
+    "u2": 1,
+    "h": 1,
+    "barrier": 1
+   }
+  }
+ },
+ "delta_fidelity_optimized_minus_baseline": 0.0
+}

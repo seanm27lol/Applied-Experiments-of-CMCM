@@ -1,0 +1,82 @@
+[
+ {
+  "name": "mod5_4",
+  "qubits": 5,
+  "route": "full_reduce",
+  "verified": true,
+  "base": {
+   "total": 63,
+   "twoq": 28,
+   "oneq": 35,
+   "T": 28,
+   "depth": 48
+  },
+  "opt": {
+   "total": 30,
+   "twoq": 20,
+   "oneq": 10,
+   "T": 8,
+   "depth": 20
+  }
+ },
+ {
+  "name": "tof_3",
+  "qubits": 5,
+  "route": "teleport",
+  "verified": true,
+  "base": {
+   "total": 45,
+   "twoq": 18,
+   "oneq": 27,
+   "T": 21,
+   "depth": 31
+  },
+  "opt": {
+   "total": 40,
+   "twoq": 16,
+   "oneq": 24,
+   "T": 15,
+   "depth": 30
+  }
+ },
+ {
+  "name": "barenco_tof_3",
+  "qubits": 5,
+  "route": "teleport",
+  "verified": true,
+  "base": {
+   "total": 58,
+   "twoq": 24,
+   "oneq": 34,
+   "T": 28,
+   "depth": 42
+  },
+  "opt": {
+   "total": 50,
+   "twoq": 22,
+   "oneq": 28,
+   "T": 16,
+   "depth": 43
+  }
+ },
+ {
+  "name": "mod_mult_55",
+  "qubits": 9,
+  "route": "teleport",
+  "verified": true,
+  "base": {
+   "total": 119,
+   "twoq": 48,
+   "oneq": 71,
+   "T": 49,
+   "depth": 51
+  },
+  "opt": {
+   "total": 92,
+   "twoq": 42,
+   "oneq": 50,
+   "T": 35,
+   "depth": 46
+  }
+ }
+]

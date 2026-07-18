@@ -1,0 +1,22 @@
+{
+ "pair": "tof_3",
+ "backend": "ibm_fez",
+ "shots": 8192,
+ "opt_level": 1,
+ "mode": "hw",
+ "arms": {
+  "baseline": {
+   "fidelity_vs_ideal": 0.94104,
+   "tvd_vs_ideal": 0.05896,
+   "transpiled_2q": 30,
+   "transpiled_depth": 118
+  },
+  "optimized": {
+   "fidelity_vs_ideal": 0.93689,
+   "tvd_vs_ideal": 0.06311,
+   "transpiled_2q": 28,
+   "transpiled_depth": 112
+  }
+ },
+ "delta_fidelity": -0.00415
+}

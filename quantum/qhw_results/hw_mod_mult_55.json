@@ -1,0 +1,22 @@
+{
+ "pair": "mod_mult_55",
+ "backend": "ibm_fez",
+ "shots": 8192,
+ "opt_level": 1,
+ "mode": "hw",
+ "arms": {
+  "baseline": {
+   "fidelity_vs_ideal": 0.67773,
+   "tvd_vs_ideal": 0.32227,
+   "transpiled_2q": 99,
+   "transpiled_depth": 217
+  },
+  "optimized": {
+   "fidelity_vs_ideal": 0.74475,
+   "tvd_vs_ideal": 0.25525,
+   "transpiled_2q": 117,
+   "transpiled_depth": 204
+  }
+ },
+ "delta_fidelity": 0.06702
+}

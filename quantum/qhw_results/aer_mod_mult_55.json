@@ -1,0 +1,22 @@
+{
+ "pair": "mod_mult_55",
+ "backend": "aer",
+ "shots": 8192,
+ "noise": 0.01,
+ "mode": "aer",
+ "arms": {
+  "baseline": {
+   "fidelity_vs_ideal": 0.69373,
+   "tvd_vs_ideal": 0.30627,
+   "transpiled_2q": 48,
+   "transpiled_depth": 59
+  },
+  "optimized": {
+   "fidelity_vs_ideal": 0.73254,
+   "tvd_vs_ideal": 0.26746,
+   "transpiled_2q": 42,
+   "transpiled_depth": 53
+  }
+ },
+ "delta_fidelity": 0.03881
+}
