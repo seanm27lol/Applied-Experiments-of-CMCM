@@ -1,5 +1,5 @@
 # witness-zx-experiments
-![provenance](provenance.jpeg)
+![provenance](Provenance.jpeg)
 Two pre-registered experiments on witness preservation, plus the Lean
 formalization layer behind them. Full write-up: **REPORT.md**.
 
