@@ -1,0 +1,35 @@
+{
+ "job_id": "d9dgaqcinv1c73ap1sbg",
+ "backend": "ibm_fez",
+ "date": "2026-07-18 04:47:37.440171+00:00",
+ "arms": [
+  {
+   "index": 0,
+   "physical_qubits": [
+    136,
+    141,
+    142,
+    143,
+    144
+   ],
+   "n_2q": 42,
+   "cz_error_mean": 0.0019950774657985742,
+   "readout_error_mean": 0.0061767578125,
+   "ceiling_actual_calibration": 0.8915
+  },
+  {
+   "index": 1,
+   "physical_qubits": [
+    136,
+    141,
+    142,
+    143,
+    144
+   ],
+   "n_2q": 34,
+   "cz_error_mean": 0.0019631817082916493,
+   "readout_error_mean": 0.0061767578125,
+   "ceiling_actual_calibration": 0.9068
+  }
+ ]
+}

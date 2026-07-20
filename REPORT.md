@@ -131,35 +131,28 @@ Certified pairs (pre-transpile counts):
 
 ### Error budget vs the device ceiling (post-hoc)
 
-This analysis was not pre-registered; it was run after the verdict, on the committed JSON artifacts plus published `ibm_fez` calibration figures. One reading note first: all four circuits have deterministic ideal outputs (a single bitstring), so `fidelity_vs_ideal` throughout this report is literally the probability of measuring the exact correct answer.
+This analysis was not pre-registered; it was run after the verdict, on the committed JSON artifacts plus the actual `ibm_fez` calibration snapshots recovered from the four jobs' execution-time backend properties (job IDs and per-arm data in `quantum/qhw_results/calibration_*.json`). One reading note first: all four circuits have deterministic ideal outputs (a single bitstring), so `fidelity_vs_ideal` throughout this report is literally the probability of measuring the exact correct answer.
 
-Attributing each arm's entire observed error to its two-qubit gates via F = (1−ε)^n2q gives an implied effective error per 2q gate:
+The layout pass placed all four pairs on overlapping low-error subsets in the qubit 117–145 region, with mean CZ error 1.85–2.11e-3 on the edges actually used (device median that day was higher). Attributing each arm's entire observed error to its two-qubit gates via F = (1−ε)^n2q gives implied effective errors of 2.0–3.9e-3 per 2q gate — i.e. the total error budget, absorbing readout, 1q gates, decoherence, and crosstalk, is on the order of the CZ errors alone.
 
-| pair | baseline ε_eff | optimized ε_eff |
-|---|---|---|
-| tof_3 | 2.0e-3 | 2.3e-3 |
-| barenco_tof_3 | 2.2e-3 | 2.2e-3 |
-| mod5_4 | 2.8e-3 | 3.1e-3 |
-| mod_mult_55 | 3.9e-3 | 2.5e-3 |
+Against each arm's ceiling computed from that day's calibration — Π(1−ε_CZ) over the exact edges used × Π(1−ε_readout) over the exact qubits measured:
 
-For comparison, `ibm_fez`-class Heron r2 calibrations report median CZ error near 3.7e-3, with the best qubit subsets near 1.5–2e-3. The implied totals — which must absorb readout, single-qubit gates, decoherence, and crosstalk on top of the CZ itself — sit at or below the median CZ error alone, consistent with the layout pass selecting a low-error subset and with very little unexplained error remaining.
-
-Against a good-subset ceiling (1−ε2q)^n2q · (1−ε_ro)^nqubits with ε2q = 1.5e-3, ε_ro = 0.6e-2, the runs land at:
-
-| pair | arm | ceiling | measured | % of ceiling |
+| pair | arm | ceiling (real cal.) | measured | % of ceiling |
 |---|---|---|---|---|
-| tof_3 | baseline | 0.928 | 0.941 | 101% |
-| tof_3 | optimized | 0.930 | 0.937 | 101% |
-| barenco_tof_3 | baseline | 0.911 | 0.912 | 100% |
-| barenco_tof_3 | optimized | 0.922 | 0.928 | 101% |
-| mod5_4 | baseline | 0.897 | 0.865 | 96% |
-| mod5_4 | optimized | 0.917 | 0.890 | 97% |
-| mod_mult_55 | baseline | 0.816 | 0.678 | 83% |
-| mod_mult_55 | optimized | 0.795 | 0.745 | 94% |
+| mod5_4 | baseline | 0.875 | 0.865 | 99% |
+| mod5_4 | optimized | 0.902 | 0.890 | 99% |
+| tof_3 | baseline | 0.908 | 0.941 | 104% |
+| tof_3 | optimized | 0.913 | 0.937 | 103% |
+| barenco_tof_3 | baseline | 0.892 | 0.912 | 102% |
+| barenco_tof_3 | optimized | 0.907 | 0.928 | 102% |
+| mod_mult_55 | baseline | 0.758 | 0.678 | 89% |
+| mod_mult_55 | optimized | 0.726 | 0.745 | 103% |
 
-Two consequences. First, the 5-qubit runs saturate the unmitigated hardware limit (96–101% of ceiling): both arms are gate-error-and-readout bound, so the measured deltas are close to a pure compilation effect — a stronger form of the mechanism check than the 2q-count covariate. Second, `mod_mult_55` is the only circuit meaningfully below ceiling, and its optimized arm implies *lower* error per gate than baseline (2.5e-3 vs 3.9e-3) despite carrying more gates: independent support for the duration-not-gate-count reading of its anomaly.
+Measured values slightly above ceiling are physical, not anomalous: randomized-benchmarking error rates count all Pauli errors, but for a circuit whose output is a computational-basis state, Z-type errors near measurement are invisible, so the RB-derived ceiling is mildly conservative for this circuit family.
 
-Caveats: calibration figures are literature values for the device class, not the 2026-07-18 snapshot (future runs should persist the job's backend properties; the runner does not currently save them); "limit" means unmitigated limit — these runs used raw SamplerV2 with no dynamical decoupling, twirling, or readout mitigation, and readout mitigation alone would move the ceilings.
+Three consequences. First, seven of eight arms sit at 99–104% of their real-calibration ceiling: the runs saturate the unmitigated hardware limit, so the measured deltas are close to a pure compilation effect — a stronger form of the mechanism check than the 2q-count covariate. Second, `mod_mult_55` baseline is the single sub-ceiling arm (89%), carrying ~8 points of error the gate-count model cannot explain, while its optimized arm — same mean CZ error on its edges (2.11e-3), mostly the same qubits — sits at 103%: the excess error tracks circuit duration, not gate quality or count, independently supporting the duration reading of the ordering anomaly. Third, a transpile-seed sweep (20 seeds, level 1, Fez snapshot) shows seed 7 gave the `mod_mult_55` optimized arm its worst routing of all twenty seeds (117 2q; min 102, median 112.5) while the baseline drew near-best routing (99; min 96): the registered +0.067 delta was measured with the optimized arm maximally handicapped, and is plausibly a lower bound.
+
+Caveats: post-hoc throughout; "limit" means unmitigated limit — these runs used raw SamplerV2 with no dynamical decoupling, twirling, or readout mitigation, any of which would move the ceilings; the ceiling model ignores 1q gate error and idling decoherence (both small at 5 qubits, and the latter is exactly what the `mod_mult_55` baseline gap measures). Future runs should persist the job's backend properties at submission time; the runner does not currently save them.
 
 ### Limitations and follow-ups
 

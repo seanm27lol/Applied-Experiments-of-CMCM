@@ -27,3 +27,12 @@ formalization layer behind them. Full write-up: **REPORT.md**.
 ## Reproducing the experiments
 See REPORT.md — exact commands for mining, training (stages 1–2), the
 six-way eval, and the hardware run.
+
+## Verifying the claims
+`python3 verify.py` (deps: pyzx, qiskit, qiskit-aer, qiskit-ibm-runtime,
+scipy) re-derives every table from the committed artifacts: independent
+pair-equality verification, manifest counts, transpile identity vs the
+recorded hardware runs, aer reproduction, hardware-delta significance,
+ceiling saturation against the recovered 2026-07-18 calibration
+(`quantum/qhw_results/calibration_*.json`), and the Part I statistics.
+The Lean layer is checked separately: `lean lean/LensLean.lean`.
