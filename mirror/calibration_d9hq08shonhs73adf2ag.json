@@ -1,0 +1,131 @@
+{
+ "job_id": "d9hq08shonhs73adf2ag",
+ "backend": "ibm_fez",
+ "date": "2026-07-24 13:25:55.451746-04:00",
+ "arms": [
+  {
+   "index": 0,
+   "physical_qubits": [
+    127,
+    137,
+    146,
+    147,
+    148
+   ],
+   "n_2q": 105,
+   "cz_error_mean": 0.0024524696785879524,
+   "readout_error_mean": 0.0062744140625,
+   "ceiling_actual_calibration": 0.7488
+  },
+  {
+   "index": 1,
+   "physical_qubits": [
+    127,
+    137,
+    146,
+    147,
+    148
+   ],
+   "n_2q": 71,
+   "cz_error_mean": 0.0025034303642747485,
+   "readout_error_mean": 0.0062744140625,
+   "ceiling_actual_calibration": 0.811
+  },
+  {
+   "index": 2,
+   "physical_qubits": [
+    127,
+    137,
+    145,
+    146,
+    147
+   ],
+   "n_2q": 58,
+   "cz_error_mean": 0.0022004036213148148,
+   "readout_error_mean": 0.008642578125,
+   "ceiling_actual_calibration": 0.8426
+  },
+  {
+   "index": 3,
+   "physical_qubits": [
+    127,
+    137,
+    145,
+    146,
+    147
+   ],
+   "n_2q": 86,
+   "cz_error_mean": 0.002210040790704158,
+   "readout_error_mean": 0.008642578125,
+   "ceiling_actual_calibration": 0.7916
+  },
+  {
+   "index": 4,
+   "physical_qubits": [
+    127,
+    137,
+    146,
+    147,
+    148
+   ],
+   "n_2q": 76,
+   "cz_error_mean": 0.0023309893092314025,
+   "readout_error_mean": 0.0062744140625,
+   "ceiling_actual_calibration": 0.8115
+  },
+  {
+   "index": 5,
+   "physical_qubits": [
+    91,
+    98,
+    108,
+    109,
+    110,
+    111,
+    112,
+    118,
+    129
+   ],
+   "n_2q": 165,
+   "cz_error_mean": 0.002421317769207872,
+   "readout_error_mean": 0.008639865451388888,
+   "ceiling_actual_calibration": 0.6199
+  },
+  {
+   "index": 6,
+   "physical_qubits": [
+    91,
+    98,
+    107,
+    108,
+    109,
+    110,
+    111,
+    118,
+    129
+   ],
+   "n_2q": 195,
+   "cz_error_mean": 0.0025632367926310237,
+   "readout_error_mean": 0.008680555555555556,
+   "ceiling_actual_calibration": 0.5605
+  },
+  {
+   "index": 7,
+   "physical_qubits": [
+    116,
+    117,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    136
+   ],
+   "n_2q": 157,
+   "cz_error_mean": 0.002841589230340576,
+   "readout_error_mean": 0.009684244791666666,
+   "ceiling_actual_calibration": 0.5859
+  }
+ ]
+}
