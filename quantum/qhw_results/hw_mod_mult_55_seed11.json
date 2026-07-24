@@ -1,0 +1,22 @@
+{
+ "pair": "mod_mult_55",
+ "mode": "hw",
+ "backend": "ibm_fez",
+ "job_id": "d9hubfchonhs73adlr30",
+ "seed_transpiler": 11,
+ "arms": {
+  "baseline": {
+   "fidelity_vs_ideal": 0.48389,
+   "tvd_vs_ideal": 0.51611,
+   "transpiled_2q": 99,
+   "transpiled_depth": 227
+  },
+  "optimized": {
+   "fidelity_vs_ideal": 0.65527,
+   "tvd_vs_ideal": 0.34473,
+   "transpiled_2q": 102,
+   "transpiled_depth": 190
+  }
+ },
+ "delta_fidelity": 0.17138
+}

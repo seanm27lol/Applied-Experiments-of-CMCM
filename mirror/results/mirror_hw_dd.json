@@ -1,0 +1,50 @@
+[
+ {
+  "name": "true_mod5_4",
+  "kind": "true",
+  "expected": "10010",
+  "return_prob": 0.4994
+ },
+ {
+  "name": "deranged_mod5_4",
+  "kind": "deranged",
+  "expected": "01010",
+  "return_prob": 0.0865
+ },
+ {
+  "name": "true_tof_3",
+  "kind": "true",
+  "expected": "11011",
+  "return_prob": 0.6199
+ },
+ {
+  "name": "deranged_tof_3",
+  "kind": "deranged",
+  "expected": "11101",
+  "return_prob": 0.0383
+ },
+ {
+  "name": "true_barenco_tof_3",
+  "kind": "true",
+  "expected": "01101",
+  "return_prob": 0.5641
+ },
+ {
+  "name": "deranged_barenco_tof_3",
+  "kind": "deranged",
+  "expected": "000111111",
+  "return_prob": 0.0016
+ },
+ {
+  "name": "true_mod_mult_55",
+  "kind": "true",
+  "expected": "100101100",
+  "return_prob": 0.1519
+ },
+ {
+  "name": "deranged_mod_mult_55",
+  "kind": "deranged",
+  "expected": "101111111",
+  "return_prob": 0.0022
+ }
+]
