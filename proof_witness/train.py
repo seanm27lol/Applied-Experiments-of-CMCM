@@ -42,11 +42,21 @@ def tokenize(ds, tok, seq):
     return ds.map(fn, batched=True, remove_columns=ds.column_names)
 
 
+def assert_finite(model, where):
+    bad = [n for n, p in model.named_parameters()
+           if not torch.isfinite(p).all()]
+    if bad:
+        raise RuntimeError(
+            f"non-finite weights after {where}: {bad[:5]} "
+            f"({len(bad)} tensors). Lower --lr1/--lr2 and rerun.")
+
+
 def run(model, tok, ds, outdir, epochs, lr, bs):
     args = TrainingArguments(
         output_dir=outdir, num_train_epochs=epochs, learning_rate=lr,
         per_device_train_batch_size=bs, gradient_accumulation_steps=4,
-        bf16=torch.cuda.is_available(), logging_steps=50,
+        bf16=False, fp16=False, logging_steps=50,
+        warmup_ratio=0.03, max_grad_norm=1.0,
         save_strategy="no", report_to=[])
     Trainer(model=model, args=args, train_dataset=ds,
             data_collator=DataCollatorForLanguageModeling(tok, mlm=False)
@@ -62,6 +72,8 @@ def main():
     ap.add_argument("--epochs", type=float, default=1)
     ap.add_argument("--seq", type=int, default=768)
     ap.add_argument("--bs", type=int, default=8)
+    ap.add_argument("--lr1", type=float, default=5e-5)
+    ap.add_argument("--lr2", type=float, default=2e-5)
     ap.add_argument("--smoke", action="store_true",
                     help="tiny run to validate plumbing")
     args = ap.parse_args()
@@ -72,14 +84,16 @@ def main():
     if tok.pad_token is None:
         tok.pad_token = tok.eos_token
     model = AutoModelForCausalLM.from_pretrained(args.model)
-    model.resize_token_embeddings(len(tok))
+    model.resize_token_embeddings(len(tok), mean_resizing=False)
 
     s1 = [json.loads(l) for l in open(f"data/{args.arm}_train.jsonl")]
+    s1 = [d for d in s1 if len(d["text"].strip()) > 20]
     if args.smoke:
         s1 = s1[:32]
     run(model, tok, tokenize(Dataset.from_list(s1), tok, args.seq),
         f"ckpt/{args.arm}_s1", args.epochs if not args.smoke else 1,
-        3e-4, args.bs)
+        args.lr1, args.bs)
+    assert_finite(model, "stage 1")
 
     # stage 2: same examples for every arm (seeded from the trace corpus's
     # source triples via a fixed file all arms share)
@@ -90,7 +104,8 @@ def main():
     if args.smoke:
         s2 = s2[:16]
     run(model, tok, tokenize(Dataset.from_list(s2), tok, args.seq),
-        f"ckpt/{args.arm}_s2", 1, 1e-4, args.bs)
+        f"ckpt/{args.arm}_s2", 1, args.lr2, args.bs)
+    assert_finite(model, "stage 2")
 
     outdir = f"ckpt/{args.arm}"
     model.save_pretrained(outdir)

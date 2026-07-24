@@ -40,3 +40,9 @@ in Part I are fully determined by their endpoints).
 
 Model: EleutherAI/pythia-160m unless amended here before running.
 Seeds: 0. Eval N: 300. Any deviation gets its own dated note below.
+## Deviation note, 2026-07-23
+First training attempt diverged (NaN gradients from step ~50). Fixes:
+fp32 instead of bf16, mean_resizing=False on token embedding resize,
+lr1 3e-4 -> 5e-5, lr2 1e-4 -> 2e-5, warmup 3%, empty-doc filter, and a
+finite-weights assertion after each stage. Plumbing only: arms, data,
+metrics, and predictions unchanged.
