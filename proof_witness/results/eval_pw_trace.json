@@ -1,0 +1,3010 @@
+{
+ "arm": "pw_trace",
+ "n": 300,
+ "exact_match": 0.0033333333333333335,
+ "sim_mean": 0.18854533333333334,
+ "sim_minus_echo_mean": -0.07275,
+ "recoverable_rate": 0.0033333333333333335,
+ "items": [
+  {
+   "i": 0,
+   "gen": "simp only [<a>LinearIsometryEquiv.sign_eq_one</a>, <a>LinearIsometryEquiv.sign_eq_one</a>, <a>LinearIsometryEquiv.sign_eq_one</a>, <a>LinearIsometryEquiv.sign",
+   "gold": "rw [EuclideanGeometry.oangle_eq_angle_of_sign_eq_one hs, Real.Angle.sin_coe, EuclideanGeometry.sin_angle_mul_dist_of_angle_eq_pi_div_two (EuclideanGeometry.angle_eq_pi_div_two_of_oangle_eq_pi_div_two h)]",
+   "exact": 0,
+   "sim": 0.2414,
+   "echo_ceiling": 0.0887,
+   "sim_minus_echo": 0.1527,
+   "recoverable": 0
+  },
+  {
+   "i": 1,
+   "gen": "simp only [<a>Finset.sum_eq_sum</a>, <a>Finset.sum_eq_sum</a>, <a>Finset.sum_eq_sum</a>, <a>Finset.sum_eq_sum</a>, <a>Finset",
+   "gold": "simp",
+   "exact": 0,
+   "sim": 0.0323,
+   "echo_ceiling": 0.25,
+   "sim_minus_echo": -0.2177,
+   "recoverable": 0
+  },
+  {
+   "i": 2,
+   "gen": "have hi' : (Finsupp.embDomain f (repr \u27e8v i, \u22ef\u27e9)) i' := by simp only [<a>Finsupp.mem_span_singleton</a>, <a>Finsupp.mem_span_singleton",
+   "gold": "rcases Finsupp.single_of_embDomain_single (repr \u27e8v i, _\u27e9) f i (1 : R) zero_ne_one.symm l_eq with \u27e8i', hi'\u27e9",
+   "exact": 0,
+   "sim": 0.2556,
+   "echo_ceiling": 0.3019,
+   "sim_minus_echo": -0.0462,
+   "recoverable": 0
+  },
+  {
+   "i": 3,
+   "gen": "refine \u27e8g, hg, ?_, ?_\u27e9",
+   "gold": "rcases hK hg with \u27e8_, \u27e8g\u2080, rfl\u27e9, _, \u27e8h1g\u2080, rfl\u27e9, h2g\u2080\u27e9",
+   "exact": 0,
+   "sim": 0.2778,
+   "echo_ceiling": 0.2407,
+   "sim_minus_echo": 0.037,
+   "recoverable": 0
+  },
+  {
+   "i": 4,
+   "gen": "rw [<a>ListBlank.map_cons</a>, <a>ListBlank.map_cons</a>, <a>ListBlank.map_cons</a>, <a>ListBlank.map_cons</a>, <a>ListBlank.map_cons</",
+   "gold": "convert Turing.ListBlank.cons_head_tail L",
+   "exact": 0,
+   "sim": 0.1926,
+   "echo_ceiling": 0.439,
+   "sim_minus_echo": -0.2464,
+   "recoverable": 0
+  },
+  {
+   "i": 5,
+   "gen": "exact <a>le_of_lt_of_le</a> h_zero",
+   "gold": "exact le_abs_self _",
+   "exact": 0,
+   "sim": 0.3824,
+   "echo_ceiling": 0.1579,
+   "sim_minus_echo": 0.2245,
+   "recoverable": 0
+  },
+  {
+   "i": 6,
+   "gen": "exact \u27e8hx, hy, hx.1, hx.2\u27e9",
+   "gold": "exact \u27e8y, Submonoid.subset_closure (by simp), by simp [hy]\u27e9",
+   "exact": 0,
+   "sim": 0.2203,
+   "echo_ceiling": 0.1525,
+   "sim_minus_echo": 0.0678,
+   "recoverable": 0
+  },
+  {
+   "i": 7,
+   "gen": "intro r",
+   "gold": "simp only [nhds_eq_iInf_abs_sub, abs_sub_comm (a := a)]",
+   "exact": 0,
+   "sim": 0.0727,
+   "echo_ceiling": 0.1273,
+   "sim_minus_echo": -0.0545,
+   "recoverable": 0
+  },
+  {
+   "i": 8,
+   "gen": "simp only [<a>Matrix.Matrix.mul_apply</a>, <a>Matrix.Matrix.mul_apply</a>, <a>Matrix.Matrix.mul_apply</a>, <a>Matrix.Matrix.mul_apply</a>, <a>Matrix.Matrix.mul_",
+   "gold": "split_ifs <;> aesop",
+   "exact": 0,
+   "sim": 0.0813,
+   "echo_ceiling": 0.2105,
+   "sim_minus_echo": -0.1293,
+   "recoverable": 0
+  },
+  {
+   "i": 9,
+   "gen": "simp [<a>AffineMap.zero_apply</a>, <a>AffineMap.zero_apply</a>, <a>AffineMap.zero_apply</a>, <a>AffineMap.zero_apply</a>, <a>AffineMap.zero_apply",
+   "gold": "norm_num",
+   "exact": 0,
+   "sim": 0.0345,
+   "echo_ceiling": 0.125,
+   "sim_minus_echo": -0.0905,
+   "recoverable": 0
+  },
+  {
+   "i": 10,
+   "gen": "apply <a>Set.mem_generatePiSystem_of_mem</a>",
+   "gold": "have h_b_alt : b = (Subtype.mk b h_b_w).Subtype.val := rfl",
+   "exact": 0,
+   "sim": 0.1552,
+   "echo_ceiling": 0.3276,
+   "sim_minus_echo": -0.1724,
+   "recoverable": 0
+  },
+  {
+   "i": 11,
+   "gen": "have hf0 : f.prod ~\u1d64 p := by simp only [<a>Multiset.prod_eq_zero</a>, <a>Multiset.mem_prod_iff</a>, <a>Multiset.mem_prod_iff</a>, <a>Mult",
+   "gold": "obtain \u27e8f, hf\u27e9 := pf p hp0",
+   "exact": 0,
+   "sim": 0.0876,
+   "echo_ceiling": 0.2692,
+   "sim_minus_echo": -0.1816,
+   "recoverable": 0
+  },
+  {
+   "i": 12,
+   "gen": "rw [<a>Nat.div_eq_mul_one</a> ha, <a>Nat.div_eq_mul_one</a> ha, <a>Nat.div_eq_mul_one</a> ha, <a>Nat.div_eq_mul_one",
+   "gold": "rw [(by ring : (x ^ 2 - \u2191a * y ^ 2) * y\u207b\u00b9 ^ 2 = (x * y\u207b\u00b9) ^ 2 - a * (y * y\u207b\u00b9) ^ 2), mul_inv_cancel hy, one_pow, mul_one, sub_eq_zero, pow_two] at hxy",
+   "exact": 0,
+   "sim": 0.1678,
+   "echo_ceiling": 0.3356,
+   "sim_minus_echo": -0.1678,
+   "recoverable": 0
+  },
+  {
+   "i": 13,
+   "gen": "intro f hf hf",
+   "gold": "have : \u2200 f : MeasureTheory.Lp E p \u03bc, P f := fun f => (MeasureTheory.Lp.simpleFunc.denseRange hp_ne_top).DenseRange.induction_on f h_closed this",
+   "exact": 0,
+   "sim": 0.0699,
+   "echo_ceiling": 0.2168,
+   "sim_minus_echo": -0.1469,
+   "recoverable": 0
+  },
+  {
+   "i": 14,
+   "gen": "exact <a>le_antisymm</a> (<a>le_antisymm</a> hxs hyt) hxs",
+   "gold": "exact le_iSup\u2082_of_le x \u27e8hxs, hyt\u27e9 (inf_idem _).Eq.le",
+   "exact": 0,
+   "sim": 0.193,
+   "echo_ceiling": 0.1731,
+   "sim_minus_echo": 0.0199,
+   "recoverable": 0
+  },
+  {
+   "i": 15,
+   "gen": "exact <a>mul_le_mul_of_nonneg_of_le</a> (hmain.le.trans <a>mul_le_mul_of_nonneg_of_le</a> (hmain.le.trans <a>mul_le_mul_",
+   "gold": "exact_mod_cast Nat.ceil_le_floor_add_one _",
+   "exact": 0,
+   "sim": 0.225,
+   "echo_ceiling": 0.119,
+   "sim_minus_echo": 0.106,
+   "recoverable": 0
+  },
+  {
+   "i": 16,
+   "gen": "simp only [<a>Cardinal.lift_def</a>, <a>Cardinal.lift_def</a>, <a>Cardinal.lift_def</a>, <a>Cardinal.lift_def</a>]",
+   "gold": "simpa using Cardinal.nat_eq_lift_iff (n := 0)",
+   "exact": 0,
+   "sim": 0.2456,
+   "echo_ceiling": 0.3778,
+   "sim_minus_echo": -0.1322,
+   "recoverable": 0
+  },
+  {
+   "i": 17,
+   "gen": "rw [<a>Cardinal.isUnit_iff_isUnit_of_isUnit_isUnit_isUnit</a>]",
+   "gold": "rw [Cardinal.isUnit_iff]",
+   "exact": 0,
+   "sim": 0.3871,
+   "echo_ceiling": 0.3333,
+   "sim_minus_echo": 0.0538,
+   "recoverable": 0
+  },
+  {
+   "i": 18,
+   "gen": "refine \u27e8fun n => ?_, fun n => ?_\u27e9",
+   "gold": "filter_upwards [h\u2081, h\u2082, h\u2083, hfmono] with \u03c9 h\u03c9\u2081 h\u03c9\u2082 h\u03c9\u2083 h\u03c9\u2084",
+   "exact": 0,
+   "sim": 0.1897,
+   "echo_ceiling": 0.2069,
+   "sim_minus_echo": -0.0172,
+   "recoverable": 0
+  },
+  {
+   "i": 19,
+   "gen": "rw [<a>TensorProduct.map_comp</a> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _",
+   "gold": "simp only [LinearMap.lTensor, LinearMap.rTensor, \u2190 TensorProduct.map_comp, LinearMap.id_comp, LinearMap.comp_id]",
+   "exact": 0,
+   "sim": 0.0815,
+   "echo_ceiling": 0.125,
+   "sim_minus_echo": -0.0435,
+   "recoverable": 0
+  },
+  {
+   "i": 20,
+   "gen": "exact <a>Set.image_subset_iff</a> (<a>Set.image_subset_iff</a> (<a>Set.image_subset_iff</a> (<a>Set.image_subset_iff</a> (<a>Set.image_subset_iff</",
+   "gold": "exact (trichotomous _ _).Or.resolve_right (not_or_of_not (hn a) fun hl => not_exists.2 hn (f.init hl))",
+   "exact": 0,
+   "sim": 0.2109,
+   "echo_ceiling": 0.1569,
+   "sim_minus_echo": 0.054,
+   "recoverable": 0
+  },
+  {
+   "i": 21,
+   "gen": "exact <a>mul_comm</a> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _",
+   "gold": "exact Set.add_mem_add (Set.smul_mem_smul_set hx) (Set.smul_mem_smul_set hy)",
+   "exact": 0,
+   "sim": 0.1473,
+   "echo_ceiling": 0.1067,
+   "sim_minus_echo": 0.0406,
+   "recoverable": 0
+  },
+  {
+   "i": 22,
+   "gen": "have h_int : \u2200 (a b : \u211d), IntervalIntegrable f \u03bc a b := <a>intervalIntegral.intervalIntegral_continuousWithinAt_Icc_left</a>",
+   "gold": "apply ContinuousWithinAt.continuousAt _ (Icc_mem_nhds hb\u2081 hb\u2082)",
+   "exact": 0,
+   "sim": 0.1371,
+   "echo_ceiling": 0.3548,
+   "sim_minus_echo": -0.2177,
+   "recoverable": 0
+  },
+  {
+   "i": 23,
+   "gen": "rw [<a>Matrix.toMatrix_apply</a>, <a>Matrix.toMatrix_apply</a>, <a>Matrix.toMatrix_apply</a>, <a>Matrix.toMatrix_apply</a>, <a>Matrix.toMatrix_apply</a>, <a>",
+   "gold": "intro kl",
+   "exact": 0,
+   "sim": 0.0382,
+   "echo_ceiling": 0.375,
+   "sim_minus_echo": -0.3368,
+   "recoverable": 0
+  },
+  {
+   "i": 24,
+   "gen": "refine \u27e8fun h => ?_, fun h => ?_\u27e9",
+   "gold": "simp_rw [MeasurableSpace.measurableSet_bot_iff] at hf_meas",
+   "exact": 0,
+   "sim": 0.1379,
+   "echo_ceiling": 0.3276,
+   "sim_minus_echo": -0.1897,
+   "recoverable": 0
+  },
+  {
+   "i": 25,
+   "gen": "refine <a>MeasureTheory.IntegrableOn_iff_integrableOn_eq_integrableOn_eq_integrableOn_eq_integrableOn_eq_integrableOn_integrableOn_eq_integrableOn_integrableOn_eq_integrableOn_integr",
+   "gold": "intro a s _ _ hf",
+   "exact": 0,
+   "sim": 0.0385,
+   "echo_ceiling": 0.4375,
+   "sim_minus_echo": -0.399,
+   "recoverable": 0
+  },
+  {
+   "i": 26,
+   "gen": "exact <a>List.reaches\u2081</a> (h\u2081.1)",
+   "gold": "exact \u27e8_, h\u2081, h.trans h\u2082\u27e9",
+   "exact": 0,
+   "sim": 0.2727,
+   "echo_ceiling": 0.24,
+   "sim_minus_echo": 0.0327,
+   "recoverable": 0
+  },
+  {
+   "i": 27,
+   "gen": "simp only [<a>MeasureTheory.Measure.smul_apply</a>, <a>MeasureTheory.Measure.smul_apply</a>, <a>MeasureTheory.Measure.smul_apply</a>, <a>MeasureTheory.Measure.smul_apply",
+   "gold": "simp [\u2190 mul_assoc, ENNReal.mul_inv_cancel, hx1, hx2]",
+   "exact": 0,
+   "sim": 0.1538,
+   "echo_ceiling": 0.1538,
+   "sim_minus_echo": 0.0,
+   "recoverable": 0
+  },
+  {
+   "i": 28,
+   "gen": "rw [<a>ListBlank.map_map</a>, <a>ListBlank.map_map</a>, <a>ListBlank.map_map</a>, <a>ListBlank.map_map</a>, <a>ListBlank.map_map</",
+   "gold": "generalize Turing.ListBlank.tail L = L'",
+   "exact": 0,
+   "sim": 0.1615,
+   "echo_ceiling": 0.359,
+   "sim_minus_echo": -0.1974,
+   "recoverable": 0
+  },
+  {
+   "i": 29,
+   "gen": "rw [<a>ContinuousOn.continuousOn_apply</a>, <a>ContinuousOn.continuousOn_apply</a>, <a>ContinuousOn.continuousOn_apply</a>, <a>ContinuousOn.continuousOn_apply</a>, <a>ContinuousOn.",
+   "gold": "rw [show (fun x => a - x) = (fun p : \u211d\u22650\u221e \u00d7 \u211d\u22650\u221e => p.fst - p.snd) \u2218 fun x => \u27e8a, x\u27e9 by rfl]",
+   "exact": 0,
+   "sim": 0.1389,
+   "echo_ceiling": 0.3478,
+   "sim_minus_echo": -0.2089,
+   "recoverable": 0
+  },
+  {
+   "i": 30,
+   "gen": "t}\n<|TACTIC|>\nintro x y",
+   "gold": "refine t.induction_on ?_ ?_ ?_",
+   "exact": 0,
+   "sim": 0.1333,
+   "echo_ceiling": 0.2667,
+   "sim_minus_echo": -0.1333,
+   "recoverable": 0
+  },
+  {
+   "i": 31,
+   "gen": "rw [<a>Finset.sum_eq_zero</a>, <a>Finset.sum_eq_zero</a>, <a>Finset.sum_eq_zero</a>, <a>Finset.sum_eq_zero</a>, <a>Finset.sum",
+   "gold": "have hz' : -z \u2260 1 := by intro H rw [neg_eq_iff_eq_neg] at H simp only [H, add_right_neg] at hz exact Complex.slitPlane_ne_zero hz rfl",
+   "exact": 0,
+   "sim": 0.1278,
+   "echo_ceiling": 0.218,
+   "sim_minus_echo": -0.0902,
+   "recoverable": 0
+  },
+  {
+   "i": 32,
+   "gen": "simp only [<a>Complex.arg_eq_add_neg</a>, <a>Complex.arg_eq_add_neg</a>, <a>Complex.arg_eq_add_neg</a>, <a>Complex.arg_eq_add_neg</a>, <",
+   "gold": "rw [Complex.arg_ofReal_of_neg hr, \u2190 Complex.ofReal_neg, Complex.arg_ofReal_of_nonneg (Left.neg_pos_iff.2 hr).LT.lt.le, \u2190 Real.Angle.coe_add, \u2190 two_mul, Real.Angle.coe_two_pi, Real.Angle.coe_zero]",
+   "exact": 0,
+   "sim": 0.2513,
+   "echo_ceiling": 0.1436,
+   "sim_minus_echo": 0.1077,
+   "recoverable": 0
+  },
+  {
+   "i": 33,
+   "gen": "rw [<a>Polynomial.C_ne_zero</a>, <a>Polynomial.C_zero</a>, <a>Polynomial.C_ne_zero</a>, <a>Polynomial.C_zero</a>, <a>Polynomial.",
+   "gold": "have lead_unit := (Units.map \u2191\u2090.RingHom.toMonoidHom (Units.mk0 _ lead_ne)).Units.isUnit",
+   "exact": 0,
+   "sim": 0.1562,
+   "echo_ceiling": 0.3218,
+   "sim_minus_echo": -0.1656,
+   "recoverable": 0
+  },
+  {
+   "i": 34,
+   "gen": "rw [<a>MeasureTheory.Measure.hasPDF_of_haveLebesgueDecomposition</a> hmX]",
+   "gold": "wlog hmX : Measurable X",
+   "exact": 0,
+   "sim": 0.1781,
+   "echo_ceiling": 0.7826,
+   "sim_minus_echo": -0.6045,
+   "recoverable": 0
+  },
+  {
+   "i": 35,
+   "gen": "rw [<a>AEStronglyMeasurable.mk_eq_mk_mk_mk_mk_eq_mk_mk_mk_mk_mk_mk_mk_mk_mk_mk_mk_mk_mk_mk_mk_mk_mk_mk_mk_mk",
+   "gold": "ext1 n",
+   "exact": 0,
+   "sim": 0.0185,
+   "echo_ceiling": 0.3333,
+   "sim_minus_echo": -0.3148,
+   "recoverable": 0
+  },
+  {
+   "i": 36,
+   "gen": "exact <a>PartENat.coe_le</a> hf",
+   "gold": "exact PowerSeries.order_mul_ge _ _",
+   "exact": 0,
+   "sim": 0.2941,
+   "echo_ceiling": 0.1765,
+   "sim_minus_echo": 0.1176,
+   "recoverable": 0
+  },
+  {
+   "i": 37,
+   "gen": "rw [<a>SimpleGraph.Walk.isCircuit_iff</a>, <a>SimpleGraph.Walk.isCircuit_iff</a>, <a>SimpleGraph.Walk.isCircuit_eq_iff</a>, <a>SimpleGraph.Walk.isCircuit_eq",
+   "gold": "subst_vars",
+   "exact": 0,
+   "sim": 0.0513,
+   "echo_ceiling": 0.1,
+   "sim_minus_echo": -0.0487,
+   "recoverable": 0
+  },
+  {
+   "i": 38,
+   "gen": "have hg' := <a>mul_comm</a> (<a>mul_comm</a> (<a>mul_left_comm</a> (<a>mul_right_comm</a> (<a>mul_left_comm</a> (<a>mul_right_comm",
+   "gold": "apply hdiv.comp",
+   "exact": 0,
+   "sim": 0.0615,
+   "echo_ceiling": 0.2667,
+   "sim_minus_echo": -0.2051,
+   "recoverable": 0
+  },
+  {
+   "i": 39,
+   "gen": "exact <a>MeasureTheory.Measure.toReal_of_edist_of_not_mem</a> hys",
+   "gold": "exact ENNReal.toReal_le_add (EMetric.edist_le_infEdist_add_ediam hy) (Metric.infEdist_ne_top \u27e8y, hy\u27e9) hs.ediam_ne_top",
+   "exact": 0,
+   "sim": 0.2479,
+   "echo_ceiling": 0.1966,
+   "sim_minus_echo": 0.0513,
+   "recoverable": 0
+  },
+  {
+   "i": 40,
+   "gen": "rw [<a>Polynomial.natTrailingDegree_add_natTrailingDegree</a>, <a>Polynomial.natTrailingDegree_add_natTrailingDegree</a>, <a>Polynomial.natTrailingDegree_add_natTra",
+   "gold": "have : \u2200 (p : R[X]), WithTop.some (Polynomial.natTrailingDegree p) = Nat.cast (Polynomial.natTrailingDegree p) := fun p \u21a6 rfl",
+   "exact": 0,
+   "sim": 0.3598,
+   "echo_ceiling": 0.456,
+   "sim_minus_echo": -0.0962,
+   "recoverable": 0
+  },
+  {
+   "i": 41,
+   "gen": "rw [<a>Finset.mem_singleton_iff</a>, <a>Finset.mem_singleton_iff</a>, <a>Finset.mem_singleton_iff</a>, <a>Finset.mem_singleton_iff</a>, <a>",
+   "gold": "have h_succFn_eq : LinearLocallyFiniteOrder.succFn i = i := le_antisymm hi (LinearLocallyFiniteOrder.le_succFn i)",
+   "exact": 0,
+   "sim": 0.1942,
+   "echo_ceiling": 0.292,
+   "sim_minus_echo": -0.0978,
+   "recoverable": 0
+  },
+  {
+   "i": 42,
+   "gen": "rw [<a>Finset.filter_union</a>, <a>Finset.union_subset_iff</a>]",
+   "gold": "simp only [Finset.truncatedInf_of_mem, hs, ht, _private.Mathlib.Combinatorics.SetFamily.AhlswedeZhang.0.Finset.sups_aux.2 \u27e8hs, ht\u27e9, Finset.inf'_sup_inf', Finset.filter_sups_le]",
+   "exact": 0,
+   "sim": 0.1989,
+   "echo_ceiling": 0.1648,
+   "sim_minus_echo": 0.0341,
+   "recoverable": 0
+  },
+  {
+   "i": 43,
+   "gen": "rw [<a>Nat.bit0_eq_bit1</a>, <a>Nat.bit0_eq_bit0</a>, <a>Nat.bit0_eq_bit0</a>, <a>Nat.bit0_eq_bit0</a>, <a>",
+   "gold": "cases' n with n",
+   "exact": 0,
+   "sim": 0.0654,
+   "echo_ceiling": 0.4,
+   "sim_minus_echo": -0.3346,
+   "recoverable": 0
+  },
+  {
+   "i": 44,
+   "gen": "exact <a>Set.mem_iUnion_of_le_of_succ</a> hs'",
+   "gold": "exact hs.mem_of_nonempty_of_not_isSuccLimit hs' hx",
+   "exact": 0,
+   "sim": 0.42,
+   "echo_ceiling": 0.28,
+   "sim_minus_echo": 0.14,
+   "recoverable": 0
+  },
+  {
+   "i": 45,
+   "gen": "simp only [<a>MeasureTheory.Measure.mk_eq_mk</a>, <a>MeasureTheory.Measure.mk_eq_mk</a>, <a>MeasureTheory.Measure.mk_eq_mk</a>, <a>MeasureTheory.Measure.mk",
+   "gold": "rw [h]",
+   "exact": 0,
+   "sim": 0.0194,
+   "echo_ceiling": 0.3333,
+   "sim_minus_echo": -0.314,
+   "recoverable": 0
+  },
+  {
+   "i": 46,
+   "gen": "exact <a>Finset.insert_subset_of_mem_insert_of_mem_insert_of_mem_insert_of_mem_insert_of_mem_insert_of_mem_insert_of_mem_insert_of_mem_insert_of_mem_insert",
+   "gold": "rw [Finset.insert_eq_self.2 (Finset.mem_inter.1 ha).2] at hu",
+   "exact": 0,
+   "sim": 0.2258,
+   "echo_ceiling": 0.3333,
+   "sim_minus_echo": -0.1075,
+   "recoverable": 0
+  },
+  {
+   "i": 47,
+   "gen": "cases' ys.nextOr x d with y hd",
+   "gold": "cases' ys with z zs",
+   "exact": 0,
+   "sim": 0.5333,
+   "echo_ceiling": 0.3684,
+   "sim_minus_echo": 0.1649,
+   "recoverable": 0
+  },
+  {
+   "i": 48,
+   "gen": "simp only [<a>Finset.map_eq_map</a>, <a>Finset.map_eq_map</a>, <a>Finset.map_eq_map</a>, <a>Finset.map_eq_map</a>, <a>Finset",
+   "gold": "rintro s t",
+   "exact": 0,
+   "sim": 0.0565,
+   "echo_ceiling": 0.4,
+   "sim_minus_echo": -0.3435,
+   "recoverable": 0
+  },
+  {
+   "i": 49,
+   "gen": "rw [<a>single_ne_zero</a>, <a>single_ne_zero</a>, <a>single_ne_zero</a>, <a>single_ne_zero</a>, <a>single_ne_zero</a>, <a>single_ne_zero",
+   "gold": "obtain rfl | hj := eq_or_ne j j'",
+   "exact": 0,
+   "sim": 0.1029,
+   "echo_ceiling": 0.25,
+   "sim_minus_echo": -0.1471,
+   "recoverable": 0
+  },
+  {
+   "i": 50,
+   "gen": "\ufffd\u00b9 ++ r\u2081 ~ [] ++ r\u2082\n<|TACTIC|>\ncases head\u271d :: tail\u271d\u00b9 ++ r\u2081 ~ []",
+   "gold": "cases l\u2081 <;> cases l\u2082 <;> dsimp at e\u2081 e\u2082 <;> injections <;> subst_vars",
+   "exact": 0,
+   "sim": 0.1714,
+   "echo_ceiling": 0.2286,
+   "sim_minus_echo": -0.0571,
+   "recoverable": 0
+  },
+  {
+   "i": 51,
+   "gen": "refine <a>MeasureTheory.Measure.snorm_mk_eq_tsum_of_ae_of_tendsto_of_ae_of_tendsto_of_ae_of_tendsto_of_ae_of_ae_of_ae_of",
+   "gold": "rw [MeasureTheory.ae_all_iff]",
+   "exact": 0,
+   "sim": 0.1917,
+   "echo_ceiling": 0.2759,
+   "sim_minus_echo": -0.0842,
+   "recoverable": 0
+  },
+  {
+   "i": 52,
+   "gen": "rw [<a>Polynomial.C_ne_zero</a>, <a>Polynomial.C_mul_C_ne_zero</a>, <a>Polynomial.C_mul_C_ne_zero</a>, <a>Polynomial.C_ne",
+   "gold": "have p_a_eq : Polynomial.aeval a (Polynomial.C k - p) = \u2191\u2090 k - Polynomial.aeval a p := by simp only [Polynomial.aeval_C, AlgHom.map_sub, sub_left_inj]",
+   "exact": 0,
+   "sim": 0.2867,
+   "echo_ceiling": 0.2267,
+   "sim_minus_echo": 0.06,
+   "recoverable": 0
+  },
+  {
+   "i": 53,
+   "gen": ".inl\nhh : CommSq h' \u03b1X \u03b1Z h\nhi : CommSq i' \u03b1Y \u03b1Z i\nw : CommSq f' g' h' i'\nhc\u2082 : IsColimit (BinaryCofan.mk (c.inr \ufffd",
+   "gold": "have e\u2081 : (g' \u226b cmp) \u226b CategoryTheory.Limits.pullback.snd = \u03b1W \u226b c.inl := by rw [CategoryTheory.Category.assoc, CategoryTheory.Limits.pullback.lift_snd, hg.w]",
+   "exact": 0,
+   "sim": 0.1709,
+   "echo_ceiling": 0.2025,
+   "sim_minus_echo": -0.0316,
+   "recoverable": 0
+  },
+  {
+   "i": 54,
+   "gen": "exact <a>IH\u2082</a> (<a>IH\u2082</a> p\u2081) (<a>IH\u2082</a> p\u2082) (<a>IH\u2082</a> p\u2082)",
+   "gold": "exact (IH\u2081 rfl rfl).List.Perm.trans (IH\u2082 rfl rfl)",
+   "exact": 0,
+   "sim": 0.25,
+   "echo_ceiling": 0.2245,
+   "sim_minus_echo": 0.0255,
+   "recoverable": 0
+  },
+  {
+   "i": 55,
+   "gen": "exact <a>le_trans</a> (<a>le_trans</a> (<a>Set.mulSupport_le_mul_mul_left</a> _))",
+   "gold": "exact fun x hx => hx.2.2 hx.1.2",
+   "exact": 0,
+   "sim": 0.1358,
+   "echo_ceiling": 0.1613,
+   "sim_minus_echo": -0.0255,
+   "recoverable": 0
+  },
+  {
+   "i": 56,
+   "gen": "exact <a>Nat.Prime.one_eq_zero_of_nonneg_of_nonneg_of_nonneg_of_nonneg_of_nonneg_of_nonneg_of_nonneg_of_nonneg_of_nonneg_of_nonneg_",
+   "gold": "simp",
+   "exact": 0,
+   "sim": 0.0153,
+   "echo_ceiling": 0.25,
+   "sim_minus_echo": -0.2347,
+   "recoverable": 0
+  },
+  {
+   "i": 57,
+   "gen": "intro n",
+   "gold": "intro n hn",
+   "exact": 0,
+   "sim": 0.7,
+   "echo_ceiling": 0.4,
+   "sim_minus_echo": 0.3,
+   "recoverable": 0
+  },
+  {
+   "i": 58,
+   "gen": "simp only [<a>MeasureTheory.Measure.comp_apply</a>, <a>MeasureTheory.Measure.comp_apply</a>, <a>MeasureTheory.Measure.comp_apply</a>, <a>MeasureTheory.Measure.comp_apply</a>]",
+   "gold": "simp only [RingHom.id_apply, ContinuousLinearMap.coe_comp', Function.comp_apply, ContinuousLinearMap.smul_apply]",
+   "exact": 0,
+   "sim": 0.3333,
+   "echo_ceiling": 0.1696,
+   "sim_minus_echo": 0.1637,
+   "recoverable": 0
+  },
+  {
+   "i": 59,
+   "gen": "have : y' < y + z := by intro y z hz",
+   "gold": "have : NeZero y := \u27e8hy\u27e9",
+   "exact": 0,
+   "sim": 0.3611,
+   "echo_ceiling": 0.4783,
+   "sim_minus_echo": -0.1171,
+   "recoverable": 0
+  },
+  {
+   "i": 60,
+   "gen": "rw [\u2190 <a>Polynomial.eval\u2082_map</a> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _",
+   "gold": "dsimp",
+   "exact": 0,
+   "sim": 0.0244,
+   "echo_ceiling": 0.2,
+   "sim_minus_echo": -0.1756,
+   "recoverable": 0
+  },
+  {
+   "i": 61,
+   "gen": "rw [<a>Polynomial.natDegree_eq_natDegree</a>]",
+   "gold": "apply Polynomial.natDegree_eq_of_natDegree_add_eq_zero",
+   "exact": 0,
+   "sim": 0.5926,
+   "echo_ceiling": 0.2963,
+   "sim_minus_echo": 0.2963,
+   "recoverable": 0
+  },
+  {
+   "i": 62,
+   "gen": "rw [<a>a.x_ne_zero</a>, <a>a.x_ne_zero</a>, <a>a.x_ne_zero</a>, <a>a.x_ne_zero</a>, <a>a.x_ne_zero</",
+   "gold": "intro hx",
+   "exact": 0,
+   "sim": 0.05,
+   "echo_ceiling": 0.375,
+   "sim_minus_echo": -0.325,
+   "recoverable": 0
+  },
+  {
+   "i": 63,
+   "gen": "exact <a>Nat.add_zero</a> h'",
+   "gold": "omega",
+   "exact": 0,
+   "sim": 0.0714,
+   "echo_ceiling": 0.2,
+   "sim_minus_echo": -0.1286,
+   "recoverable": 0
+  },
+  {
+   "i": 64,
+   "gen": "simp only [<a>Cardinal.lift_def</a>, <a>Cardinal.lift_def</a>, <a>Cardinal.lift_def</a>, <a>Cardinal.lift_def</a>]",
+   "gold": "rw [\u2190 Cardinal.lift_ofENat.{u, v}, Cardinal.lift_inj]",
+   "exact": 0,
+   "sim": 0.3333,
+   "echo_ceiling": 0.1887,
+   "sim_minus_echo": 0.1447,
+   "recoverable": 0
+  },
+  {
+   "i": 65,
+   "gen": "rw [<a>cyclotomic.minpoly_eq_cyclotomic</a> n]",
+   "gold": "haveI := NeZero.of_noZeroSMulDivisors K R n",
+   "exact": 0,
+   "sim": 0.087,
+   "echo_ceiling": 0.2558,
+   "sim_minus_echo": -0.1689,
+   "recoverable": 0
+  },
+  {
+   "i": 66,
+   "gen": "rw [<a>Submodule.mulRightMap_apply</a>, <a>Submodule.mulRightMap_apply</a>, <a>Submodule.smulRightMap_apply</a>, <a>Submodule.smulRightMap_apply</a>, <a>Submodule",
+   "gold": "simp [Submodule.mulRightMap]",
+   "exact": 0,
+   "sim": 0.1543,
+   "echo_ceiling": 0.4286,
+   "sim_minus_echo": -0.2743,
+   "recoverable": 0
+  },
+  {
+   "i": 67,
+   "gen": "exact <a>Nat.cast_add</a> (hx.le.trans hx.le.trans)",
+   "gold": "positivity",
+   "exact": 0,
+   "sim": 0.0588,
+   "echo_ceiling": 0.2,
+   "sim_minus_echo": -0.1412,
+   "recoverable": 0
+  },
+  {
+   "i": 68,
+   "gen": "refine \u27e8fun h => ?_, fun h => ?_\u27e9",
+   "gold": "constructor",
+   "exact": 0,
+   "sim": 0.0606,
+   "echo_ceiling": 0.2727,
+   "sim_minus_echo": -0.2121,
+   "recoverable": 0
+  },
+  {
+   "i": 69,
+   "gen": "rw [<a>total_eq</a>] at this",
+   "gold": "rw [this, zero_smul, zero_add] at total_eq",
+   "exact": 0,
+   "sim": 0.3333,
+   "echo_ceiling": 0.2619,
+   "sim_minus_echo": 0.0714,
+   "recoverable": 0
+  },
+  {
+   "i": 70,
+   "gen": "rw [<a>Finset.sum_erase</a>, <a>Finset.sum_erase</a>, <a>Finset.sum_erase</a>, <a>Finset.sum_erase</a>, <a>Finset.sum_erase</",
+   "gold": "rw [Lagrange.derivative_nodal, Polynomial.eval_finset_sum, \u2190 Finset.add_sum_erase _ _ hi, add_right_eq_self]",
+   "exact": 0,
+   "sim": 0.312,
+   "echo_ceiling": 0.213,
+   "sim_minus_echo": 0.099,
+   "recoverable": 0
+  },
+  {
+   "i": 71,
+   "gen": "ext x y",
+   "gold": "apply congrArg",
+   "exact": 0,
+   "sim": 0.0714,
+   "echo_ceiling": 0.1429,
+   "sim_minus_echo": -0.0714,
+   "recoverable": 0
+  },
+  {
+   "i": 72,
+   "gen": "exact <a>MeasureTheory.Measure.piecewise_eq_of_not_mem_of_not_mem_nhds_of_not_mem_nhds_of_not_mem_nhds_of_not_mem_nhds_of_not_mem_nh",
+   "gold": "exact Measurable.piecewise hs measurable_const g'_meas",
+   "exact": 0,
+   "sim": 0.2803,
+   "echo_ceiling": 0.3704,
+   "sim_minus_echo": -0.0901,
+   "recoverable": 0
+  },
+  {
+   "i": 73,
+   "gen": "intro x hx",
+   "gold": "refine fun hd \u21a6 \u27e8Matrix.isHermitian_diagonal_iff.2 fun i \u21a6 IsSelfAdjoint.of_nonneg (hd i), ?_\u27e9",
+   "exact": 0,
+   "sim": 0.0851,
+   "echo_ceiling": 0.1596,
+   "sim_minus_echo": -0.0745,
+   "recoverable": 0
+  },
+  {
+   "i": 74,
+   "gen": "exact <a>lt_of_le_of_lt_of_le</a> hM hM",
+   "gold": "rwa [\u2190 zpow_natCast] at hM",
+   "exact": 0,
+   "sim": 0.2308,
+   "echo_ceiling": 0.1538,
+   "sim_minus_echo": 0.0769,
+   "recoverable": 0
+  },
+  {
+   "i": 75,
+   "gen": "simp only [<a>IsPrimitiveRoot.isPrimitiveRoot_iff_isPrimitiveRoot_iff_isPrimitiveRoot_iff_isPrimitiveRoot_iff_isPrimitiveRoot_iff_isPrimitiveRoot_iff_isPrimitiveRoot_iff_isPrimitiveRoot",
+   "gold": "exact IsPrimitiveRoot.pow_eq_one",
+   "exact": 0,
+   "sim": 0.1243,
+   "echo_ceiling": 0.5,
+   "sim_minus_echo": -0.3757,
+   "recoverable": 0
+  },
+  {
+   "i": 76,
+   "gen": "exact <a>le_max_iff_le_of_le_of_le_of_le_of_le_of_le_of_le_of_le_of_le_of_le_of_le_of_le_of_le_of_le_",
+   "gold": "simp [max_def, if_pos h, le_refl]",
+   "exact": 0,
+   "sim": 0.1584,
+   "echo_ceiling": 0.1212,
+   "sim_minus_echo": 0.0372,
+   "recoverable": 0
+  },
+  {
+   "i": 77,
+   "gen": "rw [<a>inner_smul_eq_zero</a>, <a>inner_smul_eq_zero</a>, <a>inner_smul_eq_zero</a>, <a>inner_smul_eq_zero</a>, <a>inner_smul",
+   "gold": "refine \u27e8fun h x => ?_, fun h => by simp_rw [h, inner_zero_left, forall_const]\u27e9",
+   "exact": 0,
+   "sim": 0.224,
+   "echo_ceiling": 0.1795,
+   "sim_minus_echo": 0.0445,
+   "recoverable": 0
+  },
+  {
+   "i": 78,
+   "gen": "simp only [<a>le_antisymm</a>, <a>le_antisymm</a>, <a>le_antisymm</a>, <a>le_antisymm</a>, <a>le_antisymm</a>, <a>le_antis",
+   "gold": "refine \u27e8\u27e8a\u207b\u00b9 * b, ?_\u27e9, ?_\u27e9",
+   "exact": 0,
+   "sim": 0.0984,
+   "echo_ceiling": 0.3846,
+   "sim_minus_echo": -0.2863,
+   "recoverable": 0
+  },
+  {
+   "i": 79,
+   "gen": "simp only [<a>Set.Iic</a>, <a>Set.Iic</a>, <a>Set.Iic</a>, <a>Set.Iic</a>, <a>Set.Iic</a>]",
+   "gold": "simp only [WithBot.preimage_coe_Iic, WithTop.preimage_coe_Iic]",
+   "exact": 0,
+   "sim": 0.3111,
+   "echo_ceiling": 0.1613,
+   "sim_minus_echo": 0.1498,
+   "recoverable": 0
+  },
+  {
+   "i": 80,
+   "gen": "rw [<a>LinearMap.eval\u2082_comp</a>]",
+   "gold": "rw [Polynomial.eval\u2082_sum]",
+   "exact": 0,
+   "sim": 0.4688,
+   "echo_ceiling": 0.32,
+   "sim_minus_echo": 0.1488,
+   "recoverable": 0
+  },
+  {
+   "i": 81,
+   "gen": "refine \u27e8xl xl, ?_, ?_, ?_\u27e9",
+   "gold": "intro x xl",
+   "exact": 0,
+   "sim": 0.1923,
+   "echo_ceiling": 0.5,
+   "sim_minus_echo": -0.3077,
+   "recoverable": 0
+  },
+  {
+   "i": 82,
+   "gen": "rw [<a>Set.image_subset_iff</a>, <a>Set.image_subset_iff</a>]",
+   "gold": "simp only [Set.image_empty, Real.sInf_empty, NNReal.coe_eq_zero]",
+   "exact": 0,
+   "sim": 0.2344,
+   "echo_ceiling": 0.1406,
+   "sim_minus_echo": 0.0938,
+   "recoverable": 0
+  },
+  {
+   "i": 83,
+   "gen": "intro s hs",
+   "gold": "have : \u2200 s, (I \u2229 s : Set (\u03b9 \u2192 \u211d)) \u2286 J := fun s => inter_subset_left.trans h",
+   "exact": 0,
+   "sim": 0.08,
+   "echo_ceiling": 0.3067,
+   "sim_minus_echo": -0.2267,
+   "recoverable": 0
+  },
+  {
+   "i": 84,
+   "gen": "rw [<a>Finset.mem_cons</a>]",
+   "gold": "apply ne_of_lt",
+   "exact": 0,
+   "sim": 0.1481,
+   "echo_ceiling": 0.2143,
+   "sim_minus_echo": -0.0661,
+   "recoverable": 0
+  },
+  {
+   "i": 85,
+   "gen": "refine \u27e8u, ?_, ?_\u27e9",
+   "gold": "refine \u27e8Finset.erase v a, hv.2, ?_\u27e9",
+   "exact": 0,
+   "sim": 0.4286,
+   "echo_ceiling": 0.3429,
+   "sim_minus_echo": 0.0857,
+   "recoverable": 0
+  },
+  {
+   "i": 86,
+   "gen": "simp only [<a>Ideal.map_zero</a>, <a>Ideal.map_zero</a>, <a>Ideal.map_zero</a>, <a>Ideal.map_zero</a>, <a>Ideal.map_zero</a>]",
+   "gold": "simp [h]",
+   "exact": 0,
+   "sim": 0.056,
+   "echo_ceiling": 0.25,
+   "sim_minus_echo": -0.194,
+   "recoverable": 0
+  },
+  {
+   "i": 87,
+   "gen": "rw [<a>Set.range_eq_range_eq_range</a>]",
+   "gold": "rintro _ \u27e8a, rfl\u27e9",
+   "exact": 0,
+   "sim": 0.1538,
+   "echo_ceiling": 0.3529,
+   "sim_minus_echo": -0.1991,
+   "recoverable": 0
+  },
+  {
+   "i": 88,
+   "gen": "exact <a>Nat.cast_add</a> h\u271d",
+   "gold": "apply Nat.le_add_right",
+   "exact": 0,
+   "sim": 0.3571,
+   "echo_ceiling": 0.1818,
+   "sim_minus_echo": 0.1753,
+   "recoverable": 0
+  },
+  {
+   "i": 89,
+   "gen": "exact <a>Set.extreme_iff_subset_of_ne_top</a> hF",
+   "gold": "simpa only [Set.iInter_subtype] using isExtreme_iInter fun i : F \u21a6 hA _ i.2",
+   "exact": 0,
+   "sim": 0.2,
+   "echo_ceiling": 0.1867,
+   "sim_minus_echo": 0.0133,
+   "recoverable": 0
+  },
+  {
+   "i": 90,
+   "gen": "exact <a>this</a> (this.measurable_set_piecewise_eq_of_le_of_le hg')",
+   "gold": "simp [A, this, hg' hb, isLUB_singleton]",
+   "exact": 0,
+   "sim": 0.1765,
+   "echo_ceiling": 0.2308,
+   "sim_minus_echo": -0.0543,
+   "recoverable": 0
+  },
+  {
+   "i": 91,
+   "gen": "refine <a>UniformCauchySeqOnFilter.tendsto_uniformlyOnFilter</a> (fun n z => ?_)",
+   "gold": "refine \u27e8fun hf u hu => ?_, fun hf u hu => ?_\u27e9",
+   "exact": 0,
+   "sim": 0.275,
+   "echo_ceiling": 0.2889,
+   "sim_minus_echo": -0.0139,
+   "recoverable": 0
+  },
+  {
+   "i": 92,
+   "gen": "have hm : m \u2264 n := by rw [\u2190 <a>Submodule.mem_of_mem_of_mem</a> hm]",
+   "gold": "obtain \u27e8m, hm\u27e9 := hK fun x hx => hJK <| Ideal.mem_sup_right hx",
+   "exact": 0,
+   "sim": 0.2121,
+   "echo_ceiling": 0.2419,
+   "sim_minus_echo": -0.0298,
+   "recoverable": 0
+  },
+  {
+   "i": 93,
+   "gen": "rw [<a>CategoryTheory.Limits.BinaryCofan.isColimit_of_isColimit_of_isColimit_of_isColimit_of_isColimit_of_isColimit_of_isColimit_of_isColimit_of_",
+   "gold": "obtain \u27e8hc\u2081\u27e9 := (CategoryTheory.is_coprod_iff_isPushout c hc H.1).Iff.mpr H",
+   "exact": 0,
+   "sim": 0.1586,
+   "echo_ceiling": 0.24,
+   "sim_minus_echo": -0.0814,
+   "recoverable": 0
+  },
+  {
+   "i": 94,
+   "gen": "simp only [<a>Set.mem_Ici_iff_mem_norm</a>, <a>Set.mem_Ici_iff_mem_norm</a>, <a>Set.mem_Ici_iff_mem_norm</a>, <a>Set.mem_",
+   "gold": "rfl",
+   "exact": 0,
+   "sim": 0.0165,
+   "echo_ceiling": 0.3333,
+   "sim_minus_echo": -0.3168,
+   "recoverable": 0
+  },
+  {
+   "i": 95,
+   "gen": "rw [<a>Set.mem_iInter</a>, <a>Set.mem_iInter</a>, <a>Set.mem_iInter</a>, <a>Set.mem_iInter</a>, <a>Set.mem_iInter</a>]",
+   "gold": "rintro _ h (_ | _)",
+   "exact": 0,
+   "sim": 0.1017,
+   "echo_ceiling": 0.3333,
+   "sim_minus_echo": -0.2316,
+   "recoverable": 0
+  },
+  {
+   "i": 96,
+   "gen": "rw [<a>Nat.mod_eq_zero_iff</a>, <a>Nat.mod_eq_zero_iff</a>, <a>Nat.mod_eq_zero_iff</a>, <a>Nat.mod_eq_zero_iff</a>, <a>",
+   "gold": "rw [Nat.modEq_iff_dvd' hle, \u2190 CharP.cast_eq_zero_iff R p (b - a), \u2190 add_right_cancel_iff (G := R) (a := a) (b := b - a), zero_add, \u2190 Nat.cast_add, Nat.sub_add_cancel hle, eq_comm]",
+   "exact": 0,
+   "sim": 0.2626,
+   "echo_ceiling": 0.1229,
+   "sim_minus_echo": 0.1397,
+   "recoverable": 0
+  },
+  {
+   "i": 97,
+   "gen": "rw [<a>Set.mem_setOfIdeal</a>, <a>Set.mem_setOfIdeal</a>, <a>Set.mem_setOfIdeal</a>]",
+   "gold": "obtain \u27e8f, hf, hfx\u27e9 := mem_setOfIdeal.mp hx",
+   "exact": 0,
+   "sim": 0.2262,
+   "echo_ceiling": 0.3488,
+   "sim_minus_echo": -0.1226,
+   "recoverable": 0
+  },
+  {
+   "i": 98,
+   "gen": "intro m h",
+   "gold": "rw [Polynomial.natDegree_le_iff_degree_le, Polynomial.degree_le_iff_coeff_zero]",
+   "exact": 0,
+   "sim": 0.0759,
+   "echo_ceiling": 0.2152,
+   "sim_minus_echo": -0.1392,
+   "recoverable": 0
+  },
+  {
+   "i": 99,
+   "gen": "exact hx.1 hx.2",
+   "gold": "simp [hx]",
+   "exact": 0,
+   "sim": 0.2,
+   "echo_ceiling": 0.2222,
+   "sim_minus_echo": -0.0222,
+   "recoverable": 0
+  },
+  {
+   "i": 100,
+   "gen": "rw [<a>norm_eq_abs</a>, <a>norm_eq_abs</a>, <a>norm_mul_abs</a>, <a>norm_eq_abs</a>, <a>norm_eq_abs</a>, <a>norm_eq_abs",
+   "gold": "calc \u27eax, y\u27eb = ((\u2016x\u2016 + \u2016y\u2016) ^ 2 - \u2016x\u2016 ^ 2 - \u2016y\u2016 ^ 2) / 2 := by linarith _ = \u2016x\u2016 * \u2016y\u2016 := by ring",
+   "exact": 0,
+   "sim": 0.0924,
+   "echo_ceiling": 0.3895,
+   "sim_minus_echo": -0.297,
+   "recoverable": 0
+  },
+  {
+   "i": 101,
+   "gen": "exact <a>Set.insert_subset_of_insert_subset_of_insert_insert_subset_of_insert_insert_subset_of_insert_insert_subset_of_insert_insert_subset_of_insert_insert_subset_of_insert_insert_subset_",
+   "gold": "rw [Finset.inter_insert_of_not_mem ha]",
+   "exact": 0,
+   "sim": 0.1436,
+   "echo_ceiling": 0.2368,
+   "sim_minus_echo": -0.0932,
+   "recoverable": 0
+  },
+  {
+   "i": 102,
+   "gen": "rw [<a>MeasureTheory.lintegral_indicator_eq_indicator</a>]",
+   "gold": "ext \u03c9",
+   "exact": 0,
+   "sim": 0.0345,
+   "echo_ceiling": 0.4,
+   "sim_minus_echo": -0.3655,
+   "recoverable": 0
+  },
+  {
+   "i": 103,
+   "gen": "simp [<a>Nonempty.not_nonempty</a>, <a>Fintype.nonempty_iff_exists_nonempty</a>, <a>Fintype.nonempty_iff_exists_nonempty</a>, <a>Fintype.nonempty_iff_exists_",
+   "gold": "exact \u27e8fun \u27e8a\u27e9 => \u27e8a.symm (), fun y => a.injective (Subsingleton.elim _ _)\u27e9, fun \u27e8x, hx\u27e9 => \u27e8\u27e8fun _ => (), fun _ => x, fun _ => (hx _).Eq.trans (hx _).Eq.symm, fun _ => Subsingleton.elim _ _\u27e9\u27e9\u27e9",
+   "exact": 0,
+   "sim": 0.1295,
+   "echo_ceiling": 0.1969,
+   "sim_minus_echo": -0.0674,
+   "recoverable": 0
+  },
+  {
+   "i": 104,
+   "gen": "simp only [<a>MeasureTheory.snorm_mk</a>]",
+   "gold": "exact (hxf_eq n).Eq.symm",
+   "exact": 0,
+   "sim": 0.1463,
+   "echo_ceiling": 0.25,
+   "sim_minus_echo": -0.1037,
+   "recoverable": 0
+  },
+  {
+   "i": 105,
+   "gen": "exact <a>le_antisymm</a>",
+   "gold": "exact dist_triangle a b c",
+   "exact": 0,
+   "sim": 0.28,
+   "echo_ceiling": 0.28,
+   "sim_minus_echo": 0.0,
+   "recoverable": 0
+  },
+  {
+   "i": 106,
+   "gen": "exact <a>List.append_nil</a> (<a>List.nil_append_nil</a> (<a>List.nil_append_nil</a> (<a>List.nil_append_nil</a> (<a>List.nil_append_nil</a>",
+   "gold": "simp at e\u2081",
+   "exact": 0,
+   "sim": 0.0571,
+   "echo_ceiling": 0.4,
+   "sim_minus_echo": -0.3429,
+   "recoverable": 0
+  },
+  {
+   "i": 107,
+   "gen": "h' \u03b1X \u03b1Z h\nhi : CommSq i' \u03b1Y \u03b1Z i\nw : CommSq f' g' h' i'\nhc\u2081 : IsColimit (BinaryCofan.mk (c.inr \u226b i) h)\nW' X",
+   "gold": "rw [\u2190 CategoryTheory.Category.id_comp \u03b1Z, \u2190 show cmp \u226b CategoryTheory.Limits.pullback.snd = \u03b1Y from CategoryTheory.Limits.pullback.lift_snd _ _ _]",
+   "exact": 0,
+   "sim": 0.1644,
+   "echo_ceiling": 0.2123,
+   "sim_minus_echo": -0.0479,
+   "recoverable": 0
+  },
+  {
+   "i": 108,
+   "gen": "refine \u27e8fun h => ?_, fun h => ?_\u27e9",
+   "gold": "let repr : (Submodule.span R (Set.range (v \u2218 f)) : Type _) \u2192 \u03b9' \u2192\u2080 R := (hv.comp f f.injective).LinearIndependent.repr",
+   "exact": 0,
+   "sim": 0.1186,
+   "echo_ceiling": 0.2712,
+   "sim_minus_echo": -0.1525,
+   "recoverable": 0
+  },
+  {
+   "i": 109,
+   "gen": "exact <a>Nat.ofDigits_ofDigits_ofDigits_ofDigits_ofDigits_ofDigits_ofDigits_ofDigits_ofDigits_ofDigits_ofDigits_ofDigits_ofDigits_ofDigits_ofDig",
+   "gold": "rfl",
+   "exact": 0,
+   "sim": 0.0069,
+   "echo_ceiling": 0.0,
+   "sim_minus_echo": 0.0069,
+   "recoverable": 0
+  },
+  {
+   "i": 110,
+   "gen": ", \u2203 a, \u2200 b \u2265 a, x b \u2208 s\nk : \u2115\nh : \u2200 b \u2265 k, x b \u2208 {x | (fun n => Measurable (F n)) x} \u2229 {x | (fun n => \u2200\ufffd",
+   "gold": "apply @Filter.Tendsto.comp _ _ _ (fun n => x (n + k)) fun n => F n a",
+   "exact": 0,
+   "sim": 0.2692,
+   "echo_ceiling": 0.3676,
+   "sim_minus_echo": -0.0984,
+   "recoverable": 0
+  },
+  {
+   "i": 111,
+   "gen": "rw [<a>mulLeftEmbedding_iff_mul_one</a>]",
+   "gold": "rw [Finset.coe_map] at hu",
+   "exact": 0,
+   "sim": 0.225,
+   "echo_ceiling": 0.28,
+   "sim_minus_echo": -0.055,
+   "recoverable": 0
+  },
+  {
+   "i": 112,
+   "gen": "rw [<a>Set.univ_eq_univ_of_mem_univ_eq_univ_of_mem_univ_eq_univ_of_mem_univ_of_mem_univ_of_mem_univ_of_mem_un",
+   "gold": "simp [frontier_prod_eq]",
+   "exact": 0,
+   "sim": 0.1009,
+   "echo_ceiling": 0.2609,
+   "sim_minus_echo": -0.16,
+   "recoverable": 0
+  },
+  {
+   "i": 113,
+   "gen": "rw [<a>Set.mem_comap</a>, <a>Set.mem_comap</a>, <a>Set.mem_comap</a>, <a>Set.mem_comap</a>]",
+   "gold": "rw [\u2190 Subtype.coe_injective hy]",
+   "exact": 0,
+   "sim": 0.1648,
+   "echo_ceiling": 0.2258,
+   "sim_minus_echo": -0.061,
+   "recoverable": 0
+  },
+  {
+   "i": 114,
+   "gen": "exact <a>add_le_add_of_le_of_le_of_le_of_le_of_le_add_of_le_of_le_of_le_of_le_of_le_of_le_of_le_of_le_",
+   "gold": "gcongr",
+   "exact": 0,
+   "sim": 0.0196,
+   "echo_ceiling": 0.3333,
+   "sim_minus_echo": -0.3137,
+   "recoverable": 0
+  },
+  {
+   "i": 115,
+   "gen": "exact <a>le_of_lt_of_le</a> h\u2082",
+   "gold": "exact h\u2081",
+   "exact": 0,
+   "sim": 0.2333,
+   "echo_ceiling": 0.25,
+   "sim_minus_echo": -0.0167,
+   "recoverable": 0
+  },
+  {
+   "i": 116,
+   "gen": "exact hgf.symm hgf",
+   "gold": "refine hlt _ hgfk",
+   "exact": 0,
+   "sim": 0.2778,
+   "echo_ceiling": 0.2941,
+   "sim_minus_echo": -0.0163,
+   "recoverable": 0
+  },
+  {
+   "i": 117,
+   "gen": "have hdiv := <a>Tendsto.tendsto_of_tendsto_of_tendsto_of_tendsto_of_tendsto_of_tendsto_of_tendsto_of_tendsto_of_tendsto_of",
+   "gold": "refine HasDerivAt.lhopital_zero_right_on_Ioo hab hff' hgg' hg' ?_ ?_ hdiv",
+   "exact": 0,
+   "sim": 0.1803,
+   "echo_ceiling": 0.2466,
+   "sim_minus_echo": -0.0662,
+   "recoverable": 0
+  },
+  {
+   "i": 118,
+   "gen": "rw [<a>Continuous.toPartialHomeomorph</a>, <a>Continuous.toPartialHomeomorph</a>, <a>Continuous.toPartialHomeomorph</a>, <a>Continuous.toPartialHomeomorph</a>, <a>Continuous.toPartialHomeomorph</",
+   "gold": "rw [e.toPartialHomeomorph.continuous_iff_continuous_comp_left (a.totalSpaceMk_preimage_source b)]",
+   "exact": 0,
+   "sim": 0.3077,
+   "echo_ceiling": 0.2062,
+   "sim_minus_echo": 0.1015,
+   "recoverable": 0
+  },
+  {
+   "i": 119,
+   "gen": "simp only [<a>MeasureTheory.Measure.measure_univ</a>, <a>MeasureTheory.Measure.measure_univ</a>, <a>MeasureTheory.Measure.coe_univ</a>, <a>MeasureTheory.Measure.coe_univ",
+   "gold": "rw [\u2190 MeasureTheory.integral_univ, ProbabilityTheory.setIntegral_stieltjesOfMeasurableRat hf _ _ MeasurableSet.univ]",
+   "exact": 0,
+   "sim": 0.3432,
+   "echo_ceiling": 0.2586,
+   "sim_minus_echo": 0.0846,
+   "recoverable": 0
+  },
+  {
+   "i": 120,
+   "gen": "simp only [<a>ListBlank.default_eq_nil_of_mem</a>, <a>ListBlank.default_eq_nil_of_mem</a>, <a>ListBlank.default_eq_nil_of_mem</a>, <a>List",
+   "gold": "rfl",
+   "exact": 0,
+   "sim": 0.0145,
+   "echo_ceiling": 0.0,
+   "sim_minus_echo": 0.0145,
+   "recoverable": 0
+  },
+  {
+   "i": 121,
+   "gen": "simp only [<a>MeasureTheory.Measure.comp_apply</a>, <a>MeasureTheory.Measure.comp_apply</a>, <a>MeasureTheory.Measure.comp_apply</a>, <a>MeasureTheory.Measure.comp_apply</a>, <",
+   "gold": "simp only [ContinuousLinearMap.coe_comp', ContinuousLinearEquiv.coe_coe, Function.comp_apply, ContinuousLinearEquiv.apply_symm_apply]",
+   "exact": 0,
+   "sim": 0.3011,
+   "echo_ceiling": 0.1504,
+   "sim_minus_echo": 0.1508,
+   "recoverable": 0
+  },
+  {
+   "i": 122,
+   "gen": "refine \u27e8fun h \u21a6 ?_, fun h \u21a6 ?_\u27e9",
+   "gold": "refine \u27e8\u03c6.emb.comp (IntermediateField.inclusion <| (IntermediateField.le_extendScalars_iff hf\u03c6.1 <| IntermediateField.adjoin L S).Iff.mp <| adjoin_le_iff.mpr fun s h \u21a6 ?_), AlgHom.ext hf\u03c6.2\u27e9",
+   "exact": 0,
+   "sim": 0.1421,
+   "echo_ceiling": 0.2,
+   "sim_minus_echo": -0.0579,
+   "recoverable": 0
+  },
+  {
+   "i": 123,
+   "gen": "rw [<a>\u2190 <a>Finsupp.eval_eq_coe</a></a> n]",
+   "gold": "rw_mod_cast [ascPochhammer_nat_eq_ascFactorial, Nat.one_ascFactorial]",
+   "exact": 0,
+   "sim": 0.2319,
+   "echo_ceiling": 0.1014,
+   "sim_minus_echo": 0.1304,
+   "recoverable": 0
+  },
+  {
+   "i": 124,
+   "gen": "simp only [<a>padicNorm_iff_le_padicNorm</a>, <a>padicNorm_iff_le_padicNorm</a>, <a>padicNorm_iff_le_padicNorm</a>, <a>padicNorm_iff_le",
+   "gold": "simp only [padicNorm.of_int, true_and_iff]",
+   "exact": 0,
+   "sim": 0.2593,
+   "echo_ceiling": 0.3095,
+   "sim_minus_echo": -0.0503,
+   "recoverable": 0
+  },
+  {
+   "i": 125,
+   "gen": "rw [<a>mul_comm</a>, <a>mul_comm</a>]",
+   "gold": "rw [\u2190 ((hr.pow (Polynomial.natDegree p + Polynomial.natDegree a - Polynomial.natDegree (p * a))).IsUnit.map (algebraMap R R[X])).IsUnit.dvd_mul_left, \u2190 Algebra.smul_def, Polynomial.mul_scaleRoots]",
+   "exact": 0,
+   "sim": 0.1173,
+   "echo_ceiling": 0.1582,
+   "sim_minus_echo": -0.0408,
+   "recoverable": 0
+  },
+  {
+   "i": 126,
+   "gen": "rw [<a>MeasureTheory.Measure.rnDeriv_mul_of_linterel</a>]",
+   "gold": "rw [MeasureTheory.lintegral_congr_ae (MeasureTheory.ae_restrict_of_ae this)]",
+   "exact": 0,
+   "sim": 0.3553,
+   "echo_ceiling": 0.2105,
+   "sim_minus_echo": 0.1447,
+   "recoverable": 0
+  },
+  {
+   "i": 127,
+   "gen": "simp [<a>Nat.sizeOf_eq</a>, <a>Nat.sizeOf_eq</a>, <a>Nat.sizeOf_eq</a>, <a>Nat.sizeOf_eq</a>, <a>Nat.sizeOf_eq</a>, <a",
+   "gold": "rfl",
+   "exact": 0,
+   "sim": 0.0085,
+   "echo_ceiling": 0.0,
+   "sim_minus_echo": 0.0085,
+   "recoverable": 0
+  },
+  {
+   "i": 128,
+   "gen": "exact <a>PushoutCocone.inl_inr</a> (<a>PushoutCocone.inl_inr</a> (<a>PushoutCocone.inl_inr</a> (<a>PushoutCocone.inl_",
+   "gold": "apply CategoryTheory.Limits.Types.pushoutCocone_inl_eq_inr_imp_of_iso e",
+   "exact": 0,
+   "sim": 0.2564,
+   "echo_ceiling": 0.1831,
+   "sim_minus_echo": 0.0733,
+   "recoverable": 0
+  },
+  {
+   "i": 129,
+   "gen": "ext x",
+   "gold": "obtain \u27e8i, j\u27e9 := ij",
+   "exact": 0,
+   "sim": 0.1053,
+   "echo_ceiling": 0.4211,
+   "sim_minus_echo": -0.3158,
+   "recoverable": 0
+  },
+  {
+   "i": 130,
+   "gen": "cases' h\u2081 with h",
+   "gold": "simp only [Turing.TM2.step, Option.mem_def, Turing.PartrecToTM2.K'.elim_stack, Turing.PartrecToTM2.K'.elim_update_stack, Turing.PartrecToTM2.K'.elim_update_main, ne_eq, Function.update_noteq, Turing.PartrecToTM2.K'.elim_main, Turing.PartrecToTM2.K'.elim_rev, Turing.PartrecToTM2.K'.elim_update_rev]",
+   "exact": 0,
+   "sim": 0.0336,
+   "echo_ceiling": 0.1208,
+   "sim_minus_echo": -0.0872,
+   "recoverable": 0
+  },
+  {
+   "i": 131,
+   "gen": "have hK : K \u2286 \u22c3 g \u2208 Finset.filter (fun g => ((fun h => g * h) \u207b\u00b9' V \u2229 K).1) s := by simp only [<a>Finset.filter_interior_iff</a>, <a",
+   "gold": "rw [Set.mem_setOf_eq]",
+   "exact": 0,
+   "sim": 0.0909,
+   "echo_ceiling": 0.2381,
+   "sim_minus_echo": -0.1472,
+   "recoverable": 0
+  },
+  {
+   "i": 132,
+   "gen": "y \u2208 ys x, U x y = \u22a4 :=\n  fun x => Exists.choose_spec (CompactSpace.elim_nhds_subcover (U x) (U_nhd_y x))\nys_nonempty : \u2200 (x : X",
+   "gold": "simp only [Finset.lt_inf'_iff, ContinuousMap.inf'_apply]",
+   "exact": 0,
+   "sim": 0.1496,
+   "echo_ceiling": 0.1607,
+   "sim_minus_echo": -0.0111,
+   "recoverable": 0
+  },
+  {
+   "i": 133,
+   "gen": "simp only [<a>mul_comm</a>, <a>mul_comm</a>, <a>mul_assoc</a>, <a>mul_comm</a>, <a>mul_assoc</a>, <a>mul_assoc</a>]",
+   "gold": "simp [ha g]",
+   "exact": 0,
+   "sim": 0.0783,
+   "echo_ceiling": 0.1818,
+   "sim_minus_echo": -0.1036,
+   "recoverable": 0
+  },
+  {
+   "i": 134,
+   "gen": "rw [<a>Matrix.eval_charpoly</a>, <a>Matrix.eval_charpoly</a>]",
+   "gold": "rw [Polynomial.eval_mul_X_sub_C] at h",
+   "exact": 0,
+   "sim": 0.2295,
+   "echo_ceiling": 0.1892,
+   "sim_minus_echo": 0.0403,
+   "recoverable": 0
+  },
+  {
+   "i": 135,
+   "gen": "exact <a>MeasureTheory.Measure.restrict_Ioc_subset_Ioc_subset_Ioc_subset_Ioc_subset_Ioc_subset_Ioc_subset_Ioc_subset_Ioc_subset_Ioc_subset_Ioc_subset_I",
+   "gold": "simpa only [intervalIntegral.integral_of_le hab] using MeasureTheory.setIntegral_nonneg_of_ae_restrict H",
+   "exact": 0,
+   "sim": 0.2185,
+   "echo_ceiling": 0.2212,
+   "sim_minus_echo": -0.0026,
+   "recoverable": 0
+  },
+  {
+   "i": 136,
+   "gen": "refine \u27e8fun h => ?_, fun h => ?_\u27e9",
+   "gold": "subst this",
+   "exact": 0,
+   "sim": 0.0909,
+   "echo_ceiling": 0.2,
+   "sim_minus_echo": -0.1091,
+   "recoverable": 0
+  },
+  {
+   "i": 137,
+   "gen": "rw [<a>OrderBot.bot_bot_bot_bot_bot_bot_bot_bot_bot_bot_bot_bot_bot_bot_bot_bot_bot_bot_bot_bot_bot_bot_bot_bot_bot_bot_bot_bot_bot",
+   "gold": "intro b hb",
+   "exact": 0,
+   "sim": 0.0305,
+   "echo_ceiling": 0.3,
+   "sim_minus_echo": -0.2695,
+   "recoverable": 0
+  },
+  {
+   "i": 138,
+   "gen": "rw [<a>Polynomial.coeff_zero</a>, <a>Polynomial.natDegree_zero</a>, <a>Polynomial.natDegree_zero</a>, <a>Polynomial.coeff_zero</a>, <a>Polynom",
+   "gold": "rw [Polynomial.coeff_reverse, Polynomial.revAt, Function.Embedding.coeFn_mk, if_neg (not_le_of_gt hn), Polynomial.coeff_eq_zero_of_natDegree_lt hn]",
+   "exact": 0,
+   "sim": 0.4014,
+   "echo_ceiling": 0.1973,
+   "sim_minus_echo": 0.2041,
+   "recoverable": 0
+  },
+  {
+   "i": 139,
+   "gen": "rw [<a>Nat.cast_le_one</a>, <a>Nat.cast_le_one</a>, <a>Nat.cast_le_one</a>, <a>Nat.cast_le_one</a>, <a>Nat.cast_le_one</",
+   "gold": "rw [two_mul, add_le_add_iff_left]",
+   "exact": 0,
+   "sim": 0.1583,
+   "echo_ceiling": 0.0909,
+   "sim_minus_echo": 0.0674,
+   "recoverable": 0
+  },
+  {
+   "i": 140,
+   "gen": "ext",
+   "gold": "rw [neg_neg (Module.Oriented.positiveOrientation (R := \u211d))]",
+   "exact": 0,
+   "sim": 0.0339,
+   "echo_ceiling": 0.3898,
+   "sim_minus_echo": -0.3559,
+   "recoverable": 0
+  },
+  {
+   "i": 141,
+   "gen": "rw [<a>Set.mem_singleton_iff</a>, <a>Set.mem_singleton_iff</a>, <a>Set.mem_singleton_iff</a>]",
+   "gold": "rw [eq_top_iff]",
+   "exact": 0,
+   "sim": 0.1398,
+   "echo_ceiling": 0.2,
+   "sim_minus_echo": -0.0602,
+   "recoverable": 0
+  },
+  {
+   "i": 142,
+   "gen": "refine \u27e8fun h => ?_, fun h => ?_\u27e9",
+   "gold": "simp_rw [LinearMap.ext_iff, LinearMap.zero_apply]",
+   "exact": 0,
+   "sim": 0.1633,
+   "echo_ceiling": 0.1429,
+   "sim_minus_echo": 0.0204,
+   "recoverable": 0
+  },
+  {
+   "i": 143,
+   "gen": "rw [<a>ContinuousLinearMap.snd</a>]",
+   "gold": "rfl",
+   "exact": 0,
+   "sim": 0.0286,
+   "echo_ceiling": 0.3333,
+   "sim_minus_echo": -0.3048,
+   "recoverable": 0
+  },
+  {
+   "i": 144,
+   "gen": "ext",
+   "gold": "rw [LinearMap.toMvPolynomial_comp _ (Algebra.TensorProduct.basis A (Basis.end b\u2098)), \u2190 LinearMap.toMvPolynomial_baseChange]",
+   "exact": 0,
+   "sim": 0.0164,
+   "echo_ceiling": 0.3115,
+   "sim_minus_echo": -0.2951,
+   "recoverable": 0
+  },
+  {
+   "i": 145,
+   "gen": "exact <a>le_antisymm</a> ha\u2080",
+   "gold": "calc a ^ m = a ^ m * 1 := (mul_one _).Eq.symm _ \u2264 a ^ m * a ^ k := mul_le_mul_of_nonneg_left (one_le_pow_of_one_le ha _) (zpow_nonneg ha\u2080.le _) _ = a ^ n := by rw [\u2190 zpow_natCast, \u2190 zpow_add\u2080 ha\u2080.ne', hk, add_sub_cancel]",
+   "exact": 0,
+   "sim": 0.0773,
+   "echo_ceiling": 0.2,
+   "sim_minus_echo": -0.1227,
+   "recoverable": 0
+  },
+  {
+   "i": 146,
+   "gen": "obtain \u27e8x, hx, hx\u27e9 := <a>MeasureTheory.exists_mem_of_subset_closedBall</a> (<a>MeasureTheory.Measure.ball</a> f)",
+   "gold": "refine Filter.Frequently.mem_closure ((Filter.HasBasis.frequently_iff Metric.nhds_basis_ball).Iff.mpr fun \u03b5 pos => ?_)",
+   "exact": 0,
+   "sim": 0.1356,
+   "echo_ceiling": 0.1186,
+   "sim_minus_echo": 0.0169,
+   "recoverable": 0
+  },
+  {
+   "i": 147,
+   "gen": "simp only [<a>MeasureTheory.integrable_const</a>, <a>MeasureTheory.integrable_const</a>, <a>MeasureTheory.integrable_const</a>, <a>MeasureTheory.integrable_const</a>, <a>MeasureThe",
+   "gold": "exact (MeasureTheory.condexp_add hf hg.neg).Filter.EventuallyEq.trans (EventuallyEq.rfl.add (MeasureTheory.condexp_neg g))",
+   "exact": 0,
+   "sim": 0.3,
+   "echo_ceiling": 0.1557,
+   "sim_minus_echo": 0.1443,
+   "recoverable": 0
+  },
+  {
+   "i": 148,
+   "gen": "simp only [<a>Filter.im_eq_im_of_ne_zero</a>, <a>Filter.im_eq_im_of_ne_zero</a>, <a>Filter.im_eq_im_of_ne_zero</a>, <a>Filter",
+   "gold": "simp only [pow_mul']",
+   "exact": 0,
+   "sim": 0.12,
+   "echo_ceiling": 0.2,
+   "sim_minus_echo": -0.08,
+   "recoverable": 0
+  },
+  {
+   "i": 149,
+   "gen": "rw [<a>Set.image_eq_singleton</a>, <a>Set.image_singleton</a>]",
+   "gold": "suffices CategoryTheory.IsIso i by apply SimplexCategory.eq_id_of_isIso",
+   "exact": 0,
+   "sim": 0.1127,
+   "echo_ceiling": 0.2817,
+   "sim_minus_echo": -0.169,
+   "recoverable": 0
+  },
+  {
+   "i": 150,
+   "gen": "exact <a>le_of_not_mem_nhds_left</a> h\u2081 h\u2082",
+   "gold": "filter_upwards [MeasureTheory.ae_all_iff.1 hfmono n] with \u03c9 h\u03c9 using sub_nonneg.2 h\u03c9",
+   "exact": 0,
+   "sim": 0.1667,
+   "echo_ceiling": 0.1786,
+   "sim_minus_echo": -0.0119,
+   "recoverable": 0
+  },
+  {
+   "i": 151,
+   "gen": "rw [<a>Submodule.le_of_le</a> H, <a>Submodule.map_le_iff</a> H, <a>Submodule.map_le_iff</a> H]",
+   "gold": "refine (Submodule.map_le_map_iff_of_injective (Submodule.injective_subtype _) _ _).Iff.mp ?_",
+   "exact": 0,
+   "sim": 0.234,
+   "echo_ceiling": 0.3261,
+   "sim_minus_echo": -0.092,
+   "recoverable": 0
+  },
+  {
+   "i": 152,
+   "gen": "cases' hl with hl",
+   "gold": "rintro \u27e8\u27e8l\u27e9, hl\u27e9 _",
+   "exact": 0,
+   "sim": 0.1111,
+   "echo_ceiling": 0.2222,
+   "sim_minus_echo": -0.1111,
+   "recoverable": 0
+  },
+  {
+   "i": 153,
+   "gen": "simp only [<a>CategoryTheory.Limits.zero_add</a>, <a>CategoryTheory.Limits.zero_one</a>, <a>CategoryTheory.Limits.zero_one</a>]",
+   "gold": "rw [CategoryTheory.NonPreadditiveAbelian.add_def, CategoryTheory.NonPreadditiveAbelian.neg_def, CategoryTheory.NonPreadditiveAbelian.sub_self, CategoryTheory.NonPreadditiveAbelian.sub_zero]",
+   "exact": 0,
+   "sim": 0.3122,
+   "echo_ceiling": 0.2381,
+   "sim_minus_echo": 0.0741,
+   "recoverable": 0
+  },
+  {
+   "i": 154,
+   "gen": "N : \u2115\u221e\nhs : UniqueDiffOn \ud835\udd5c s\nx : E\nhx : x \u2208 s\ni : \u03b9\nu : Finset \u03b9\nhi : i \u2209 u\nn : \u2115\nhn : \u2191n \u2264 N",
+   "gold": "suffices \u220f j \u2208 u, \u2016iteratedFDerivWithin \ud835\udd5c (Multiset.count j p) (f j) s x\u2016 = \u220f j \u2208 u, \u2016iteratedFDerivWithin \ud835\udd5c (Multiset.count j (Sym.fill i m p)) (f j) s x\u2016 by rw [this, Nat.cast_mul] ring",
+   "exact": 0,
+   "sim": 0.2139,
+   "echo_ceiling": 0.5722,
+   "sim_minus_echo": -0.3583,
+   "recoverable": 0
+  },
+  {
+   "i": 155,
+   "gen": "exact <a>ofAdd_eq_of_not_of_not_of_not_of_not_of_not_of_not_of_not_of_not_of_not_of_not_of_not_of_not_of_not_of_not",
+   "gold": "exact hr",
+   "exact": 0,
+   "sim": 0.0522,
+   "echo_ceiling": 0.25,
+   "sim_minus_echo": -0.1978,
+   "recoverable": 0
+  },
+  {
+   "i": 156,
+   "gen": "\ufffd\nF\u2081\u2083 : C\u2081 \u2964 C\u2083\nF\u2082\u2083 : C\u2082 \u2964 C\u2083\nF\u2081\u2083 : C\u2081 \u2964 C\u2083\nF\u2082\u2083 : C\u2082 \u2964 C\ufffd",
+   "gold": "subst h\u2081\u2083",
+   "exact": 0,
+   "sim": 0.0526,
+   "echo_ceiling": 0.4444,
+   "sim_minus_echo": -0.3918,
+   "recoverable": 0
+  },
+  {
+   "i": 157,
+   "gen": "cases' <a>List.findMin_eq_cons_head</a>",
+   "gold": "rw [Batteries.BinomialHeap.Imp.Heap.findMin, Batteries.BinomialHeap.Imp.Heap.headD]",
+   "exact": 0,
+   "sim": 0.2048,
+   "echo_ceiling": 0.1928,
+   "sim_minus_echo": 0.012,
+   "recoverable": 0
+  },
+  {
+   "i": 158,
+   "gen": "exact <a>hasDerivAt_of_le</a> hf'",
+   "gold": "exact fun x => hasDerivAt_gronwallBound_shift \u03b4 K \u03b5' x a",
+   "exact": 0,
+   "sim": 0.4107,
+   "echo_ceiling": 0.4464,
+   "sim_minus_echo": -0.0357,
+   "recoverable": 0
+  },
+  {
+   "i": 159,
+   "gen": "rw [<a>MeasureTheory.countablyGenerated_of_ne_zero</a> (hseq_meas h0)]",
+   "gold": "by_cases h0 : \u03bd a (MeasurableSpace.countablePartitionSet n x) = 0",
+   "exact": 0,
+   "sim": 0.1857,
+   "echo_ceiling": 0.5077,
+   "sim_minus_echo": -0.322,
+   "recoverable": 0
+  },
+  {
+   "i": 160,
+   "gen": "rw [<a>NumberField.NrComplexPlaces_factorial_mul_factorial</a>]",
+   "gold": "simp_rw [inv_div, div_eq_mul_inv, mul_inv, \u2190 zpow_neg_one, \u2190 zpow_natCast, mul_zpow, \u2190 zpow_mul, neg_one_mul, mul_neg_one, neg_neg, Real.coe_sqrt, coe_nnnorm, sub_eq_add_neg, zpow_add\u2080 (two_ne_zero : (2 : \u211d) \u2260 0)]",
+   "exact": 0,
+   "sim": 0.1315,
+   "echo_ceiling": 0.1268,
+   "sim_minus_echo": 0.0047,
+   "recoverable": 0
+  },
+  {
+   "i": 161,
+   "gen": "exact <a>Cardinal.card_le_of_le_of_le_of_lt_of_le_of_lt_of_le_of_le_of_le_of_le_of_le_of_le_of_le_of_le_of",
+   "gold": "rwa [Cardinal.mul_eq_max' <| ha.trans <| habc, max_def', if_pos h] at hbc",
+   "exact": 0,
+   "sim": 0.2075,
+   "echo_ceiling": 0.2603,
+   "sim_minus_echo": -0.0527,
+   "recoverable": 0
+  },
+  {
+   "i": 162,
+   "gen": "exact <a>le_antisymm</a> (<a>le_antisymm</a> (<a>le_antisymm</a> (<a>le_antisymm</a> (<a>le_antisymm</a> (<a>le_antisymm",
+   "gold": "exact Multiset.card_le_card H",
+   "exact": 0,
+   "sim": 0.1583,
+   "echo_ceiling": 0.3103,
+   "sim_minus_echo": -0.152,
+   "recoverable": 0
+  },
+  {
+   "i": 163,
+   "gen": "intro h",
+   "gold": "rintro \u27e8y', hy', rfl\u27e9",
+   "exact": 0,
+   "sim": 0.3333,
+   "echo_ceiling": 0.3333,
+   "sim_minus_echo": 0.0,
+   "recoverable": 0
+  },
+  {
+   "i": 164,
+   "gen": "rw [<a>MeasureTheory.hasFiniteIntegral_iff_hasFiniteIntegral_iff_hasFiniteIntegral_iff_hasFiniteIntegral_iff_hasFiniteIntegral_iff_hasFiniteIntegral_iff_hasFiniteIntegral_iff_",
+   "gold": "constructor",
+   "exact": 0,
+   "sim": 0.04,
+   "echo_ceiling": 0.2727,
+   "sim_minus_echo": -0.2327,
+   "recoverable": 0
+  },
+  {
+   "i": 165,
+   "gen": "rw [<a>Nat.add_one</a>, <a>Nat.add_one</a>]",
+   "gold": "unfold bit1 bit0",
+   "exact": 0,
+   "sim": 0.0698,
+   "echo_ceiling": 0.3125,
+   "sim_minus_echo": -0.2427,
+   "recoverable": 0
+  },
+  {
+   "i": 166,
+   "gen": "rw [<a>Set.mem_comap_iff</a>]",
+   "gold": "refine \u27e8_, ht, ?_\u27e9",
+   "exact": 0,
+   "sim": 0.1034,
+   "echo_ceiling": 0.2778,
+   "sim_minus_echo": -0.1743,
+   "recoverable": 0
+  },
+  {
+   "i": 167,
+   "gen": "exact h.symm.trans h.symm.prod",
+   "gold": "exact hf.1 q (Multiset.mem_singleton_self _)",
+   "exact": 0,
+   "sim": 0.2727,
+   "echo_ceiling": 0.1364,
+   "sim_minus_echo": 0.1364,
+   "recoverable": 0
+  },
+  {
+   "i": 168,
+   "gen": "simp only [<a>Nat.succ_add_one</a>, <a>Nat.succ_add_one</a>, <a>Nat.succ_add_one</a>, <a>Nat.succ_add_one</a>, <a>Nat.succ_add_",
+   "gold": "simp [hba, hb_le_a1, hb_dvd_a]",
+   "exact": 0,
+   "sim": 0.1496,
+   "echo_ceiling": 0.3333,
+   "sim_minus_echo": -0.1837,
+   "recoverable": 0
+  },
+  {
+   "i": 169,
+   "gen": "rw [<a>Filter.filter_eq_filter_of_not_mem</a>]",
+   "gold": "rcases le_total n l with hnl | hln",
+   "exact": 0,
+   "sim": 0.1522,
+   "echo_ceiling": 0.3235,
+   "sim_minus_echo": -0.1714,
+   "recoverable": 0
+  },
+  {
+   "i": 170,
+   "gen": "exact <a>MeasureTheory.Measure.measurable_comp</a> (h\u03b9 hg')",
+   "gold": "have B : \u2200 b \u2208 s, g b = g x := by intro b hb apply le_antisymm (A b hb (g x)) (A x hx (g b))",
+   "exact": 0,
+   "sim": 0.163,
+   "echo_ceiling": 0.2609,
+   "sim_minus_echo": -0.0978,
+   "recoverable": 0
+  },
+  {
+   "i": 171,
+   "gen": "intro a",
+   "gold": "simp only [Set.InjOn, Finset.mem_coe, Finset.forall_mem_diffs, Finset.forall_image, Finset.mem_Ioo, Finset.mem_Iio]",
+   "exact": 0,
+   "sim": 0.0522,
+   "echo_ceiling": 0.1739,
+   "sim_minus_echo": -0.1217,
+   "recoverable": 0
+  },
+  {
+   "i": 172,
+   "gen": "rw [<a>mul_assoc</a>, <a>mul_assoc</a>, <a>mul_assoc</a>, <a>mul_mul_assoc</a>, <a>mul_mul_assoc</a>]",
+   "gold": "rfl",
+   "exact": 0,
+   "sim": 0.0198,
+   "echo_ceiling": 0.3333,
+   "sim_minus_echo": -0.3135,
+   "recoverable": 0
+  },
+  {
+   "i": 173,
+   "gen": "exact \u27e8i, hpi, hqj, hji\u27e9",
+   "gold": "exact \u27e8j, \u27e8hpj, hqj\u27e9, hji.trans hti\u27e9",
+   "exact": 0,
+   "sim": 0.6111,
+   "echo_ceiling": 0.2222,
+   "sim_minus_echo": 0.3889,
+   "recoverable": 0
+  },
+  {
+   "i": 174,
+   "gen": "simp only [<a>List.pmap_eq_map</a>, <a>List.map_eq_map</a>, <a>List.map_eq_map</a>, <a>List.map_eq_map</a>, <a>List.map_eq",
+   "gold": "simp [List.getElem?_pmap, h]",
+   "exact": 0,
+   "sim": 0.1803,
+   "echo_ceiling": 0.1786,
+   "sim_minus_echo": 0.0018,
+   "recoverable": 0
+  },
+  {
+   "i": 175,
+   "gen": "rw [<a>MeasureTheory.Measure.comap_apply</a>]",
+   "gold": "rw [\u2190 map_comap_subtype_coe hs]",
+   "exact": 0,
+   "sim": 0.2222,
+   "echo_ceiling": 0.3548,
+   "sim_minus_echo": -0.1326,
+   "recoverable": 0
+  },
+  {
+   "i": 176,
+   "gen": "simp only [<a>WithBot.unbot'</a>, <a>WithBot.bot_bot'</a>, <a>WithBot.bot_bot'</a>, <a>WithBot.bot_bot'</a>, <a>WithBot.bot_bot'",
+   "gold": "norm_cast",
+   "exact": 0,
+   "sim": 0.0391,
+   "echo_ceiling": 0.2222,
+   "sim_minus_echo": -0.1832,
+   "recoverable": 0
+  },
+  {
+   "i": 177,
+   "gen": "exact h.2",
+   "gold": "convert h",
+   "exact": 0,
+   "sim": 0.1111,
+   "echo_ceiling": 0.2222,
+   "sim_minus_echo": -0.1111,
+   "recoverable": 0
+  },
+  {
+   "i": 178,
+   "gen": "simp only [<a>Ioi_eq_Iio</a>, <a>Iio_eq_Ioi</a>, <a>Iio_eq_Ioi</a>, <a>Iio_eq_Ioc</a>, <a>Iio_eq_I",
+   "gold": "rw [Finset.Ici_eq_cons_Ioi, Finset.prod_cons]",
+   "exact": 0,
+   "sim": 0.2041,
+   "echo_ceiling": 0.1778,
+   "sim_minus_echo": 0.0263,
+   "recoverable": 0
+  },
+  {
+   "i": 179,
+   "gen": "simp only [<a>Nat.cast_mul</a>, <a>Nat.cast_add</a>, <a>Nat.cast_mul</a>, <a>Nat.cast_mul</a>, <a>Nat.cast_add</a>, <a>Nat.cast",
+   "gold": "simp [ha]",
+   "exact": 0,
+   "sim": 0.0551,
+   "echo_ceiling": 0.2222,
+   "sim_minus_echo": -0.1671,
+   "recoverable": 0
+  },
+  {
+   "i": 180,
+   "gen": "intro b\u2080 b\u2081 b\u2082",
+   "gold": "intro b\u2080",
+   "exact": 0,
+   "sim": 0.5714,
+   "echo_ceiling": 0.375,
+   "sim_minus_echo": 0.1964,
+   "recoverable": 0
+  },
+  {
+   "i": 181,
+   "gen": "rw [<a>MeasureTheory.Measure.ball_closedBall</a>, <a>MeasureTheory.Measure.ball_closedBall</a>]",
+   "gold": "rw [\u2190 gauge_ball (hr.trans hR.out.le)]",
+   "exact": 0,
+   "sim": 0.2105,
+   "echo_ceiling": 0.2895,
+   "sim_minus_echo": -0.0789,
+   "recoverable": 0
+  },
+  {
+   "i": 182,
+   "gen": "rw [<a>Multiset.card_le_card</a>]",
+   "gold": "rw [MvPolynomial.totalDegree_eq p, hb\u2082, MvPolynomial.totalDegree_eq]",
+   "exact": 0,
+   "sim": 0.1912,
+   "echo_ceiling": 0.25,
+   "sim_minus_echo": -0.0588,
+   "recoverable": 0
+  },
+  {
+   "i": 183,
+   "gen": "rw [\u2190 <a>LieAlgebra.equiv</a> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _",
+   "gold": "rintro \u27e8\u27e8\u27e8\u27e8f, -\u27e9, -\u27e9, -\u27e9, f_inv\u27e9 \u27e8\u27e8\u27e8\u27e8g, -\u27e9, -\u27e9, -\u27e9, g_inv\u27e9",
+   "exact": 0,
+   "sim": 0.1181,
+   "echo_ceiling": 0.2586,
+   "sim_minus_echo": -0.1405,
+   "recoverable": 0
+  },
+  {
+   "i": 184,
+   "gen": "rw [<a>ContinuousOn.continuousOn_iff_continuousOn_eq_continuousOn_eq_continuousOn_eq_continuousOn_eq_continuousOn_eq_continuousOn_eq_continuousOn_eq_continuousOn_eq_continuousOn_eq_continuousOn_eq_con",
+   "gold": "simp [continuous_iff_continuousAt, ContinuousOn, ContinuousAt, ContinuousWithinAt, nhdsWithin_univ]",
+   "exact": 0,
+   "sim": 0.3237,
+   "echo_ceiling": 0.2222,
+   "sim_minus_echo": 0.1014,
+   "recoverable": 0
+  },
+  {
+   "i": 185,
+   "gen": "simp only [<a>Set.elim</a>, <a>Set.elim</a>, <a>Set.mem_setOf_eq</a>, <a>Set.mem_setOf_eq</a>, <a>Set.mem_setOf_eq</a",
+   "gold": "cases i <;> rfl",
+   "exact": 0,
+   "sim": 0.0769,
+   "echo_ceiling": 0.3333,
+   "sim_minus_echo": -0.2564,
+   "recoverable": 0
+  },
+  {
+   "i": 186,
+   "gen": "rw [<a>Fermat42.gcd_mul_of_dvd_of_dvd_of_dvd_of_dvd_of_dvd_of_dvd_of_dvd_of_dvd_of_dvd_of_dvd_",
+   "gold": "rw [Int.gcd_eq_one_iff_coprime.mpr (Fermat42.coprime_of_minimal hf)] at h1",
+   "exact": 0,
+   "sim": 0.2234,
+   "echo_ceiling": 0.1892,
+   "sim_minus_echo": 0.0342,
+   "recoverable": 0
+  },
+  {
+   "i": 187,
+   "gen": "rw [<a>Set.image_eq_image_of_mem</a>]",
+   "gold": "rfl",
+   "exact": 0,
+   "sim": 0.0541,
+   "echo_ceiling": 0.0,
+   "sim_minus_echo": 0.0541,
+   "recoverable": 0
+  },
+  {
+   "i": 188,
+   "gen": "rw [<a>Set.mem_setOf_eq_self</a>]",
+   "gold": "refine ((PSigma.lex_wf (Set.wellFoundedOn_range.2 h\u03b1) fun a => h\u03b2 a).WellFounded.onFun (f := fun c => \u27e8\u27e8_, c, rfl\u27e9, c, rfl\u27e9)).WellFounded.mono fun c c' h => ?_",
+   "exact": 0,
+   "sim": 0.1069,
+   "echo_ceiling": 0.2893,
+   "sim_minus_echo": -0.1824,
+   "recoverable": 0
+  },
+  {
+   "i": 189,
+   "gen": "have : \u2200 x, dist x f < \u03b5 := fun x y => <a>dist_lt</a> (x y)",
+   "gold": "let ys : X \u2192 Finset X := fun x => (CompactSpace.elim_nhds_subcover (U x) (U_nhd_y x)).Exists.choose",
+   "exact": 0,
+   "sim": 0.2222,
+   "echo_ceiling": 0.2727,
+   "sim_minus_echo": -0.0505,
+   "recoverable": 0
+  },
+  {
+   "i": 190,
+   "gen": "simp only [<a>CategoryTheory.limit.\u03c0_comp_id</a>, <a>CategoryTheory.limit.\u03c0_id</a>, <a>CategoryTheory.limit.\u03c0_id</a>]",
+   "gold": "simp [CategoryTheory.Limits.limitIsoLimitCurryCompLim, Trans.simple, CategoryTheory.Limits.HasLimit.isoOfNatIso, CategoryTheory.Limits.limitUncurryIsoLimitCompLim]",
+   "exact": 0,
+   "sim": 0.411,
+   "echo_ceiling": 0.2209,
+   "sim_minus_echo": 0.1902,
+   "recoverable": 0
+  },
+  {
+   "i": 191,
+   "gen": "exact <a>List.reaches\u2081</a> (h\u2081)",
+   "gold": "exact \u27e8_, h\u2081, h.trans h\u2082\u27e9",
+   "exact": 0,
+   "sim": 0.2903,
+   "echo_ceiling": 0.28,
+   "sim_minus_echo": 0.0103,
+   "recoverable": 0
+  },
+  {
+   "i": 192,
+   "gen": "rw [<a>Submonoid.mem_span</a>]",
+   "gold": "ext y",
+   "exact": 0,
+   "sim": 0.0333,
+   "echo_ceiling": 0.4,
+   "sim_minus_echo": -0.3667,
+   "recoverable": 0
+  },
+  {
+   "i": 193,
+   "gen": "exact <a>IsSquare.mul_mul_cancel_left</a>",
+   "gold": "exact \u27e8a * b, mul_mul_mul_comm _ _ _ _\u27e9",
+   "exact": 0,
+   "sim": 0.4146,
+   "echo_ceiling": 0.2051,
+   "sim_minus_echo": 0.2095,
+   "recoverable": 0
+  },
+  {
+   "i": 194,
+   "gen": "refine \u27e8K0, <a>max_succ_left</a>, <a>max_succ_left</a>, <a>max_succ_left</a>, <a>max_succ_left</a>, <a>max_succ_left</a>, <",
+   "gold": "have K0 : (0 : \u03b1) < Max.max 1 (Max.max K\u2081 K\u2082) := lt_of_lt_of_le zero_lt_one (le_max_left _ _)",
+   "exact": 0,
+   "sim": 0.2033,
+   "echo_ceiling": 0.2688,
+   "sim_minus_echo": -0.0656,
+   "recoverable": 0
+  },
+  {
+   "i": 195,
+   "gen": "rw [<a>Subtype.ext_iff</a>]",
+   "gold": "rw [DFinsupp.single_eq_of_ne, DFinsupp.single_eq_of_ne hj]",
+   "exact": 0,
+   "sim": 0.1897,
+   "echo_ceiling": 0.2069,
+   "sim_minus_echo": -0.0172,
+   "recoverable": 0
+  },
+  {
+   "i": 196,
+   "gen": "exact hgf\u271d hgf\u271d hgf k",
+   "gold": "if hij : j = i then subst hij; refine hlt _ hgfk else exact eq_bot_iff.2 <| le_trans (hgf _) (eq_bot_iff.1 (hbot _ hij))",
+   "exact": 0,
+   "sim": 0.1167,
+   "echo_ceiling": 0.2,
+   "sim_minus_echo": -0.0833,
+   "recoverable": 0
+  },
+  {
+   "i": 197,
+   "gen": "rw [<a>Set.insert_of_mem_of_finite</a>]",
+   "gold": "obtain hs | hs := s.finite_or_infinite",
+   "exact": 0,
+   "sim": 0.1795,
+   "echo_ceiling": 0.3947,
+   "sim_minus_echo": -0.2152,
+   "recoverable": 0
+  },
+  {
+   "i": 198,
+   "gen": "exact <a>Ordinal.mul_lt_of_lt_of_le</a> hbo",
+   "gold": "rwa [MulZeroClass.zero_mul]",
+   "exact": 0,
+   "sim": 0.1628,
+   "echo_ceiling": 0.1111,
+   "sim_minus_echo": 0.0517,
+   "recoverable": 0
+  },
+  {
+   "i": 199,
+   "gen": "exact \u27e8I, hI, <a>Finset.univ_eq_singleton</a> _ _ hI, <a>Finset.univ_eq_singleton</a> hI\u27e9",
+   "gold": "rwa [Finset.coe_univ, Set.pairwise_univ]",
+   "exact": 0,
+   "sim": 0.236,
+   "echo_ceiling": 0.35,
+   "sim_minus_echo": -0.114,
+   "recoverable": 0
+  },
+  {
+   "i": 200,
+   "gen": "cases h",
+   "gold": "split_ifs with h",
+   "exact": 0,
+   "sim": 0.1875,
+   "echo_ceiling": 0.25,
+   "sim_minus_echo": -0.0625,
+   "recoverable": 0
+  },
+  {
+   "i": 201,
+   "gen": "refine \u27e8<a>Finset.mem_filter</a>, ?_, ?_, ?_\u27e9",
+   "gold": "simp only [Set.mem_iUnion]",
+   "exact": 0,
+   "sim": 0.2222,
+   "echo_ceiling": 0.1538,
+   "sim_minus_echo": 0.0684,
+   "recoverable": 0
+  },
+  {
+   "i": 202,
+   "gen": "\u211d\nhw : \u2200 (x : V), w x \u2208 A.toContinuousLinearMap\u2082 (\u2191A\u2098\u207b\u00b9 \u2022 A)\n\u22a2 Tendsto (fun w => \u222b (v : V), \ud835\udc1e (-w v",
+   "gold": "convert (tendsto_integral_exp_smul_cocompact_of_inner_product (f \u2218 A.symm) (\u03bc.map A\u2098)).Filter.Tendsto.comp Adual.toHomeomorph.toCocompactMap.cocompact_tendsto' with w",
+   "exact": 0,
+   "sim": 0.1566,
+   "echo_ceiling": 0.1747,
+   "sim_minus_echo": -0.0181,
+   "recoverable": 0
+  },
+  {
+   "i": 203,
+   "gen": "rw [<a>IsUnit.mul_eq_zero</a>, <a>mul_eq_zero</a>, <a>mul_eq_zero</a>, <a>mul_eq_zero</a>, <a>mul_eq_zero</a>, <a>mul_",
+   "gold": "rintro \u27e8\u27e8u, v, hu, hv\u27e9, hf\u27e9",
+   "exact": 0,
+   "sim": 0.1356,
+   "echo_ceiling": 0.2593,
+   "sim_minus_echo": -0.1237,
+   "recoverable": 0
+  },
+  {
+   "i": 204,
+   "gen": "intro ij",
+   "gold": "rintro ij",
+   "exact": 0,
+   "sim": 0.8889,
+   "echo_ceiling": 0.3333,
+   "sim_minus_echo": 0.5556,
+   "recoverable": 0
+  },
+  {
+   "i": 205,
+   "gen": "b, c x \u2208 Ioo a x \u2227 f x * g' (c x) = g x * f' (c x)\nthis : \u2200 x \u2208 Ioo a b, ((fun x' => f' x' / g' x') \u2218 c) x =",
+   "gold": "refine tendsto_nhdsWithin_of_tendsto_nhds_of_eventually_within _ (tendsto_of_tendsto_of_tendsto_of_le_of_le' tendsto_const_nhds (tendsto_nhdsWithin_of_tendsto_nhds Filter.tendsto_id) ?_ ?_) ?_",
+   "exact": 0,
+   "sim": 0.1094,
+   "echo_ceiling": 0.1302,
+   "sim_minus_echo": -0.0208,
+   "recoverable": 0
+  },
+  {
+   "i": 206,
+   "gen": "exact <a>MeasureTheory.Measure.measurableSet_empty</a> (MeasureTheory.Measure.measurableSet_empty_of_nonempty hm\u2081 hm\u2082)",
+   "gold": "exact hm\u2081",
+   "exact": 0,
+   "sim": 0.0763,
+   "echo_ceiling": 0.3333,
+   "sim_minus_echo": -0.2571,
+   "recoverable": 0
+  },
+  {
+   "i": 207,
+   "gen": "refine <a>le_of_gt</a> (by simp) (by simp)",
+   "gold": "refine (Real.logb_le_logb (b := 2) (by norm_num) (by positivity) (zpow_pos_of_pos (by norm_num) _)).Iff.mp ?_",
+   "exact": 0,
+   "sim": 0.2569,
+   "echo_ceiling": 0.1743,
+   "sim_minus_echo": 0.0826,
+   "recoverable": 0
+  },
+  {
+   "i": 208,
+   "gen": "rw [<a>Set.mem_singleton_iff</a>, <a>Set.mem_singleton_iff</a>, <a>Set.mem_singleton_iff</a>, <a>Set.mem_singleton_iff</a>]",
+   "gold": "simpa using @BoundedContinuousFunction.dist_le _ _ _ _ f 0 _ C0",
+   "exact": 0,
+   "sim": 0.1463,
+   "echo_ceiling": 0.1905,
+   "sim_minus_echo": -0.0441,
+   "recoverable": 0
+  },
+  {
+   "i": 209,
+   "gen": "intro z hz",
+   "gold": "specialize hx x\u2080 (le_of_max_le_left hx\u2080_ge)",
+   "exact": 0,
+   "sim": 0.093,
+   "echo_ceiling": 0.186,
+   "sim_minus_echo": -0.093,
+   "recoverable": 0
+  },
+  {
+   "i": 210,
+   "gen": "have : Nonempty C := <a>CategoryTheory.Category.assoc</a> (<a>CategoryTheory.Category.assoc</a> (<a>CategoryTheory.Category.assoc</a> (<a>CategoryTheory.Category.assoc</a> (<a",
+   "gold": "obtain \u27e8c, -\u27e9 := h (Classical.arbitrary D)",
+   "exact": 0,
+   "sim": 0.1314,
+   "echo_ceiling": 0.1667,
+   "sim_minus_echo": -0.0352,
+   "recoverable": 0
+  },
+  {
+   "i": 211,
+   "gen": "exact <a>List.mem_of_eq_nil</a> xs'",
+   "gold": "exact hd",
+   "exact": 0,
+   "sim": 0.1714,
+   "echo_ceiling": 0.25,
+   "sim_minus_echo": -0.0786,
+   "recoverable": 0
+  },
+  {
+   "i": 212,
+   "gen": "exact <a>Continuous.continuous_toFun_eq_toFun</a> (fun t => <a>Continuous.continuous_toFun_eq_toFun</a> t)",
+   "gold": "exact \u03d5.cont'",
+   "exact": 0,
+   "sim": 0.1038,
+   "echo_ceiling": 0.2308,
+   "sim_minus_echo": -0.127,
+   "recoverable": 0
+  },
+  {
+   "i": 213,
+   "gen": "rw [<a>Set.range_subset_iff</a>, <a>Set.range_subset_iff</a>, <a>Set.range_subset_iff</a>, <a>Set.range_subset_iff</a>, <a>Set.range_subset_iff</",
+   "gold": "rcases EuclideanGeometry.exists_circumsphere_eq_of_cospherical hd hc with \u27e8r, hr\u27e9",
+   "exact": 0,
+   "sim": 0.1724,
+   "echo_ceiling": 0.2593,
+   "sim_minus_echo": -0.0868,
+   "recoverable": 0
+  },
+  {
+   "i": 214,
+   "gen": "rw [<a>divisors_eq_zero_iff</a>] at h",
+   "gold": "cases m",
+   "exact": 0,
+   "sim": 0.1081,
+   "echo_ceiling": 0.5714,
+   "sim_minus_echo": -0.4633,
+   "recoverable": 0
+  },
+  {
+   "i": 215,
+   "gen": "exact <a>Left.eq_of_eq_of_injective</a> h\u03c6",
+   "gold": "ext <;> apply_fun _ using h\u03c6 <;> assumption",
+   "exact": 0,
+   "sim": 0.186,
+   "echo_ceiling": 0.2093,
+   "sim_minus_echo": -0.0233,
+   "recoverable": 0
+  },
+  {
+   "i": 216,
+   "gen": "exact \u27e8i, <a>CategoryTheory.Category.id_comp</a> _ _\u27e9",
+   "gold": "exact \u27e8i, rfl, by simp only [CategoryTheory.eqToHom_refl, CategoryTheory.Category.id_comp]\u27e9",
+   "exact": 0,
+   "sim": 0.3956,
+   "echo_ceiling": 0.1978,
+   "sim_minus_echo": 0.1978,
+   "recoverable": 0
+  },
+  {
+   "i": 217,
+   "gen": "simp only [<a>Set.mem_univ</a>, <a>Set.mem_univ</a>, <a>Set.mem_univ</a>, <a>Set.mem_univ</a>, <a>Set.mem_univ</a>, <",
+   "gold": "simp",
+   "exact": 0,
+   "sim": 0.0342,
+   "echo_ceiling": 0.5,
+   "sim_minus_echo": -0.4658,
+   "recoverable": 0
+  },
+  {
+   "i": 218,
+   "gen": "rw [<a>Submodule.map_dualCoannihilator</a> p.dualCoannihilator]",
+   "gold": "have : Module.IsReflexive R N := e.isReflexive_of_equiv_dual_of_isReflexive",
+   "exact": 0,
+   "sim": 0.1733,
+   "echo_ceiling": 0.28,
+   "sim_minus_echo": -0.1067,
+   "recoverable": 0
+  },
+  {
+   "i": 219,
+   "gen": "intro i",
+   "gold": "subst h",
+   "exact": 0,
+   "sim": 0.1429,
+   "echo_ceiling": 0.4286,
+   "sim_minus_echo": -0.2857,
+   "recoverable": 0
+  },
+  {
+   "i": 220,
+   "gen": "have A : \u2200\u1d50 \u03c9, A = X \u03c9 := by intro \u03c9 <a>MeasureTheory.integral_const</a> (fun \u03c9 => <a>MeasureTheory.integral_const</a> (fun \u03c9 => <a>MeasureTheory.integral_const</a",
+   "gold": "have A : MeasureTheory.Mem\u2112p (X - fun \u03c9 : \u03a9 => \ud835\udd3c[X]) 2 \u2119 := (MeasureTheory.mem\u2112p_two_iff_integrable_sq (hint.aestronglyMeasurable.sub MeasureTheory.aestronglyMeasurable_const)).2 h",
+   "exact": 0,
+   "sim": 0.3,
+   "echo_ceiling": 0.2333,
+   "sim_minus_echo": 0.0667,
+   "recoverable": 0
+  },
+  {
+   "i": 221,
+   "gen": "simp only [<a>Real.Angle.neg_eq_zero</a>, <a>Real.Angle.neg_eq_zero</a>, <a>Real.Angle.neg_eq_zero</a>, <a>Real.Angle.neg_eq_zero</a>, <",
+   "gold": "abel",
+   "exact": 0,
+   "sim": 0.0221,
+   "echo_ceiling": 0.25,
+   "sim_minus_echo": -0.2279,
+   "recoverable": 0
+  },
+  {
+   "i": 222,
+   "gen": "have : i' = i := by simp only [<a>Finsupp.single_eq_of_ne_zero</a>]",
+   "gold": "use i'",
+   "exact": 0,
+   "sim": 0.0597,
+   "echo_ceiling": 0.6667,
+   "sim_minus_echo": -0.607,
+   "recoverable": 0
+  },
+  {
+   "i": 223,
+   "gen": "refine \u27e8fun h => ?_, fun h => ?_\u27e9",
+   "gold": "intro h x y z hz",
+   "exact": 0,
+   "sim": 0.2727,
+   "echo_ceiling": 0.3125,
+   "sim_minus_echo": -0.0398,
+   "recoverable": 0
+  },
+  {
+   "i": 224,
+   "gen": "rw [<a>Submodule.coe_mk</a>, <a>Submodule.coe_mk</a>, <a>Submodule.coe_mk</a>]",
+   "gold": "rfl",
+   "exact": 0,
+   "sim": 0.0256,
+   "echo_ceiling": 0.3333,
+   "sim_minus_echo": -0.3077,
+   "recoverable": 0
+  },
+  {
+   "i": 225,
+   "gen": "intro ht\u2081 ht\u2082",
+   "gold": "intro t\u2081 t\u2082 ht\u2081 ht\u2082",
+   "exact": 0,
+   "sim": 0.6842,
+   "echo_ceiling": 0.4211,
+   "sim_minus_echo": 0.2632,
+   "recoverable": 0
+  },
+  {
+   "i": 226,
+   "gen": "rw [<a>LieSubmodule.lcs_iff_eq_bot</a>, <a>LieSubmodule.bot_bot</a>, <a>LieSubmodule.bot_bot</a>, <a>LieSubmodule.bot_bot</a>, <a>LieSubmodule",
+   "gold": "rw [LieModule.isNilpotent_iff]",
+   "exact": 0,
+   "sim": 0.1549,
+   "echo_ceiling": 0.3333,
+   "sim_minus_echo": -0.1784,
+   "recoverable": 0
+  },
+  {
+   "i": 227,
+   "gen": "exact <a>le_of_lt_of_le</a> h_zero",
+   "gold": "exact zero_le_one",
+   "exact": 0,
+   "sim": 0.3824,
+   "echo_ceiling": 0.1765,
+   "sim_minus_echo": 0.2059,
+   "recoverable": 0
+  },
+  {
+   "i": 228,
+   "gen": "rw [<a>CategoryTheory.Limits.isOpenImmersion.isOpenImmersion.isOpenIso_invApp_eq_isOpenIso_invApp_eq_isOpenIso_invApp_eq_isOpenIso_invApp_eq_isOpenI",
+   "gold": "refine le_trans (AlgebraicGeometry.Scheme.basicOpen_le _ _) (le_of_eq ?_)",
+   "exact": 0,
+   "sim": 0.1892,
+   "echo_ceiling": 0.2055,
+   "sim_minus_echo": -0.0163,
+   "recoverable": 0
+  },
+  {
+   "i": 229,
+   "gen": "rw [<a>CategoryTheory.Category.assoc</a>]",
+   "gold": "dsimp [TopologicalSpace.Opens.map]",
+   "exact": 0,
+   "sim": 0.1463,
+   "echo_ceiling": 0.2941,
+   "sim_minus_echo": -0.1478,
+   "recoverable": 0
+  },
+  {
+   "i": 230,
+   "gen": "exact <a>lt_of_le_of_lt</a> (<a>lt_of_le_of_lt</a> (<a>mul_pos</a> (<a>mul_lt_mul</a> (<a>mul_lt_mul</a> (<a",
+   "gold": "norm_num",
+   "exact": 0,
+   "sim": 0.0463,
+   "echo_ceiling": 0.25,
+   "sim_minus_echo": -0.2037,
+   "recoverable": 0
+  },
+  {
+   "i": 231,
+   "gen": "refine \u27e8fun h => <a>CategoryTheory.Limits.Triangle.mk_mk_mk_assoc</a> (L.mapArrow.map e.hom.left) (L.mapArrow.map e.hom.left) (L.map",
+   "gold": "refine \u27e8L.obj Z, e.inv.right \u226b L.map g, L.map h \u226b (L.commShiftIso (1 : \u2124)).hom.app _ \u226b e.hom.left\u27e6(1 : \u2124)\u27e7', _, ?_, H\u27e9",
+   "exact": 0,
+   "sim": 0.2121,
+   "echo_ceiling": 0.5085,
+   "sim_minus_echo": -0.2964,
+   "recoverable": 0
+  },
+  {
+   "i": 232,
+   "gen": "rw [<a>Real.exp_eq_exp_of_pos</a>]",
+   "gold": "rw [Real.exp_log_eq_abs (mul_ne_zero hx hy), Real.exp_add, Real.exp_log_eq_abs hx, Real.exp_log_eq_abs hy, abs_mul]",
+   "exact": 0,
+   "sim": 0.2261,
+   "echo_ceiling": 0.2,
+   "sim_minus_echo": 0.0261,
+   "recoverable": 0
+  },
+  {
+   "i": 233,
+   "gen": "simp only [<a>Monoid.mem_of_mem</a>, <a>Monoid.mem_of_mem</a>, <a>Monoid.mem_of_mem</a>, <a>Monoid.mem_of_mem</a>, <a>Monoid",
+   "gold": "simp",
+   "exact": 0,
+   "sim": 0.0323,
+   "echo_ceiling": 0.0,
+   "sim_minus_echo": 0.0323,
+   "recoverable": 0
+  },
+  {
+   "i": 234,
+   "gen": "rw [<a>Fin.coe_mkSol</a>, <a>Fin.coe_mkSol</a>]",
+   "gold": "intro n",
+   "exact": 0,
+   "sim": 0.1064,
+   "echo_ceiling": 0.4286,
+   "sim_minus_echo": -0.3222,
+   "recoverable": 0
+  },
+  {
+   "i": 235,
+   "gen": "exact <a>Ordinal.mul_lt_of_le_of_lt_of_le_of_lt_of_le_of_lt_of_le_of_lt_of_le_of_lt_of_le_of_lt_of_le_of",
+   "gold": "exact (Ordinal.mul_isNormal ha).Ordinal.IsNormal.strictMono hbo",
+   "exact": 0,
+   "sim": 0.2692,
+   "echo_ceiling": 0.3333,
+   "sim_minus_echo": -0.0641,
+   "recoverable": 0
+  },
+  {
+   "i": 236,
+   "gen": "simp only [<a>CategoryTheory.Category.assoc</a>, <a>CategoryTheory.Category.assoc</a>, <a>CategoryTheory.Category.assoc</a>, <a>CategoryTheory.Category.assoc</a>]",
+   "gold": "simp only [CategoryTheory.Category.assoc, CategoryTheory.Iso.hom_inv_id_app]",
+   "exact": 0,
+   "sim": 0.3951,
+   "echo_ceiling": 0.1974,
+   "sim_minus_echo": 0.1977,
+   "recoverable": 0
+  },
+  {
+   "i": 237,
+   "gen": "simp only [<a>Set.image_subset_iff</a>, <a>Set.image_subset_iff</a>, <a>Set.image_singleton_iff</a>, <a>Set.image_singleton_iff</a>, <a>Set.image_",
+   "gold": "simpa using ((Set.finite_singleton t).Set.Finite.insert s).Set.Finite.absorbs_sInter",
+   "exact": 0,
+   "sim": 0.2466,
+   "echo_ceiling": 0.1905,
+   "sim_minus_echo": 0.0561,
+   "recoverable": 0
+  },
+  {
+   "i": 238,
+   "gen": "have hx_pos : 0 < x\u2080 := by rw [\u2190 <a>Real.logb_mul_of_pos</a> hx\u2080_pos] exact <a>Real.logb_mul_of_pos</a> hx\u2080_pos",
+   "gold": "rw [neg_nonneg]",
+   "exact": 0,
+   "sim": 0.0901,
+   "echo_ceiling": 0.1333,
+   "sim_minus_echo": -0.0432,
+   "recoverable": 0
+  },
+  {
+   "i": 239,
+   "gen": "refine <a>le_of_gt</a> (<a>le_of_lt</a> <a>le_of_gt</a> (<a>le_of_gt</a> <a>le_of_gt</a> (<a>le",
+   "gold": "rw [\u2190 le_div_iff x\u2080_pos]",
+   "exact": 0,
+   "sim": 0.1158,
+   "echo_ceiling": 0.25,
+   "sim_minus_echo": -0.1342,
+   "recoverable": 0
+  },
+  {
+   "i": 240,
+   "gen": "rw [<a>Polynomial.C_mul_C_mul_C_mul_C_mul_C_mul_C_mul_C_mul_C_mul_C_mul_C_mul_C_mul_C_mul_C_mul_C_mul_",
+   "gold": "rw [PowerSeries.coeff_C, if_pos rfl]",
+   "exact": 0,
+   "sim": 0.1078,
+   "echo_ceiling": 0.1667,
+   "sim_minus_echo": -0.0588,
+   "recoverable": 0
+  },
+  {
+   "i": 241,
+   "gen": "simp only [<a>MeasureTheory.Measure.comp_add</a>, <a>MeasureTheory.Measure.comp_add</a>, <a>MeasureTheory.Measure.comp_add</a>, <a>MeasureTheory.Measure.comp_add</a>, <",
+   "gold": "simp only [ContinuousLinearMap.coe_comp', Function.comp_apply, ContinuousLinearMap.add_apply]",
+   "exact": 0,
+   "sim": 0.2619,
+   "echo_ceiling": 0.1828,
+   "sim_minus_echo": 0.0791,
+   "recoverable": 0
+  },
+  {
+   "i": 242,
+   "gen": "exact <a>Submodule.mem_adjoin</a> _ _",
+   "gold": "exact this (MonoidAlgebra.mem_span_support f)",
+   "exact": 0,
+   "sim": 0.3556,
+   "echo_ceiling": 0.2889,
+   "sim_minus_echo": 0.0667,
+   "recoverable": 0
+  },
+  {
+   "i": 243,
+   "gen": "have hx_pos : 0 < x\u2080 := by rw [\u2190 <a>lt_of_le</a> hx_pos] exact <a>lt_of_le</a> <a>le_of_lt</a> <a>le_of_",
+   "gold": "rw [\u2190 Real.rpow_intCast, Real.logb_rpow (by norm_num) (by norm_num), \u2190 neg_le_neg_iff]",
+   "exact": 0,
+   "sim": 0.125,
+   "echo_ceiling": 0.1395,
+   "sim_minus_echo": -0.0145,
+   "recoverable": 0
+  },
+  {
+   "i": 244,
+   "gen": "have : UniformSpace E := UniformSpace.toUniformSpace E",
+   "gold": "letI := TopologicalAddGroup.toUniformSpace E",
+   "exact": 0,
+   "sim": 0.4259,
+   "echo_ceiling": 0.9318,
+   "sim_minus_echo": -0.5059,
+   "recoverable": 0
+  },
+  {
+   "i": 245,
+   "gen": "intro t ht",
+   "gold": "intro t h_meas_t",
+   "exact": 0,
+   "sim": 0.625,
+   "echo_ceiling": 0.5625,
+   "sim_minus_echo": 0.0625,
+   "recoverable": 0
+  },
+  {
+   "i": 246,
+   "gen": "rw [<a>iteratedFDerivWithin_compContinuousMultilinearMap_apply</a> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _",
+   "gold": "rw [this]",
+   "exact": 0,
+   "sim": 0.0533,
+   "echo_ceiling": 0.3333,
+   "sim_minus_echo": -0.28,
+   "recoverable": 0
+  },
+  {
+   "i": 247,
+   "gen": "rw [<a>Finset.mem_toFinset</a>, <a>Finset.mem_toFinset</a>, <a>Finset.mem_toFinset</a>, <a>Finset.mem_toFinset</a>, <a>Finset.mem",
+   "gold": "rw [finprod_eq_prod f hf]",
+   "exact": 0,
+   "sim": 0.093,
+   "echo_ceiling": 0.2,
+   "sim_minus_echo": -0.107,
+   "recoverable": 0
+  },
+  {
+   "i": 248,
+   "gen": "rw [<a>\u2190 <a>Polynomial.degree_eq_normalizeScaleRoots</a>]",
+   "gold": "apply le_antisymm",
+   "exact": 0,
+   "sim": 0.1579,
+   "echo_ceiling": 0.2353,
+   "sim_minus_echo": -0.0774,
+   "recoverable": 0
+  },
+  {
+   "i": 249,
+   "gen": "rw [<a>dvd_mul_dvd_iff_dvd_mul_dvd_iff_dvd_mul_dvd_iff_dvd_mul_dvd_iff_dvd_mul_dvd_iff_dvd_mul_dvd_iff_",
+   "gold": "obtain \u27e8d, rfl\u27e9 := dvd",
+   "exact": 0,
+   "sim": 0.0777,
+   "echo_ceiling": 0.1818,
+   "sim_minus_echo": -0.1041,
+   "recoverable": 0
+  },
+  {
+   "i": 250,
+   "gen": "rw [<a>\u2191C.u ^ 12 * E.c\u2084 ^ 3 * E.c\u2084 ^ 3 -\n      (\u2191E.\u0394'\u207b\u00b9 * E.c\u2084 ^ 3 * (\u2191C.u * \u2191C.u\u207b\u00b9)",
+   "gold": "ring1",
+   "exact": 0,
+   "sim": 0.0238,
+   "echo_ceiling": 0.2,
+   "sim_minus_echo": -0.1762,
+   "recoverable": 0
+  },
+  {
+   "i": 251,
+   "gen": "rw [<a>Set.mem_ball_of_mem</a> h\u03b4]",
+   "gold": "refine hs (fun i => ?_) hz",
+   "exact": 0,
+   "sim": 0.1471,
+   "echo_ceiling": 0.2308,
+   "sim_minus_echo": -0.0837,
+   "recoverable": 0
+  },
+  {
+   "i": 252,
+   "gen": "rw [<a>Submonoid.mul_smul_right</a>, <a>Submonoid.mul_smul_right</a>, <a>Submonoid.mul_smul_right</a>, <a>Submonoid.mul_smul_right</a",
+   "gold": "have ha := OreLocalization.ore_eq (s\u2081 : R) s\u2082",
+   "exact": 0,
+   "sim": 0.1053,
+   "echo_ceiling": 0.2667,
+   "sim_minus_echo": -0.1614,
+   "recoverable": 0
+  },
+  {
+   "i": 253,
+   "gen": "simp only [<a>Finset.card_eq_zero</a>, <a>Finset.card_eq_zero</a>, <a>Finset.card_eq_zero</a>, <a>Finset.card_eq_zero</a>, <a>Finset",
+   "gold": "apply Nat.one_lt_mul_iff",
+   "exact": 0,
+   "sim": 0.1136,
+   "echo_ceiling": 0.0833,
+   "sim_minus_echo": 0.0303,
+   "recoverable": 0
+  },
+  {
+   "i": 254,
+   "gen": "refine \u27e8A, ?_, ?_\u27e9",
+   "gold": "have A : \u2200 i, f' i b = g' b := fun i \u21a6 by simp [f', hb]",
+   "exact": 0,
+   "sim": 0.1455,
+   "echo_ceiling": 0.4182,
+   "sim_minus_echo": -0.2727,
+   "recoverable": 0
+  },
+  {
+   "i": 255,
+   "gen": "X.restrict \u22ef).ofRestrict \u22ef) \u22a4)\n\u22a2 P (Scheme.Hom.appLE f (\u2191U) (\u2191V) e)\n<|TACTIC|>\nintro U'",
+   "gold": "rw [\u2190 hP.cancel_right_isIso _ (X.presheaf.map (CategoryTheory.eqToHom _)), AlgebraicGeometry.Scheme.Hom.appLE, CategoryTheory.Category.assoc, \u2190 X.presheaf.map_comp]",
+   "exact": 0,
+   "sim": 0.2012,
+   "echo_ceiling": 0.2256,
+   "sim_minus_echo": -0.0244,
+   "recoverable": 0
+  },
+  {
+   "i": 256,
+   "gen": "rw [<a>mul_le_mul_iff_of_le</a>]",
+   "gold": "obtain \u27e8u, hus, rfl\u27e9 := hus",
+   "exact": 0,
+   "sim": 0.0938,
+   "echo_ceiling": 0.2222,
+   "sim_minus_echo": -0.1285,
+   "recoverable": 0
+  },
+  {
+   "i": 257,
+   "gen": "rw [<a>Metric.sphere_mem_sphere</a>, <a>Metric.sphere_mem_sphere</a>, <a>Metric.sphere_sphere_mem_sphere</a>, <a>Metric.sphere_mem_sphere</a>, <a>Metric.sphere_mem_",
+   "gold": "ext x",
+   "exact": 0,
+   "sim": 0.0183,
+   "echo_ceiling": 0.4,
+   "sim_minus_echo": -0.3817,
+   "recoverable": 0
+  },
+  {
+   "i": 258,
+   "gen": "simp only [<a>MeasureTheory.SimpleFunc.piecewise</a>, <a>MeasureTheory.SimpleFunc.piecewise_const</a>, <a>MeasureTheory.SimpleFunc.piecewise_const</a>, <a>MeasureTheory.SimpleFunc.piecewise",
+   "gold": "simp [Function.const]",
+   "exact": 0,
+   "sim": 0.1005,
+   "echo_ceiling": 0.4762,
+   "sim_minus_echo": -0.3757,
+   "recoverable": 0
+  },
+  {
+   "i": 259,
+   "gen": "rw [<a>mul_le_mul_iff_le_mul_one</a>]",
+   "gold": "rw [Finset.subset_map_iff] at hus",
+   "exact": 0,
+   "sim": 0.1892,
+   "echo_ceiling": 0.2727,
+   "sim_minus_echo": -0.0835,
+   "recoverable": 0
+  },
+  {
+   "i": 260,
+   "gen": "exact <a>Real.slitsPlane_eq_zero_of_nonneg</a> hz",
+   "gold": "exact Complex.slitPlane_ne_zero hz rfl",
+   "exact": 0,
+   "sim": 0.449,
+   "echo_ceiling": 0.1579,
+   "sim_minus_echo": 0.2911,
+   "recoverable": 0
+  },
+  {
+   "i": 261,
+   "gen": "rw [<a>CosZeta.compl_compl_cancel_left</a>, <a>CosZeta.compl_compl_cancel_right</a>, <a>CosZeta.compl_compl_cancel_right</a>, <a>CosZeta.compl_compl_cancel",
+   "gold": "rw [HurwitzZeta.completedCosZeta, Function.comp_apply, div_mul_eq_mul_div, mul_div_assoc]",
+   "exact": 0,
+   "sim": 0.271,
+   "echo_ceiling": 0.1236,
+   "sim_minus_echo": 0.1474,
+   "recoverable": 0
+  },
+  {
+   "i": 262,
+   "gen": "exact <a>rfl</a> (<a>rfl</a> (<a>r\u03b1</a> (<a>r\u03b2</a> (<a>r\u03b3</a> (<a>r\u03b1</a> (<a>r\u03b3</a> (<a>r\u03b1</a",
+   "gold": "exacts [\u27e8c, h'.1\u27e9, PSigma.subtype_ext (Subtype.ext h'.1) rfl, h'.2]",
+   "exact": 0,
+   "sim": 0.1398,
+   "echo_ceiling": 0.1493,
+   "sim_minus_echo": -0.0095,
+   "recoverable": 0
+  },
+  {
+   "i": 263,
+   "gen": "exact <a>Nat.le_of_lt_of_le_of_le_of_lt_of_le_of_lt_of_le_of_lt_of_le_of_lt_of_le_of_lt_of_le_of_lt_",
+   "gold": "omega",
+   "exact": 0,
+   "sim": 0.02,
+   "echo_ceiling": 0.2,
+   "sim_minus_echo": -0.18,
+   "recoverable": 0
+  },
+  {
+   "i": 264,
+   "gen": "rw [<a>Nat.ofRepeatch_ofReplicateEq_of_mem</a>]",
+   "gold": "erw [TypeVec.repeatEq, i_ih]",
+   "exact": 0,
+   "sim": 0.2979,
+   "echo_ceiling": 0.3571,
+   "sim_minus_echo": -0.0593,
+   "recoverable": 0
+  },
+  {
+   "i": 265,
+   "gen": "exact <a>mulLeftEmbedding_iff_card_le_mul_one</a> hu",
+   "gold": "exact (threeGPFree_smul_set.1 hu).ThreeGPFree.le_mulRothNumber hus",
+   "exact": 0,
+   "sim": 0.303,
+   "echo_ceiling": 0.3182,
+   "sim_minus_echo": -0.0152,
+   "recoverable": 0
+  },
+  {
+   "i": 266,
+   "gen": "rw [<a>pow_two</a>]",
+   "gold": "simp only [Pi.add_apply, ENNReal.rpow_zero, MeasureTheory.lintegral_one, div_zero, zero_sub]",
+   "exact": 0,
+   "sim": 0.1087,
+   "echo_ceiling": 0.1413,
+   "sim_minus_echo": -0.0326,
+   "recoverable": 0
+  },
+  {
+   "i": 267,
+   "gen": "rw [<a>Finsupp.total_apply</a>, <a>Finsupp.total_apply</a>, <a>Finsupp.total_apply</a>, <a>Finsupp.total_apply</a>, <a>Finsupp.total_apply</",
+   "gold": "rw [(hv.comp f f.injective).LinearIndependent.total_repr]",
+   "exact": 0,
+   "sim": 0.1786,
+   "echo_ceiling": 0.3158,
+   "sim_minus_echo": -0.1372,
+   "recoverable": 0
+  },
+  {
+   "i": 268,
+   "gen": "rw [<a>\u2190 <a>ZMod.pow_two</a>]",
+   "gold": "rw [legendreSym, quadraticChar_eq_one_of_char_two hc ha]",
+   "exact": 0,
+   "sim": 0.2321,
+   "echo_ceiling": 0.25,
+   "sim_minus_echo": -0.0179,
+   "recoverable": 0
+  },
+  {
+   "i": 269,
+   "gen": "simp only [<a>CategoryTheory.Limits.IsColimit.pullback.fst_inl</a>, <a>CategoryTheory.Limits.IsColimit.pullback.snd_fst_inr</a>, <a>CategoryTheory.Limits",
+   "gold": "rw [CategoryTheory.Category.assoc, CategoryTheory.Limits.pullback.lift_snd, CategoryTheory.Limits.pullback.condition]",
+   "exact": 0,
+   "sim": 0.4052,
+   "echo_ceiling": 0.2222,
+   "sim_minus_echo": 0.183,
+   "recoverable": 0
+  },
+  {
+   "i": 270,
+   "gen": "have h_lim : \u2200\u1d50 (a : \u03b1) \u2202\u03bc, Tendsto (fun n => F n a) l (\ud835\udcdd (f a)) := fun n => <a>MeasureTheory.Measure.Tendsto.comp_apply</a> (<",
+   "gold": "intro",
+   "exact": 0,
+   "sim": 0.0394,
+   "echo_ceiling": 0.4,
+   "sim_minus_echo": -0.3606,
+   "recoverable": 1
+  },
+  {
+   "i": 271,
+   "gen": "exact <a>mul_comm</a> hb",
+   "gold": "exact h 1",
+   "exact": 0,
+   "sim": 0.2917,
+   "echo_ceiling": 0.2222,
+   "sim_minus_echo": 0.0694,
+   "recoverable": 0
+  },
+  {
+   "i": 272,
+   "gen": "intro a b",
+   "gold": "simp (config := { proj := Bool.false }) only [Set.mem_iInter, Subtype.forall, Finset.set_biInter_finset_image]",
+   "exact": 0,
+   "sim": 0.0727,
+   "echo_ceiling": 0.2545,
+   "sim_minus_echo": -0.1818,
+   "recoverable": 0
+  },
+  {
+   "i": 273,
+   "gen": "intro i hi",
+   "gold": "intro i hi",
+   "exact": 1,
+   "sim": 1.0,
+   "echo_ceiling": 0.6,
+   "sim_minus_echo": 0.4,
+   "recoverable": 0
+  },
+  {
+   "i": 274,
+   "gen": "exact <a>Filter.mem_of_mem_nhds_of_mem_nhds_of_mem_nhds_of_mem_nhds_of_mem_nhds_of_mem_nhds_of_mem_nhds_of_mem_nhds_",
+   "gold": "rwa [Filter.mem_inv, Set.inv_preimage, inv_inv]",
+   "exact": 0,
+   "sim": 0.1983,
+   "echo_ceiling": 0.1489,
+   "sim_minus_echo": 0.0493,
+   "recoverable": 0
+  },
+  {
+   "i": 275,
+   "gen": "simp only [<a>MeasureTheory.kernel.densityProcess_apply</a>, <a>MeasureTheory.kernel.densityProcess_apply</a>, <a>MeasureTheory.kernel.densityProcess_apply</a>, <a>MeasureTheory.kernel.densityProcess_",
+   "gold": "simp_rw [ProbabilityTheory.kernel.densityProcess]",
+   "exact": 0,
+   "sim": 0.2098,
+   "echo_ceiling": 0.2857,
+   "sim_minus_echo": -0.076,
+   "recoverable": 0
+  },
+  {
+   "i": 276,
+   "gen": "exact this",
+   "gold": "simpa [specializes_iff_pure, ContinuousMap.nhds_compactOpen]",
+   "exact": 0,
+   "sim": 0.1,
+   "echo_ceiling": 0.1333,
+   "sim_minus_echo": -0.0333,
+   "recoverable": 0
+  },
+  {
+   "i": 277,
+   "gen": "rw [<a>MeasureTheory.Measure.map_smul</a>]",
+   "gold": "rw [MeasureTheory.Measure.map_linearMap_addHaar_eq_smul_addHaar \u03bc hf]",
+   "exact": 0,
+   "sim": 0.4783,
+   "echo_ceiling": 0.2174,
+   "sim_minus_echo": 0.2609,
+   "recoverable": 0
+  },
+  {
+   "i": 278,
+   "gen": "rw [<a>MeasureTheory.Measure.withDensity_of_ae_of_nonpos</a> hmf]",
+   "gold": "apply MeasureTheory.withDensity_eq_iff (MeasureTheory.measurable_pdf X \u2119 \u03bc).Measurable.aemeasurable hmf",
+   "exact": 0,
+   "sim": 0.2913,
+   "echo_ceiling": 0.2816,
+   "sim_minus_echo": 0.0097,
+   "recoverable": 0
+  },
+  {
+   "i": 279,
+   "gen": "exact <a>Nat.not_zero</a> hf",
+   "gold": "exact Ne.symm hn",
+   "exact": 0,
+   "sim": 0.3571,
+   "echo_ceiling": 0.125,
+   "sim_minus_echo": 0.2321,
+   "recoverable": 0
+  },
+  {
+   "i": 280,
+   "gen": "rw [<a>Matrix.Matrix.charpoly_apply</a>, <a>Matrix.Matrix.charpoly_apply</a>, <a>Matrix.Matrix.charpoly_apply</a>, <a>Matrix.Matrix.charpoly_apply</a>, <a>Matrix.Matrix.",
+   "gold": "apply_fun matPolyEquiv at h",
+   "exact": 0,
+   "sim": 0.0947,
+   "echo_ceiling": 0.5185,
+   "sim_minus_echo": -0.4238,
+   "recoverable": 0
+  },
+  {
+   "i": 281,
+   "gen": "\u00b3 : IsIntegrallyClosed B\ninst\u271d\u00b2 : Module.Finite A B\ninst\u271d\u00b9 : NoZeroSMulDivisors A B\ninst\u271d : IsSeparable (FractionRing A) (FractionRing B)\nx : B\nthis\ufffd",
+   "gold": "haveI := IsIntegralClosure.isFractionRing_of_finite_extension A K L B",
+   "exact": 0,
+   "sim": 0.2282,
+   "echo_ceiling": 0.4928,
+   "sim_minus_echo": -0.2646,
+   "recoverable": 0
+  },
+  {
+   "i": 282,
+   "gen": "exact \u27e8hts, ht, hts, ht\u27e9",
+   "gold": "simpa [Set.subset_def] using hts a b a",
+   "exact": 0,
+   "sim": 0.2368,
+   "echo_ceiling": 0.2105,
+   "sim_minus_echo": 0.0263,
+   "recoverable": 0
+  },
+  {
+   "i": 283,
+   "gen": "exact <a>le_antisymm</a> (<a>le_antisymm</a> (<a>Ioi_mem_Iio</a> h2))",
+   "gold": "exact Cardinal.mk_Ioi_real a \u25b8 h2 \u25b8 Cardinal.mk_image_le",
+   "exact": 0,
+   "sim": 0.2609,
+   "echo_ceiling": 0.125,
+   "sim_minus_echo": 0.1359,
+   "recoverable": 0
+  },
+  {
+   "i": 284,
+   "gen": "exact <a>Lex.not_le_of_not_lt_of_not_lt_of_not_lt_of_not_lt_of_not_lt_of_not_lt_of_not_lt_of_not_lt_of_not_lt_",
+   "gold": "exact \u27e8Finset.min' _ (DFinsupp.nonempty_neLocus_iff.2 hne), fun j hj \u21a6 DFinsupp.not_mem_neLocus.1 fun h \u21a6 (Finset.min'_le _ _ h).LE.le.not_lt hj, (h _).LE.le.lt_of_ne (DFinsupp.mem_neLocus.1 <| Finset.min'_mem _ _)\u27e9",
+   "exact": 0,
+   "sim": 0.2326,
+   "echo_ceiling": 0.1256,
+   "sim_minus_echo": 0.107,
+   "recoverable": 0
+  },
+  {
+   "i": 285,
+   "gen": "Bounds (Set.range fun n => predictablePart f \u2131 \u03bc n \u03c9)\n\u22a2 \u00acBddAbove (Set.range fun n => predictablePart f \u2131 \u03bc n \u03c9)\n<|TACTIC|>\nhave b : b \u2208 Set.range fun n => predictablePart f \ufffd",
+   "gold": "rintro \u27e8b, hbdd\u27e9",
+   "exact": 0,
+   "sim": 0.0629,
+   "echo_ceiling": 0.3125,
+   "sim_minus_echo": -0.2496,
+   "recoverable": 0
+  },
+  {
+   "i": 286,
+   "gen": "rw [\u2190 <a>Nat.minFac_le_one</a> h1, <a>Nat.minFac_le_one</a> h1, <a>Nat.minFac_le_one</a> h1, <a>Nat.minFac_le",
+   "gold": "rw [mul_one] at h1",
+   "exact": 0,
+   "sim": 0.1468,
+   "echo_ceiling": 0.1667,
+   "sim_minus_echo": -0.0199,
+   "recoverable": 0
+  },
+  {
+   "i": 287,
+   "gen": "simp only [<a>Matrix.toMatrix_apply</a>, <a>Matrix.toMatrix_apply</a>, <a>Matrix.toMatrix_apply</a>, <a>Matrix.toMatrix_apply</a>, <a>Matrix.toMatrix_apply</a>]",
+   "gold": "exact (h (Finset.mem_univ _)).False.elim",
+   "exact": 0,
+   "sim": 0.0813,
+   "echo_ceiling": 0.25,
+   "sim_minus_echo": -0.1687,
+   "recoverable": 0
+  },
+  {
+   "i": 288,
+   "gen": "simp only [<a>List.length_merge</a>, <a>List.length_merge</a>, <a>List.length_merge</a>, <a>List.length_succ</a>, <a>List.length_succ</a>, <a>List.length",
+   "gold": "simp",
+   "exact": 0,
+   "sim": 0.0261,
+   "echo_ceiling": 0.0,
+   "sim_minus_echo": 0.0261,
+   "recoverable": 0
+  },
+  {
+   "i": 289,
+   "gen": "simp only [<a>MeasureTheory.Measure.comp_apply</a>, <a>MeasureTheory.Measure.comp_apply</a>, <a>MeasureTheory.Measure.comp_apply</a>, <a>MeasureTheory.Measure.comp_apply</a>, <",
+   "gold": "intro x f",
+   "exact": 0,
+   "sim": 0.0341,
+   "echo_ceiling": 0.4444,
+   "sim_minus_echo": -0.4104,
+   "recoverable": 0
+  },
+  {
+   "i": 290,
+   "gen": "rw [<a>MeasureTheory.Measure.map_mul</a>, <a>MeasureTheory.Measure.map_mul</a>]",
+   "gold": "rw [\u2190 h, MeasureTheory.Measure.map_apply (MeasurableMul.measurable_const_mul _) hA]",
+   "exact": 0,
+   "sim": 0.5422,
+   "echo_ceiling": 0.2048,
+   "sim_minus_echo": 0.3373,
+   "recoverable": 0
+  },
+  {
+   "i": 291,
+   "gen": "rw [<a>Submonoid.mem_span_singleton</a>, <a>Submonoid.mem_span_singleton</a>, <a>Submonoid.mem_span_singleton</a>, <a>Submonoid.mem_singleton</a>, <",
+   "gold": "refine (FractionalIdeal.mem_coeIdeal S).Iff.trans (Iff.trans ?_ (FractionalIdeal.mem_spanSingleton S).Iff.symm)",
+   "exact": 0,
+   "sim": 0.2162,
+   "echo_ceiling": 0.1802,
+   "sim_minus_echo": 0.036,
+   "recoverable": 0
+  },
+  {
+   "i": 292,
+   "gen": "exact <a>IsPrimitiveRoot.nontrivial_cyclotomic</a> n",
+   "gold": "refine Multiset.nodup_of_le (Polynomial.roots.le_of_dvd (Polynomial.X_pow_sub_C_ne_zero (NeZero.pos_of_neZero_natCast R) 1) <| Polynomial.cyclotomic.dvd_X_pow_sub_one n R) h\u03b6.nthRoots_one_nodup",
+   "exact": 0,
+   "sim": 0.1554,
+   "echo_ceiling": 0.2073,
+   "sim_minus_echo": -0.0518,
+   "recoverable": 0
+  },
+  {
+   "i": 293,
+   "gen": "simp [<a>Ring.leadingCoeff_eq_zero</a>, <a>Ring.leadingCoeff_eq_zero</a>, <a>Ring.leadingCoeff_eq_zero</a>, <a>Ring.leadingCoeff_eq_zero</",
+   "gold": "rw [Polynomial.leadingCoeff, Polynomial.leadingCoeff, Polynomial.natDegree_neg, Polynomial.coeff_neg]",
+   "exact": 0,
+   "sim": 0.3406,
+   "echo_ceiling": 0.1386,
+   "sim_minus_echo": 0.202,
+   "recoverable": 0
+  },
+  {
+   "i": 294,
+   "gen": "simp only [<a>List.length_merge_eq_self</a>, <a>List.length_eq_self</a>, <a>List.length_eq_self</a>, <a>List.length_eq_self</a>, <a>List.length_",
+   "gold": "simp_arith [length_merge s (a::l) r]",
+   "exact": 0,
+   "sim": 0.1667,
+   "echo_ceiling": 0.3333,
+   "sim_minus_echo": -0.1667,
+   "recoverable": 0
+  },
+  {
+   "i": 295,
+   "gen": "rw [<a>Polynomial.coeff_zero</a>, <a>Polynomial.coeff_zero</a>, <a>Polynomial.coeff_zero</a>, <a>Polynomial.coeff_zero</a>, <a>Polynomial.",
+   "gold": "rw [h]",
+   "exact": 0,
+   "sim": 0.029,
+   "echo_ceiling": 0.3333,
+   "sim_minus_echo": -0.3043,
+   "recoverable": 0
+  },
+  {
+   "i": 296,
+   "gen": "tfae_1_iff_2 : (\u03c6 x).HasEigenvalue 0\n\ncase tfae_5_to_6\nR : Type u_1\nK : Type u_2\nM : Type u_3\ninst\u271d\u2078 : CommRing R\ninst\ufffd",
+   "gold": "contrapose!",
+   "exact": 0,
+   "sim": 0.0504,
+   "echo_ceiling": 0.3636,
+   "sim_minus_echo": -0.3132,
+   "recoverable": 0
+  },
+  {
+   "i": 297,
+   "gen": "simp only [<a>Metric.sphere_zero</a>, <a>Metric.sphere_zero_iff</a>, <a>Metric.sphere_zero_iff</a>, <a>Metric.sphere_zero_iff</a>, <a>Metric.sphere_zero_iff</",
+   "gold": "simp_rw [Set.mem_setOf, mem_sphere_zero_iff_norm, EuclideanSpace.norm_eq, Real.norm_eq_abs, sq_abs, Real.sqrt_eq_iff_sq_eq this hr, eq_comm]",
+   "exact": 0,
+   "sim": 0.2722,
+   "echo_ceiling": 0.1786,
+   "sim_minus_echo": 0.0936,
+   "recoverable": 0
+  },
+  {
+   "i": 298,
+   "gen": "intro a ha",
+   "gold": "refine (mem_filter.mp ha).And.elim ?_",
+   "exact": 0,
+   "sim": 0.1892,
+   "echo_ceiling": 0.2162,
+   "sim_minus_echo": -0.027,
+   "recoverable": 0
+  },
+  {
+   "i": 299,
+   "gen": "have hn' : (J \u2294 K) ^ n \u2264 I := by rw [\u2190 <a>Submodule.mem_radical</a>, <a>Submodule.mem_radical</a>, <a>Submodule.mem_radical</a>, <a",
+   "gold": "obtain \u27e8n, hn\u27e9 := hJ fun x hx => hJK <| Ideal.mem_sup_left hx",
+   "exact": 0,
+   "sim": 0.1832,
+   "echo_ceiling": 0.2131,
+   "sim_minus_echo": -0.0299,
+   "recoverable": 0
+  }
+ ]
+}
