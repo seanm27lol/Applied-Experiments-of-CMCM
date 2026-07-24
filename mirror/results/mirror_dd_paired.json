@@ -1,0 +1,167 @@
+{
+ "job_id": "d9hupjt0k0jc738iqq5g",
+ "backend": "ibm_fez",
+ "shots": 8192,
+ "results": [
+  {
+   "name": "true_mod5_4_nodd",
+   "cond": "nodd",
+   "kind": "true",
+   "base": "mod5_4",
+   "frame_str": "10010",
+   "n_delay": 0,
+   "n_x": 3,
+   "return_prob": 0.6199
+  },
+  {
+   "name": "true_mod5_4_dd",
+   "cond": "dd",
+   "kind": "true",
+   "base": "mod5_4",
+   "frame_str": "10010",
+   "n_delay": 340,
+   "n_x": 119,
+   "return_prob": 0.5436
+  },
+  {
+   "name": "deranged_mod5_4_nodd",
+   "cond": "nodd",
+   "kind": "deranged",
+   "base": "mod5_4",
+   "frame_str": "01010",
+   "n_delay": 0,
+   "n_x": 3,
+   "return_prob": 0.0695
+  },
+  {
+   "name": "deranged_mod5_4_dd",
+   "cond": "dd",
+   "kind": "deranged",
+   "base": "mod5_4",
+   "frame_str": "01010",
+   "n_delay": 311,
+   "n_x": 101,
+   "return_prob": 0.067
+  },
+  {
+   "name": "true_tof_3_nodd",
+   "cond": "nodd",
+   "kind": "true",
+   "base": "tof_3",
+   "frame_str": "11011",
+   "n_delay": 0,
+   "n_x": 4,
+   "return_prob": 0.6921
+  },
+  {
+   "name": "true_tof_3_dd",
+   "cond": "dd",
+   "kind": "true",
+   "base": "tof_3",
+   "frame_str": "11011",
+   "n_delay": 275,
+   "n_x": 80,
+   "return_prob": 0.6698
+  },
+  {
+   "name": "deranged_tof_3_nodd",
+   "cond": "nodd",
+   "kind": "deranged",
+   "base": "tof_3",
+   "frame_str": "11101",
+   "n_delay": 0,
+   "n_x": 4,
+   "return_prob": 0.016
+  },
+  {
+   "name": "deranged_tof_3_dd",
+   "cond": "dd",
+   "kind": "deranged",
+   "base": "tof_3",
+   "frame_str": "11101",
+   "n_delay": 293,
+   "n_x": 92,
+   "return_prob": 0.0243
+  },
+  {
+   "name": "true_barenco_tof_3_nodd",
+   "cond": "nodd",
+   "kind": "true",
+   "base": "barenco_tof_3",
+   "frame_str": "01101",
+   "n_delay": 0,
+   "n_x": 4,
+   "return_prob": 0.5952
+  },
+  {
+   "name": "true_barenco_tof_3_dd",
+   "cond": "dd",
+   "kind": "true",
+   "base": "barenco_tof_3",
+   "frame_str": "01101",
+   "n_delay": 306,
+   "n_x": 96,
+   "return_prob": 0.5906
+  },
+  {
+   "name": "deranged_barenco_tof_3_nodd",
+   "cond": "nodd",
+   "kind": "deranged",
+   "base": "barenco_tof_3",
+   "frame_str": "000111111",
+   "n_delay": 0,
+   "n_x": 6,
+   "return_prob": 0.0013
+  },
+  {
+   "name": "deranged_barenco_tof_3_dd",
+   "cond": "dd",
+   "kind": "deranged",
+   "base": "barenco_tof_3",
+   "frame_str": "000111111",
+   "n_delay": 441,
+   "n_x": 186,
+   "return_prob": 0.0015
+  },
+  {
+   "name": "true_mod_mult_55_nodd",
+   "cond": "nodd",
+   "kind": "true",
+   "base": "mod_mult_55",
+   "frame_str": "100101100",
+   "n_delay": 0,
+   "n_x": 7,
+   "return_prob": 0.2701
+  },
+  {
+   "name": "true_mod_mult_55_dd",
+   "cond": "dd",
+   "kind": "true",
+   "base": "mod_mult_55",
+   "frame_str": "100101100",
+   "n_delay": 503,
+   "n_x": 225,
+   "return_prob": 0.2313
+  },
+  {
+   "name": "deranged_mod_mult_55_nodd",
+   "cond": "nodd",
+   "kind": "deranged",
+   "base": "mod_mult_55",
+   "frame_str": "101111111",
+   "n_delay": 0,
+   "n_x": 14,
+   "return_prob": 0.0005
+  },
+  {
+   "name": "deranged_mod_mult_55_dd",
+   "cond": "dd",
+   "kind": "deranged",
+   "base": "mod_mult_55",
+   "frame_str": "101111111",
+   "n_delay": 449,
+   "n_x": 202,
+   "return_prob": 0.0021
+  }
+ ]
+}

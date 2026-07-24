@@ -1,0 +1,43 @@
+{
+ "pair": "mod_mult_55",
+ "backend": "ibm_fez",
+ "job_id": "d9huqq4honhs73admhag",
+ "layout": [
+  141,
+  123,
+  143,
+  145,
+  124,
+  144,
+  136,
+  142,
+  140
+ ],
+ "seed_A": 1,
+ "seed_B": 6,
+ "arms": {
+  "baseline_A": {
+   "arm": "baseline",
+   "seed": 1,
+   "n2q": 99,
+   "depth": 241,
+   "fidelity": 0.63916
+  },
+  "optimized_A": {
+   "arm": "optimized",
+   "seed": 1,
+   "n2q": 102,
+   "depth": 205,
+   "fidelity": 0.69958
+  },
+  "optimized_B": {
+   "arm": "optimized",
+   "seed": 6,
+   "n2q": 114,
+   "depth": 223,
+   "fidelity": 0.56494
+  }
+ },
+ "delta_matched_layout": 0.06042,
+ "routing_effect": -0.13464
+}
