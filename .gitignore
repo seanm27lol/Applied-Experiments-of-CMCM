@@ -4,3 +4,6 @@ edits.jsonl
 __pycache__/
 .venv/
 .DS_Store
+proof_witness/data/
+proof_witness/ckpt/
+.venv/
