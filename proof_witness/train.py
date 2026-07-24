@@ -66,7 +66,7 @@ def run(model, tok, ds, outdir, epochs, lr, bs):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--arm", required=True,
-                    choices=["pw_trace", "pw_pair", "pw_endpoint"])
+                    choices=["pw_trace", "pw_pair", "pw_endpoint", "pw_shuffle"])
     ap.add_argument("--model", default="EleutherAI/pythia-160m")
     ap.add_argument("--stage2_n", type=int, default=2000)
     ap.add_argument("--epochs", type=float, default=1)
@@ -83,8 +83,12 @@ def main():
     tok.add_special_tokens({"additional_special_tokens": [B, T, A, E]})
     if tok.pad_token is None:
         tok.pad_token = tok.eos_token
-    model = AutoModelForCausalLM.from_pretrained(args.model)
-    model.resize_token_embeddings(len(tok), mean_resizing=False)
+    # pythia configs declare float16; transformers>=5 honours that and
+    # AdamW on raw fp16 weights overflows immediately. Force fp32.
+    model = AutoModelForCausalLM.from_pretrained(
+        args.model, dtype=torch.float32)
+    if len(tok) > model.get_input_embeddings().weight.shape[0]:
+        model.resize_token_embeddings(len(tok), mean_resizing=False)
 
     s1 = [json.loads(l) for l in open(f"data/{args.arm}_train.jsonl")]
     s1 = [d for d in s1 if len(d["text"].strip()) > 20]

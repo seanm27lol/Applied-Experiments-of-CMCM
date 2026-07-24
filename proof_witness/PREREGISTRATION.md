@@ -40,9 +40,14 @@ in Part I are fully determined by their endpoints).
 
 Model: EleutherAI/pythia-160m unless amended here before running.
 Seeds: 0. Eval N: 300. Any deviation gets its own dated note below.
-## Deviation note, 2026-07-23
-First training attempt diverged (NaN gradients from step ~50). Fixes:
-fp32 instead of bf16, mean_resizing=False on token embedding resize,
-lr1 3e-4 -> 5e-5, lr2 1e-4 -> 2e-5, warmup 3%, empty-doc filter, and a
-finite-weights assertion after each stage. Plumbing only: arms, data,
-metrics, and predictions unchanged.
+
+## Addendum, 2026-07-24: shuffle control (committed before running)
+Confound in P1: pw_trace alone saw tactic-format text in stage 1, so its
+advantage could be format exposure rather than witness content. Control:
+pw_shuffle trains on BEFORE + wrong-but-real TACTIC + AFTER (derangement
+over training steps). Predictions:
+C1: pw_trace beats pw_shuffle on sim_minus_echo, p < 0.05, meanD >= +0.02
+    (the advantage is witness CONTENT).
+C2: no committed direction for pw_shuffle vs pw_pair; reported as observed.
+Falsification: if pw_trace ~ pw_shuffle, P1's effect is format exposure
+and the recoverability claim must be withdrawn, not softened.

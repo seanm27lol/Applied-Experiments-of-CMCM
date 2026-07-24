@@ -71,7 +71,8 @@ def main():
     os.makedirs("results", exist_ok=True)
 
     tok = AutoTokenizer.from_pretrained(f"ckpt/{args.arm}")
-    model = AutoModelForCausalLM.from_pretrained(f"ckpt/{args.arm}")
+    model = AutoModelForCausalLM.from_pretrained(
+        f"ckpt/{args.arm}", dtype=torch.float32)
     device = "cuda" if torch.cuda.is_available() else "cpu"
     model.to(device).eval()
     end_id = tok.convert_tokens_to_ids(E)

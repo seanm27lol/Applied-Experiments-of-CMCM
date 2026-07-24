@@ -8,8 +8,16 @@ from scipy.stats import wilcoxon
 def items(arm): return json.load(open(f"results/eval_{arm}.json"))["items"]
 
 tr, pa, en = items("pw_trace"), items("pw_pair"), items("pw_endpoint")
-for name, a, b, pred in [("P1 pw_trace - pw_pair", tr, pa, "trace wins"),
-                         ("P2 pw_pair - pw_endpoint", pa, en, "pair wins")]:
+try:
+    sh = items("pw_shuffle")
+except FileNotFoundError:
+    sh = None
+comps = [("P1 pw_trace - pw_pair", tr, pa, "trace wins"),
+         ("P2 pw_pair - pw_endpoint", pa, en, "pair wins")]
+if sh is not None:
+    comps += [("C1 pw_trace - pw_shuffle", tr, sh, "content, not format"),
+              ("C2 pw_shuffle - pw_pair", sh, pa, "format exposure alone")]
+for name, a, b, pred in comps:
     for m in ("sim_minus_echo", "sim", "exact"):
         d = [x[m] - y[m] for x, y in zip(a, b)]
         mean = sum(d) / len(d)

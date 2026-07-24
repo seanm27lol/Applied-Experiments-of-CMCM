@@ -24,10 +24,12 @@ def clip(s):
     return s[-MAX_STATE:] if len(s) > MAX_STATE else s
 
 
-def doc(ex, arm):
+def doc(ex, arm, wrong_tactic=None):
     b, t, a = clip(ex["state"]), detag(ex["tactic"]).strip(), clip(ex["target_state"])
     if arm == "pw_trace":
         return f"{B}\n{b}\n{T}\n{t}\n{A}\n{a}\n{E}\n"
+    if arm == "pw_shuffle":
+        return f"{B}\n{b}\n{T}\n{wrong_tactic}\n{A}\n{a}\n{E}\n"
     if arm == "pw_pair":
         return f"{B}\n{b}\n{A}\n{a}\n{E}\n"
     return f"{A}\n{a}\n{E}\n"  # pw_endpoint
@@ -60,11 +62,19 @@ def main():
     rng.shuffle(train_pool)
     rng.shuffle(eval_pool)
 
-    for arm in ("pw_trace", "pw_pair", "pw_endpoint"):
+    # derangement of tactics for the shuffle control: every step gets a
+    # real tactic from a DIFFERENT step (format exposure, no valid witness)
+    tactics = [detag(ex["tactic"]).strip() for ex in train_pool]
+    shifted = tactics[1:] + tactics[:1]
+    wrong = {id(ex): (shifted[i] if shifted[i] != tactics[i]
+                      else tactics[(i + 2) % len(tactics)])
+             for i, ex in enumerate(train_pool)}
+
+    for arm in ("pw_trace", "pw_pair", "pw_endpoint", "pw_shuffle"):
         used, n = 0, 0
         with open(f"data/{arm}_train.jsonl", "w") as f:
             for ex in train_pool:
-                d = doc(ex, arm)
+                d = doc(ex, arm, wrong.get(id(ex)))
                 if used + len(d) > args.budget:
                     break
                 f.write(json.dumps({"text": d}) + "\n")
