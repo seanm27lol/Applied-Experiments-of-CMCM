@@ -74,10 +74,12 @@ def main():
     ap.add_argument("--bs", type=int, default=8)
     ap.add_argument("--lr1", type=float, default=5e-5)
     ap.add_argument("--lr2", type=float, default=2e-5)
+    ap.add_argument("--seed", type=int, default=0,
+                    help="0 = the registered run; 1,2,... = replicates")
     ap.add_argument("--smoke", action="store_true",
                     help="tiny run to validate plumbing")
     args = ap.parse_args()
-    torch.manual_seed(0)
+    torch.manual_seed(args.seed)
 
     tok = AutoTokenizer.from_pretrained(args.model)
     tok.add_special_tokens({"additional_special_tokens": [B, T, A, E]})
@@ -101,7 +103,7 @@ def main():
 
     # stage 2: same examples for every arm (seeded from the trace corpus's
     # source triples via a fixed file all arms share)
-    rng = random.Random(1)
+    rng = random.Random(1 + args.seed)
     pool = [json.loads(l) for l in open("data/stage2_pool.jsonl")]
     s2 = [{"text": stage2_doc(ex)}
           for ex in rng.sample(pool, min(args.stage2_n, len(pool)))]
@@ -111,7 +113,8 @@ def main():
         f"ckpt/{args.arm}_s2", 1, args.lr2, args.bs)
     assert_finite(model, "stage 2")
 
-    outdir = f"ckpt/{args.arm}"
+    suffix = "" if args.seed == 0 else f"_s{args.seed}"
+    outdir = f"ckpt/{args.arm}{suffix}"
     model.save_pretrained(outdir)
     tok.save_pretrained(outdir)
     print(f"saved {outdir}")

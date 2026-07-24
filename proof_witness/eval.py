@@ -66,13 +66,15 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--arm", required=True)
     ap.add_argument("--n", type=int, default=300)
+    ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--max_new", type=int, default=64)
     args = ap.parse_args()
     os.makedirs("results", exist_ok=True)
 
-    tok = AutoTokenizer.from_pretrained(f"ckpt/{args.arm}")
+    suffix = "" if args.seed == 0 else f"_s{args.seed}"
+    tok = AutoTokenizer.from_pretrained(f"ckpt/{args.arm}{suffix}")
     model = AutoModelForCausalLM.from_pretrained(
-        f"ckpt/{args.arm}", dtype=torch.float32)
+        f"ckpt/{args.arm}{suffix}", dtype=torch.float32)
     device = "cuda" if torch.cuda.is_available() else "cpu"
     model.to(device).eval()
     end_id = tok.convert_tokens_to_ids(E)
@@ -110,7 +112,7 @@ def main():
         sim_minus_echo_mean=sum(x["sim_minus_echo"] for x in items) / n,
         recoverable_rate=sum(x["recoverable"] for x in items) / n,
         items=items)
-    with open(f"results/eval_{args.arm}.json", "w") as f:
+    with open(f"results/eval_{args.arm}{suffix}.json", "w") as f:
         json.dump(summary, f, indent=1)
     for k in ("exact_match", "sim_mean", "sim_minus_echo_mean",
               "recoverable_rate"):

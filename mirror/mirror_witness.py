@@ -96,6 +96,10 @@ def main():
                     choices=["check", "aer", "hw", "score"])
     ap.add_argument("--job_id")
     ap.add_argument("--shots", type=int, default=8192)
+    ap.add_argument("--dd", action="store_true",
+                    help="enable dynamical decoupling (XY4) on idle qubits")
+    ap.add_argument("--tag", default="",
+                    help="suffix for the results filename")
     args = ap.parse_args()
     os.makedirs("results", exist_ok=True)
     jobs = build_all()
@@ -145,12 +149,16 @@ def main():
             counts = [res.get_counts(i) for i in range(len(circs))]
         else:
             sampler = SamplerV2(backend)
+            if args.dd:
+                sampler.options.dynamical_decoupling.enable = True
+                sampler.options.dynamical_decoupling.sequence_type = "XY4"
+                print("dynamical decoupling: XY4 enabled")
             job = sampler.run(circs, shots=args.shots)
             print("job id:", job.job_id(), "(waiting...)")
             res = job.result()
             counts = [getattr(r.data, list(r.data.keys())[0] if hasattr(
                 r.data, 'keys') else 'meas').get_counts() for r in res]
-        score(jobs, counts, args.mode, args.shots)
+        score(jobs, counts, args.mode + args.tag, args.shots)
 
     if args.mode == "score":
         raise SystemExit("score mode: fetch counts for --job_id via "
