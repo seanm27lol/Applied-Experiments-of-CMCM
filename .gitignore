@@ -19,3 +19,4 @@ proof_witness/data/
 proof_witness/ckpt/
 .venv/
 __pycache__/
+proof_witness/ckpt_s1/
