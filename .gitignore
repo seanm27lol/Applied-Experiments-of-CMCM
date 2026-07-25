@@ -7,3 +7,9 @@ __pycache__/
 proof_witness/data/
 proof_witness/ckpt/
 .venv/
+part_iv/data/
+part_iv/ckpt/
+proof_witness/data/
+proof_witness/ckpt/
+.venv/
+__pycache__/
