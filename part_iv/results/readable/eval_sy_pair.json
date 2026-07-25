@@ -1,0 +1,2711 @@
+{
+ "opset": "readable",
+ "arm": "sy_pair",
+ "seed": 0,
+ "n": 300,
+ "exact_match": 0.0,
+ "tok_acc_mean": 0.16056,
+ "mean_fiber": 1.0,
+ "items": [
+  {
+   "i": 0,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP3 OP2 OP5 OP1 OP3 OP4",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 1,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP6 OP3 OP1 OP0 OP5 OP2",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 2,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP2 OP3",
+   "gold": "OP4 OP6 OP5 OP2 OP3 OP7",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 3,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP3 OP3 OP3",
+   "gold": "OP7 OP7 OP4 OP0 OP5 OP0",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 4,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP4 OP1 OP2 OP7 OP6 OP3",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 5,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP3 OP1 OP2",
+   "gold": "OP1 OP3 OP7 OP5 OP3 OP5",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 6,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP3 OP3 OP0 OP4 OP6 OP2",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 7,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP3 OP0 OP0 OP3 OP2 OP5",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 8,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP6 OP5 OP3 OP6 OP1 OP4",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 9,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP0 OP7 OP1 OP0 OP0 OP3",
+   "exact": 0,
+   "tok_acc": 0.5,
+   "n_pred": 6
+  },
+  {
+   "i": 10,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP3 OP3 OP3 OP3",
+   "gold": "OP1 OP7 OP0 OP0 OP3 OP6",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 11,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP2 OP3",
+   "gold": "OP5 OP5 OP5 OP6 OP4 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 12,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP2",
+   "gold": "OP1 OP6 OP7 OP5 OP4 OP3",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 13,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP2 OP7 OP0 OP7 OP6 OP2",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 14,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP3",
+   "gold": "OP4 OP0 OP6 OP2 OP1 OP5",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 15,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP3",
+   "gold": "OP4 OP0 OP6 OP0 OP1 OP4",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 16,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP3 OP4 OP3 OP4 OP2 OP2",
+   "exact": 0,
+   "tok_acc": 0.6667,
+   "n_pred": 6
+  },
+  {
+   "i": 17,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP2 OP3",
+   "gold": "OP1 OP6 OP4 OP6 OP5 OP0",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 18,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP5 OP3 OP4 OP3 OP5 OP7",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 19,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP2 OP3 OP5 OP3 OP1 OP0",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 20,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP3",
+   "gold": "OP3 OP0 OP1 OP4 OP3 OP1",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 21,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP4 OP5 OP6 OP1 OP2 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 22,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP5 OP6 OP2 OP5 OP1 OP7",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 23,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP6 OP0 OP7 OP1 OP6 OP1",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 24,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP4",
+   "gold": "OP2 OP1 OP3 OP5 OP7 OP7",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 25,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP6 OP5 OP7 OP4 OP1 OP4",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 26,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP4 OP0 OP1 OP2 OP0 OP2",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 27,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP2 OP5 OP0 OP4 OP2 OP4",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 28,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP2 OP3 OP2 OP2",
+   "gold": "OP0 OP4 OP5 OP2 OP6 OP7",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 29,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP0 OP3 OP0 OP2 OP0 OP2",
+   "exact": 0,
+   "tok_acc": 0.5,
+   "n_pred": 6
+  },
+  {
+   "i": 30,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP3",
+   "gold": "OP4 OP1 OP2 OP1 OP5 OP7",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 31,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP5 OP6 OP6 OP3 OP7 OP3",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 32,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP0 OP4 OP5 OP6 OP5 OP0",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 33,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP2 OP7 OP7 OP0 OP2 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 34,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP3 OP4 OP3",
+   "gold": "OP2 OP6 OP0 OP2 OP1 OP4",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 35,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP0 OP6 OP5 OP3 OP7 OP0",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 36,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP0 OP4 OP1 OP5 OP1 OP0",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 37,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP4",
+   "gold": "OP2 OP0 OP3 OP3 OP7 OP3",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 38,
+   "fiber": 1,
+   "gen": "OP1 OP1 OP1 OP1 OP1 OP1",
+   "gold": "OP1 OP6 OP1 OP7 OP2 OP0",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 39,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP4 OP2 OP4 OP0 OP3 OP1",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 40,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP2 OP3",
+   "gold": "OP0 OP7 OP4 OP2 OP5 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 41,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP4",
+   "gold": "OP3 OP7 OP2 OP6 OP6 OP5",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 42,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP3 OP5 OP3 OP4 OP0 OP2",
+   "exact": 0,
+   "tok_acc": 0.5,
+   "n_pred": 6
+  },
+  {
+   "i": 43,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP2 OP3 OP2 OP3",
+   "gold": "OP1 OP5 OP2 OP3 OP1 OP1",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 44,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP3 OP4 OP3",
+   "gold": "OP5 OP0 OP0 OP6 OP0 OP4",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 45,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP7 OP2 OP4 OP7 OP6 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 46,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP4 OP3 OP6 OP5 OP6 OP3",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 47,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP2 OP7 OP1 OP5 OP3 OP5",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 48,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP7 OP5 OP7 OP5 OP5 OP7",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 49,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP1 OP1 OP1 OP1",
+   "gold": "OP1 OP4 OP4 OP7 OP7 OP7",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 50,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP7 OP5 OP0 OP6 OP5 OP1",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 51,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP0 OP6 OP5 OP4 OP3 OP3",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 52,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP4 OP2 OP7 OP6 OP0 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 53,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP3 OP0 OP0 OP5 OP1 OP1",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 54,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP1 OP0 OP7 OP1 OP2 OP0",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 55,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP5 OP6 OP6 OP5 OP3 OP2",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 56,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP3 OP4 OP3",
+   "gold": "OP6 OP2 OP3 OP4 OP0 OP5",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 57,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP3",
+   "gold": "OP2 OP4 OP6 OP0 OP0 OP2",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 58,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP3",
+   "gold": "OP3 OP2 OP0 OP5 OP3 OP6",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 59,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP4",
+   "gold": "OP5 OP3 OP5 OP7 OP5 OP4",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 60,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP3 OP3 OP1",
+   "gold": "OP6 OP2 OP2 OP7 OP3 OP6",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 61,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP4 OP7 OP1 OP5 OP2 OP4",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 62,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP0 OP7 OP7 OP3 OP1 OP3",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 63,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP3",
+   "gold": "OP5 OP6 OP3 OP0 OP5 OP4",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 64,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP5 OP7 OP0 OP2 OP7 OP5",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 65,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP5 OP4 OP6 OP4 OP5 OP4",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 66,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP2 OP1 OP3 OP6 OP0 OP5",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 67,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP2 OP3 OP3 OP2",
+   "gold": "OP7 OP3 OP2 OP5 OP2 OP7",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 68,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP0 OP3 OP1 OP7 OP7 OP0",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 69,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP6 OP6 OP6 OP3 OP6 OP4",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 70,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP3 OP5 OP3 OP3 OP2 OP6",
+   "exact": 0,
+   "tok_acc": 0.5,
+   "n_pred": 6
+  },
+  {
+   "i": 71,
+   "fiber": 1,
+   "gen": "OP0 OP1 OP0 OP1 OP0 OP1",
+   "gold": "OP1 OP5 OP0 OP4 OP0 OP6",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 72,
+   "fiber": 1,
+   "gen": "OP1 OP1 OP2 OP3 OP4 OP3",
+   "gold": "OP0 OP2 OP2 OP0 OP5 OP5",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 73,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP0 OP6 OP3 OP1 OP0 OP1",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 74,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP2 OP3",
+   "gold": "OP2 OP6 OP7 OP6 OP5 OP4",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 75,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP4",
+   "gold": "OP3 OP2 OP2 OP0 OP1 OP6",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 76,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP0 OP7 OP0 OP2 OP7 OP5",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 77,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP3 OP4 OP6 OP3 OP2 OP1",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 78,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP1 OP5 OP4 OP5 OP2 OP1",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 79,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP4",
+   "gold": "OP7 OP3 OP0 OP6 OP3 OP7",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 80,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP2 OP3",
+   "gold": "OP1 OP6 OP4 OP3 OP6 OP6",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 81,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP3 OP2 OP3",
+   "gold": "OP1 OP5 OP2 OP2 OP1 OP1",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 82,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP3 OP3 OP7 OP7 OP3 OP0",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 83,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP3",
+   "gold": "OP4 OP6 OP5 OP2 OP1 OP7",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 84,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP4",
+   "gold": "OP3 OP3 OP2 OP2 OP7 OP0",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 85,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP4 OP3 OP5 OP1 OP4 OP0",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 86,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP1 OP5 OP5 OP3 OP6 OP2",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 87,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP1 OP0 OP2 OP7 OP7 OP4",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 88,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP3 OP3 OP3 OP1",
+   "gold": "OP1 OP5 OP4 OP7 OP1 OP0",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 89,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP1 OP1 OP1 OP1",
+   "gold": "OP1 OP5 OP3 OP1 OP0 OP0",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 90,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP3 OP5 OP0 OP4 OP0 OP1",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 91,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP3",
+   "gold": "OP4 OP1 OP7 OP1 OP0 OP1",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 92,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP4 OP2 OP5 OP3 OP3 OP6",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 93,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP6 OP2 OP5 OP6 OP5 OP0",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 94,
+   "fiber": 1,
+   "gen": "OP0 OP1 OP2 OP3 OP3 OP4",
+   "gold": "OP0 OP3 OP3 OP0 OP2 OP3",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 95,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP6 OP2 OP5 OP1 OP0 OP1",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 96,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP3",
+   "gold": "OP6 OP6 OP4 OP2 OP2 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 97,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP2 OP3 OP7 OP1 OP5 OP1",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 98,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP2 OP3",
+   "gold": "OP3 OP2 OP4 OP0 OP4 OP1",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 99,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP3",
+   "gold": "OP4 OP3 OP5 OP5 OP4 OP3",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 100,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP3 OP4 OP3",
+   "gold": "OP6 OP3 OP0 OP1 OP0 OP7",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 101,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP4 OP3 OP3 OP3",
+   "gold": "OP0 OP2 OP2 OP2 OP7 OP3",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 102,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP7 OP2 OP0 OP0 OP0 OP5",
+   "exact": 0,
+   "tok_acc": 0.5,
+   "n_pred": 6
+  },
+  {
+   "i": 103,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP7 OP5 OP2 OP7 OP6 OP0",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 104,
+   "fiber": 1,
+   "gen": "OP1 OP1 OP1 OP1 OP1 OP1",
+   "gold": "OP0 OP3 OP7 OP6 OP1 OP2",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 105,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP6 OP7 OP3 OP3 OP1 OP1",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 106,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP7 OP2 OP0 OP1 OP1 OP7",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 107,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP5 OP3 OP0 OP3 OP0 OP7",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 108,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP3 OP4 OP3",
+   "gold": "OP6 OP2 OP2 OP1 OP5 OP3",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 109,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP3 OP4 OP7 OP3 OP7 OP1",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 110,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP3 OP3 OP1",
+   "gold": "OP1 OP3 OP3 OP4 OP7 OP3",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 111,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP0 OP4 OP2 OP2 OP3 OP6",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 112,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP6 OP2 OP0 OP0 OP1 OP3",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 113,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP3",
+   "gold": "OP7 OP2 OP4 OP6 OP0 OP1",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 114,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP4",
+   "gold": "OP4 OP0 OP7 OP2 OP3 OP4",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 115,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP3 OP3 OP3 OP3",
+   "gold": "OP2 OP2 OP3 OP0 OP7 OP1",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 116,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP5 OP3 OP6 OP4 OP0 OP1",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 117,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP4",
+   "gold": "OP2 OP4 OP6 OP5 OP7 OP4",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 118,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP3 OP4 OP7 OP3 OP5 OP0",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 119,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP5 OP3 OP0 OP5 OP0 OP5",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 120,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP5 OP7 OP7 OP0 OP2 OP0",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 121,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP0 OP6 OP4 OP5 OP0 OP2",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 122,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP3 OP0 OP0 OP2 OP0 OP4",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 123,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP4",
+   "gold": "OP3 OP7 OP4 OP3 OP5 OP0",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 124,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP4",
+   "gold": "OP4 OP7 OP0 OP4 OP6 OP7",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 125,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP2 OP3 OP2 OP3",
+   "gold": "OP7 OP7 OP3 OP2 OP4 OP4",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 126,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP3 OP4 OP4 OP5 OP7 OP4",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 127,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP2 OP3 OP2 OP2",
+   "gold": "OP6 OP5 OP3 OP2 OP7 OP0",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 128,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP6 OP7 OP2 OP1 OP7 OP1",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 129,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP2 OP3",
+   "gold": "OP5 OP7 OP2 OP6 OP4 OP7",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 130,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP2 OP3",
+   "gold": "OP1 OP2 OP2 OP4 OP3 OP4",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 131,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP2 OP2 OP2 OP3 OP1 OP1",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 132,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP1 OP1 OP1 OP1",
+   "gold": "OP1 OP7 OP2 OP0 OP0 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 133,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP3 OP4 OP3",
+   "gold": "OP0 OP0 OP5 OP4 OP3 OP4",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 134,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP4",
+   "gold": "OP5 OP4 OP4 OP0 OP4 OP6",
+   "exact": 0,
+   "tok_acc": 0.5,
+   "n_pred": 6
+  },
+  {
+   "i": 135,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP3",
+   "gold": "OP4 OP0 OP4 OP3 OP5 OP1",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 136,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP3 OP3 OP5 OP4 OP6 OP0",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 137,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP1 OP1 OP2 OP0 OP7 OP7",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 138,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP2 OP3 OP2 OP3",
+   "gold": "OP2 OP7 OP3 OP6 OP6 OP4",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 139,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP3 OP3 OP3 OP3",
+   "gold": "OP1 OP7 OP3 OP1 OP3 OP3",
+   "exact": 0,
+   "tok_acc": 0.5,
+   "n_pred": 6
+  },
+  {
+   "i": 140,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP3 OP7 OP7 OP3 OP5 OP3",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 141,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP1 OP1 OP2 OP1",
+   "gold": "OP1 OP3 OP3 OP1 OP5 OP5",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 142,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP2",
+   "gold": "OP5 OP4 OP6 OP7 OP1 OP4",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 143,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP2 OP3 OP2 OP3",
+   "gold": "OP3 OP3 OP1 OP2 OP4 OP1",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 144,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP2 OP2 OP3 OP0 OP6 OP1",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 145,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP3",
+   "gold": "OP1 OP3 OP2 OP7 OP5 OP3",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 146,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP2 OP0 OP5 OP1 OP1 OP4",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 147,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP2 OP3 OP2 OP3",
+   "gold": "OP1 OP4 OP3 OP6 OP4 OP5",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 148,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP7 OP6 OP4 OP6 OP4 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 149,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP0 OP6 OP3 OP4 OP0 OP0",
+   "exact": 0,
+   "tok_acc": 0.5,
+   "n_pred": 6
+  },
+  {
+   "i": 150,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP4",
+   "gold": "OP7 OP2 OP2 OP0 OP5 OP7",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 151,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP2 OP3",
+   "gold": "OP2 OP6 OP1 OP6 OP2 OP1",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 152,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP2 OP3 OP2 OP3",
+   "gold": "OP7 OP5 OP5 OP6 OP4 OP7",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 153,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP7 OP3 OP4 OP1 OP2 OP5",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 154,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP3 OP3 OP4 OP3",
+   "gold": "OP2 OP2 OP7 OP3 OP0 OP7",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 155,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP4",
+   "gold": "OP3 OP0 OP1 OP0 OP5 OP7",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 156,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP3",
+   "gold": "OP5 OP2 OP7 OP1 OP3 OP0",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 157,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP3 OP7 OP3 OP0 OP6 OP5",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 158,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP4",
+   "gold": "OP3 OP0 OP7 OP3 OP5 OP7",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 159,
+   "fiber": 1,
+   "gen": "OP0 OP1 OP0 OP0 OP0 OP0",
+   "gold": "OP4 OP0 OP3 OP7 OP7 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 160,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP3 OP3 OP3 OP1",
+   "gold": "OP1 OP5 OP4 OP1 OP5 OP0",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 161,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP1 OP1 OP2 OP1",
+   "gold": "OP1 OP3 OP1 OP1 OP1 OP1",
+   "exact": 0,
+   "tok_acc": 0.5,
+   "n_pred": 6
+  },
+  {
+   "i": 162,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP1 OP1 OP2",
+   "gold": "OP1 OP3 OP3 OP5 OP3 OP4",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 163,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP0 OP1 OP0 OP1",
+   "gold": "OP4 OP0 OP2 OP1 OP0 OP5",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 164,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP2 OP7 OP6 OP2 OP0 OP4",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 165,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP6 OP3 OP3 OP5 OP5 OP6",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 166,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP3 OP2 OP3",
+   "gold": "OP1 OP3 OP1 OP2 OP3 OP1",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 167,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP2 OP3 OP2 OP3",
+   "gold": "OP1 OP5 OP2 OP5 OP1 OP4",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 168,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP2 OP3 OP2 OP3",
+   "gold": "OP7 OP4 OP1 OP2 OP2 OP1",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 169,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP3",
+   "gold": "OP3 OP5 OP5 OP7 OP0 OP4",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 170,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP3 OP4 OP3",
+   "gold": "OP6 OP0 OP4 OP0 OP7 OP0",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 171,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP2 OP6 OP0 OP2 OP0 OP2",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 172,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP7 OP4 OP3 OP0 OP2 OP3",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 173,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP3",
+   "gold": "OP4 OP5 OP0 OP1 OP3 OP7",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 174,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP4",
+   "gold": "OP4 OP1 OP5 OP4 OP2 OP1",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 175,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP5 OP2 OP1 OP3 OP1 OP3",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 176,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP7 OP5 OP1 OP2 OP0 OP7",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 177,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP1 OP0 OP4 OP5 OP5 OP2",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 178,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP3 OP2 OP7 OP3 OP6 OP3",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 179,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP4 OP0 OP2 OP6 OP5 OP1",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 180,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP2 OP3",
+   "gold": "OP1 OP1 OP6 OP3 OP5 OP6",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 181,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP2 OP3",
+   "gold": "OP5 OP3 OP2 OP3 OP5 OP5",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 182,
+   "fiber": 1,
+   "gen": "OP1 OP1 OP2 OP3 OP4 OP3",
+   "gold": "OP0 OP2 OP1 OP5 OP4 OP2",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 183,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP0 OP0 OP1 OP2",
+   "gold": "OP2 OP5 OP6 OP0 OP7 OP5",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 184,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP0 OP6 OP3 OP0 OP4 OP4",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 185,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP3 OP2 OP3",
+   "gold": "OP0 OP5 OP2 OP2 OP7 OP6",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 186,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP4 OP7 OP3 OP7 OP1 OP7",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 187,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP3 OP7 OP5 OP0 OP1 OP6",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 188,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP4 OP5 OP4 OP3 OP0 OP4",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 189,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP0 OP7 OP4 OP4 OP7 OP4",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 190,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP4 OP4 OP4 OP3 OP4 OP6",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 191,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP2 OP0 OP1 OP1 OP6 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 192,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP2 OP3 OP2 OP3",
+   "gold": "OP1 OP3 OP2 OP7 OP1 OP2",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 193,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP3 OP4 OP5 OP3 OP3 OP3",
+   "exact": 0,
+   "tok_acc": 0.5,
+   "n_pred": 6
+  },
+  {
+   "i": 194,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP3 OP3 OP3",
+   "gold": "OP6 OP2 OP6 OP3 OP6 OP1",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 195,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP3",
+   "gold": "OP2 OP4 OP2 OP6 OP7 OP0",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 196,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP5 OP1 OP3 OP7 OP6 OP6",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 197,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP6 OP1 OP0 OP7 OP4 OP7",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 198,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP1 OP1 OP2",
+   "gold": "OP1 OP1 OP5 OP0 OP3 OP4",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 199,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP3 OP4 OP7 OP7 OP6 OP6",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 200,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP0 OP4 OP2 OP2 OP6 OP3",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 201,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP3 OP4 OP3",
+   "gold": "OP2 OP2 OP1 OP6 OP7 OP3",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 202,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP5 OP7 OP5 OP3 OP0 OP7",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 203,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP2 OP3 OP2 OP3",
+   "gold": "OP2 OP3 OP3 OP6 OP2 OP7",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 204,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP6 OP4 OP2 OP7 OP2 OP1",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 205,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP0 OP2 OP7 OP4 OP3 OP1",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 206,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP4 OP7 OP4 OP7 OP1 OP7",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 207,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP7 OP2 OP6 OP4 OP5 OP7",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 208,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP3 OP1 OP0 OP3 OP4 OP7",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 209,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP0 OP6 OP1 OP6 OP0 OP3",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 210,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP3 OP4 OP1",
+   "gold": "OP7 OP5 OP5 OP6 OP1 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 211,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP2 OP3 OP2 OP3",
+   "gold": "OP5 OP5 OP2 OP3 OP1 OP3",
+   "exact": 0,
+   "tok_acc": 0.5,
+   "n_pred": 6
+  },
+  {
+   "i": 212,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP2 OP6 OP4 OP0 OP2 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 213,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP0 OP4 OP5 OP1 OP2 OP3",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 214,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP2 OP3 OP2 OP3",
+   "gold": "OP6 OP4 OP7 OP2 OP6 OP7",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 215,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP3 OP7 OP7 OP3 OP0 OP2",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 216,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP3 OP7 OP5 OP4 OP7 OP5",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 217,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP2 OP4 OP6 OP5 OP6 OP7",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 218,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP2 OP3",
+   "gold": "OP1 OP3 OP1 OP6 OP4 OP3",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 219,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP4 OP1 OP7 OP2 OP1 OP4",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 220,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP4",
+   "gold": "OP7 OP3 OP7 OP0 OP4 OP5",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 221,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP3 OP3 OP3 OP3",
+   "gold": "OP6 OP2 OP6 OP3 OP7 OP2",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 222,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP2 OP3",
+   "gold": "OP7 OP1 OP4 OP6 OP5 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 223,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP7 OP4 OP5 OP0 OP7 OP1",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 224,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP6 OP2 OP0 OP5 OP4 OP4",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 225,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP2 OP3",
+   "gold": "OP1 OP6 OP7 OP4 OP0 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 226,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP3 OP5 OP6 OP3 OP0 OP5",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 227,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP4 OP1 OP6 OP5 OP7 OP5",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 228,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP4 OP6 OP6 OP4 OP0 OP0",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 229,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP6 OP3 OP3 OP0 OP0 OP2",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 230,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP3 OP3 OP3 OP1",
+   "gold": "OP1 OP7 OP0 OP3 OP0 OP3",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 231,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP5 OP3 OP3 OP1 OP0 OP7",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 232,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP4",
+   "gold": "OP7 OP0 OP4 OP0 OP5 OP5",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 233,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP4 OP2 OP7 OP1 OP4 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 234,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP7 OP1 OP0 OP7 OP6 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 235,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP4",
+   "gold": "OP5 OP4 OP0 OP1 OP0 OP5",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 236,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP7 OP4 OP7 OP5 OP1 OP0",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 237,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP4",
+   "gold": "OP6 OP4 OP2 OP4 OP7 OP6",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 238,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP5 OP6 OP7 OP2 OP6 OP4",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 239,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP2 OP3 OP2 OP3",
+   "gold": "OP6 OP7 OP1 OP2 OP2 OP4",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 240,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP3 OP6 OP2 OP3 OP1 OP2",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 241,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP2 OP5 OP1 OP3 OP3 OP4",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 242,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP3 OP4 OP2 OP0 OP7 OP7",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 243,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP3 OP4 OP3",
+   "gold": "OP4 OP4 OP2 OP0 OP1 OP5",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 244,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP7 OP7 OP7 OP5 OP1 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 245,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP5 OP6 OP3 OP5 OP0 OP4",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 246,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP0 OP6 OP1 OP3 OP0 OP1",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 247,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP2 OP3 OP2 OP3",
+   "gold": "OP0 OP2 OP3 OP2 OP5 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 248,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP3 OP4 OP1",
+   "gold": "OP6 OP6 OP7 OP6 OP0 OP5",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 249,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP2 OP3",
+   "gold": "OP2 OP4 OP6 OP3 OP2 OP4",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 250,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP3 OP4 OP3",
+   "gold": "OP6 OP7 OP4 OP0 OP0 OP2",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 251,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP3 OP4 OP3",
+   "gold": "OP2 OP2 OP6 OP3 OP4 OP5",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 252,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP6 OP1 OP7 OP0 OP2 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 253,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP6 OP3 OP1 OP1 OP1 OP2",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 254,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP0 OP7 OP0 OP4 OP1 OP1",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 255,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP3",
+   "gold": "OP4 OP5 OP6 OP2 OP7 OP0",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 256,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP4 OP2 OP6 OP6 OP6 OP2",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 257,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP4 OP7 OP1 OP5 OP1 OP0",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 258,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP4",
+   "gold": "OP0 OP5 OP4 OP4 OP5 OP1",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 259,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP4",
+   "gold": "OP6 OP1 OP7 OP7 OP5 OP4",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 260,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP3 OP5 OP1 OP6 OP4 OP2",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 261,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP7 OP6 OP3 OP7 OP1 OP6",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 262,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP6 OP6 OP6 OP0 OP5 OP3",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 263,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP7 OP1 OP7 OP3 OP0 OP2",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 264,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP2",
+   "gold": "OP1 OP6 OP2 OP6 OP2 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 265,
+   "fiber": 1,
+   "gen": "OP0 OP1 OP2 OP1 OP2 OP1",
+   "gold": "OP0 OP4 OP4 OP5 OP7 OP2",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 266,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP1 OP1 OP3 OP4 OP2 OP2",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 267,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP4",
+   "gold": "OP3 OP0 OP2 OP2 OP2 OP3",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 268,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP3",
+   "gold": "OP3 OP3 OP6 OP5 OP4 OP6",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 269,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP3 OP4 OP3",
+   "gold": "OP2 OP2 OP4 OP0 OP1 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 270,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP6 OP5 OP2 OP1 OP5 OP2",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 271,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP3",
+   "gold": "OP4 OP4 OP3 OP2 OP7 OP3",
+   "exact": 0,
+   "tok_acc": 0.5,
+   "n_pred": 6
+  },
+  {
+   "i": 272,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP4",
+   "gold": "OP5 OP0 OP1 OP5 OP7 OP0",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 273,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP2 OP3",
+   "gold": "OP5 OP2 OP3 OP4 OP4 OP0",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 274,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP3 OP5 OP0 OP7 OP0 OP6",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 275,
+   "fiber": 1,
+   "gen": "OP3 OP1 OP2 OP3 OP3 OP3",
+   "gold": "OP7 OP7 OP5 OP6 OP3 OP1",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 276,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP2 OP7 OP4 OP5 OP7 OP3",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 277,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP5 OP4 OP0 OP7 OP2 OP3",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 278,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP2 OP3 OP3 OP7 OP1 OP6",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 279,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP0 OP7 OP5 OP3 OP2 OP1",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 280,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP4",
+   "gold": "OP5 OP1 OP3 OP5 OP4 OP7",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 281,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP5 OP5 OP1 OP1 OP3 OP2",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 282,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP4 OP3",
+   "gold": "OP2 OP4 OP7 OP2 OP3 OP4",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 283,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP3 OP7 OP3 OP4 OP7 OP3",
+   "exact": 0,
+   "tok_acc": 0.5,
+   "n_pred": 6
+  },
+  {
+   "i": 284,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP2",
+   "gold": "OP3 OP2 OP3 OP4 OP4 OP3",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 285,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP2 OP3 OP2 OP3",
+   "gold": "OP4 OP5 OP2 OP2 OP1 OP3",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 286,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP3 OP7 OP5 OP5 OP6 OP2",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 287,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP2 OP3",
+   "gold": "OP3 OP2 OP1 OP6 OP7 OP5",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 288,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP3 OP1 OP7 OP7 OP3 OP1",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  },
+  {
+   "i": 289,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP5 OP2 OP1 OP3 OP4 OP1",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 290,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP1 OP4 OP1 OP0 OP1 OP5",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 291,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP2 OP3 OP7 OP1 OP0 OP1",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 292,
+   "fiber": 1,
+   "gen": "OP0 OP0 OP0 OP0 OP0 OP0",
+   "gold": "OP0 OP6 OP7 OP4 OP5 OP3",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 293,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP6 OP1 OP5 OP0 OP4 OP4",
+   "exact": 0,
+   "tok_acc": 0.1667,
+   "n_pred": 6
+  },
+  {
+   "i": 294,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP4",
+   "gold": "OP0 OP5 OP7 OP6 OP5 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 295,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP7 OP3 OP5 OP5 OP0 OP0",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 296,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP2",
+   "gold": "OP5 OP7 OP6 OP6 OP7 OP0",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 297,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP4 OP4 OP4 OP4",
+   "gold": "OP1 OP7 OP0 OP6 OP2 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 298,
+   "fiber": 1,
+   "gen": "OP3 OP3 OP3 OP3 OP3 OP3",
+   "gold": "OP2 OP7 OP4 OP7 OP6 OP6",
+   "exact": 0,
+   "tok_acc": 0.0,
+   "n_pred": 6
+  },
+  {
+   "i": 299,
+   "fiber": 1,
+   "gen": "OP3 OP4 OP3 OP4 OP3 OP4",
+   "gold": "OP3 OP3 OP7 OP4 OP7 OP3",
+   "exact": 0,
+   "tok_acc": 0.3333,
+   "n_pred": 6
+  }
+ ]
+}
