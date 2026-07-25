@@ -113,3 +113,30 @@ R2 (seed-11 rerun):
   Execution-time calibration shows device CZ error barely moved
   (2.11e-3 to 2.26e-3), so the drop in both arms is placement, not
   calibration. R2' repeats it with placement controlled.
+
+## Verdicts, 2026-07-24
+
+R1 (DD mirror, cross-job):
+  R1a FAILED. True mirror deltas were mixed in sign, not all >= +0.03:
+      mod5_4 -0.033, tof_3 +0.089, barenco +0.055, mod_mult_55 -0.115.
+  R1b FAILED. Mean change -0.001, not >= +0.05.
+  R1c CONFIRMED. Deranged mirrors max 0.086, under 0.15.
+
+  Design error. DD and no-DD were separate jobs five hours apart
+  (d9hq08shonhs73adf2ag at 13:25, d9hua4khonhs73adloe0 at 18:20). Part II
+  interleaves compared conditions in one job precisely so that drift
+  cannot masquerade as an effect, and this run did not follow that
+  protocol. R1' repeats it correctly. The verdicts above stand as
+  recorded but the run does not isolate a DD effect.
+
+R2 (seed-11 rerun):
+  R2a CONFIRMED. delta_fidelity +0.171 exceeds the registered +0.067.
+  R2b FAILED. +0.171 also exceeds the +0.15 bound.
+
+  Design error. seed_transpiler changes the layout, not only the routing.
+  Arms landed on disjoint physical qubits (0/9 overlap) where the
+  2026-07-18 runs shared 5/5, 5/5, 4/5 and 7/9. The +0.171 therefore
+  compares two different qubit sets and is not comparable to +0.067.
+  Execution-time calibration shows device CZ error barely moved
+  (2.11e-3 to 2.26e-3), so the drop in both arms is placement, not
+  calibration. R2' repeats it with placement controlled.
