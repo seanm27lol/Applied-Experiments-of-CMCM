@@ -51,3 +51,31 @@ C1: pw_trace beats pw_shuffle on sim_minus_echo, p < 0.05, meanD >= +0.02
 C2: no committed direction for pw_shuffle vs pw_pair; reported as observed.
 Falsification: if pw_trace ~ pw_shuffle, P1's effect is format exposure
 and the recoverability claim must be withdrawn, not softened.
+
+## Verdicts, 2026-07-24: shuffle control and multi-seed replication
+
+C1 CONFIRMED (seed 0). pw_trace minus pw_shuffle +0.0393, 169-119,
+   p=1.39e-05, clearing the +0.02 and p<0.05 thresholds. The P1 advantage
+   is witness content, not format exposure.
+C2 observed positive (no direction was committed). pw_shuffle minus
+   pw_pair +0.0146, 182-107, p=3.29e-05. Format exposure is real.
+   Decomposition: C1 + C2 = 0.0539 against P1's +0.0540.
+
+R3 (seeds 0, 1, 2):
+  R3a CONFIRMED. C1 positive with p<0.05 in every seed: +0.0393
+      (p=1.39e-05), +0.0500 (p=3.32e-09), +0.0240 (p=0.0055).
+  R3b CONFIRMED. Across-seed standard deviation of the C1 mean delta
+      0.0131, under the 0.02 bound.
+  R3c CONFIRMED. P2 remains null in every seed: p=0.604, 0.275, 0.765;
+      mean +0.0041, sd 0.0061.
+  C2 across seeds: mean +0.0122, sd 0.0046, all p<0.05.
+  Content share across seeds: 76%.
+
+  Limitation to carry into any writeup: C1's magnitude ranges +0.024 to
+  +0.050 across seeds, a factor of two. Sign and significance are robust;
+  magnitude is not. Report the range, not the point estimate.
+
+  Unchanged limitation from the original registration: all arms score
+  below the copy baseline in absolute terms (sim_minus_echo negative
+  throughout), so this is a valid comparison among models that cannot
+  perform the task.
