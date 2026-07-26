@@ -78,3 +78,17 @@ committed before masked results: balanced accuracy (mean of hard-strata
 and VALID accuracy) will be reported alongside every registered check.
 Path fix (data/stage2_pool.jsonl fallback) applied to train_verif.py;
 no protocol change.
+
+## Final verdict, 2026-07-26: retry failed, experiment closed
+Masked-loss retry at N=4000: S1 = 0.581 (pw_trace), 0.605 (pw_pair),
+0.512 (pw_shuffle). V1 failed a second time; per registration the
+experiment is UNINTERPRETABLE and stops here. No V3-V5 claims are made.
+Post-hoc record: the two protocols failed with opposite biases
+(unmasked always-no-leaning, VALID 0.53-0.66; masked always-yes-leaning,
+VALID 0.75-0.92, grad norms 10x higher under sparse labels). Under
+masking, S5 (after-swap) hit 1.000 while tactic-swap strata sat near
+chance: models judged state-pair coherence and ignored the tactic, the
+shortcut S5 was designed to expose. Only supported claim: at 160M
+parameters and these budgets, tactic-level witness verification did not
+get off the ground under either protocol. Any future attempt (larger
+model, balanced anchor, mixed loss) requires a new registration.
