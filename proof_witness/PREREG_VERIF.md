@@ -59,3 +59,9 @@ not kernel checking; S3 negatives expose same-theorem tactic text from
 held-out proofs (labelled invalid here, gold elsewhere; both labels
 drawn from the same proofs, so no exploitable direction); single seed;
 fallback strata (S2f, S4f) reported separately.
+
+## V0' verdict, 2026-07-26
+S2 0/15, S3 1/15, S4 1/15, S1 0/8, S5 0/8. All strata retained under the
+registered bounds. The two flagged negatives (S3 idx 268, S4 idx 310)
+are excluded from verif_eval.jsonl; their paired valid instances remain.
+Eval size: 598.
