@@ -30,3 +30,15 @@ is strictly monotone in log fiber here (0.0004 / 0.1395 / 0.2792 /
 predictor of the supervision gap as a SAMPLE-COMPLEXITY quantity,
 matching the direction of the Part V evidence. Status: hypothesis;
 one theorem and one experiment short of a claim.
+
+## Addendum, 2026-07-26: the surviving hypothesis, tested and corrected
+The variance-alone predictor is falsified at the linear level by direct
+simulation: samples-to-fixed-excess-risk for an OLS endpoint learner
+gives n/variance ratios of 1014/680/716/185 across q25/q50/q75/abelian,
+non-constant and direction-inverted (highest-variance system was
+easiest, because its endpoint features span only 9 of 28 dimensions).
+The corrected quantity is variance x effective rank of the endpoint
+features: n * eps / (variance x rank) = 1.81/1.21/1.28/1.03 across the
+same systems, consistent within a factor of two. Status: the two-factor
+law holds for linear learners by construction and simulation; whether
+neural learners obey it is open and would need its own registration.
