@@ -65,3 +65,16 @@ S2 0/15, S3 1/15, S4 1/15, S1 0/8, S5 0/8. All strata retained under the
 registered bounds. The two flagged negatives (S3 idx 268, S4 idx 310)
 are excluded from verif_eval.jsonl; their paired valid instances remain.
 Eval size: 598.
+
+## V1 verdict and registered retry, 2026-07-26
+V1 FAILED as registered: S1 at N=4000 was 0.860 (pw_trace), 0.581
+(pw_pair), 0.860 (pw_shuffle) against the 0.90 bar. V2 passed (best S3
+0.826). N=250 collapsed to a degenerate always-no classifier in all
+arms (VALID 0.007-0.037), showing V1's design flaw: it is passable by a
+degenerate model and was failed by non-degenerate ones. Per
+registration, the verdict-masked-loss retry is invoked; the unmasked
+grid is retained as the failed first attempt. Post-hoc diagnostic
+committed before masked results: balanced accuracy (mean of hard-strata
+and VALID accuracy) will be reported alongside every registered check.
+Path fix (data/stage2_pool.jsonl fallback) applied to train_verif.py;
+no protocol change.

@@ -36,7 +36,7 @@ def doc(state, tactic, after, valid):
 
 def build_train(n, seed):
     rng = random.Random(100 + seed)
-    pool = [json.loads(l) for l in open("stage2_pool.jsonl")]
+    pool = [json.loads(l) for l in open("data/stage2_pool.jsonl" if __import__("os").path.exists("data/stage2_pool.jsonl") else "stage2_pool.jsonl")]
     order = list(range(len(pool)))
     rng.shuffle(order)
     tacs = [(pool[i]["full_name"], pool[i]["tactic"].strip(),

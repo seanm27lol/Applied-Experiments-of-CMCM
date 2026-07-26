@@ -20,9 +20,10 @@ def main():
     ap.add_argument("--arm", required=True)
     ap.add_argument("--n", type=int, required=True)
     ap.add_argument("--seed", type=int, default=0)
+    ap.add_argument("--prefix", default="verif")
     args = ap.parse_args()
     suf = "" if args.seed == 0 else f"_s{args.seed}"
-    tag = f"verif_{args.arm}_n{args.n}{suf}"
+    tag = f"{args.prefix}_{args.arm}_n{args.n}{suf}"
     os.makedirs("results", exist_ok=True)
 
     tok = AutoTokenizer.from_pretrained(f"ckpt/{tag}")
