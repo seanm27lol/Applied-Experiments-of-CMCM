@@ -1,0 +1,14 @@
+system      items  skipped    true  median     min  imposs exact(main)
+q50            88       62   0.080   0.057   0.102   0.000      0.0200
+q75           108       42   0.398   0.435   0.380   0.000      0.0000
+abelian       143        7   0.944   0.972   0.783   0.000      0.0000
+
+R1 control (impossible rung <= 0.05): PASS  max 0.000
+R2 feasibility (q50: true rung >= main exact 0.0200): PASS  0.0795
+R2 feasibility (q75: true rung >= main exact 0.0000): PASS  0.3981
+R2 feasibility (abelian: true rung >= main exact 0.0000): PASS  0.9441
+R3 primary (minimum-cost rung, no threshold):
+  q50       0.1023
+  q75       0.3796
+  abelian   0.7832
+R4 direction (abelian > q75 > q50): PASS  0.783 > 0.380 > 0.102

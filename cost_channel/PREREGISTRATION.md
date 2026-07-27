@@ -183,3 +183,57 @@ Part IV's P4c failure mode — the pipeline can measure. C2 on readable
 is +0.0000, as the design requires (sc_cost and sc_counts carry
 identical information and the task is a copy). The queue continued to
 the remaining five systems at 22:14 local.
+
+## Main-run verdicts, 2026-07-27
+Full table: results/stats_main.txt; per-item scores in
+results/<system>/<arm>.json.
+
+A1 anchor: PASS (all four arms 1.0000 on readable vs the 0.90 bar;
+see the 2026-07-26 section).
+A2 access: PASS. abelian counts - pair = +0.0716 vs the registered
+>= 0.05 bar. The model can use fully explicit multiset information
+where the ceiling difference is largest, so C1 is testable.
+C1 primary: FAIL, in the registered direction of falsification.
+Measured cost - pair advantages are +0.166 (free), +0.176 (q25),
++0.100 (q50), +0.051 (q75), +0.073 (abelian) against ceiling
+differences 0.000 / 0.006 / 0.041 / 0.074 / 0.173: Spearman rho =
+-0.80, and abelian does not exceed free (it is lower by 0.093). With
+A1 and A2 both passing, the registered falsification clause fires:
+models do not extract available information in proportion to how much
+is present, and the ceiling table does not predict learned behaviour.
+The cost channel helps everywhere but least where it should help
+most. Reported as the outcome, per the registration.
+C2 decoding cost: null everywhere (counts - cost between -0.007 and
++0.011 across systems). The aggregate scalar is as accessible as the
+spelled-out counts, so the C1 failure is not a reading-instrument
+effect: the information was available and legible.
+C3 order term: registered non-monotone shape CONFIRMED. Measured
+costd - cost: +0.032 (q25), +0.062 (q50), +0.062 (q75), +0.011
+(abelian): largest in the middle systems, smaller at abelian than at
+q75, not monotone increasing, matching the ceiling analysis (+0.056 /
++0.105 / +0.112 / +0.029) in shape at roughly half magnitude. The
+order-sensitive term buys the most where order matters least and
+nearly nothing where order is the only unknown, as computed.
+
+## Search-eval verdicts, 2026-07-27
+Full table: results/stats_search.txt; per-rung detail in
+results/<system>/search_sc_cost.json. Searchable items 88 (q50),
+108 (q75), 143 (abelian); single-cost endpoints skipped and counted
+(62 / 42 / 7).
+
+R1 control: PASS. Impossible-rung valid-and-cost rate 0.000 in all
+three systems (vs the 0.05 bound). The models read the cost field;
+the search numbers are interpretable.
+R2 feasibility: PASS in all three systems (true rung 0.080 / 0.398 /
+0.944 vs main exact-match 0.020 / 0.000 / 0.000).
+R3 primary: minimum-cost valid-and-cost 0.102 (q50), 0.380 (q75),
+0.783 (abelian). No threshold was committed; these are the numbers
+the procedure produces.
+R4 direction: PASS. R3 orders abelian > q75 > q50, matching the
+co-optimal-path counts (296.3 / 3.25 / 1.59 mean minima): more
+distinct valid targets, easier hits. Uniqueness failure helps the
+search, as registered.
+Post-hoc note (not a registered check): on abelian the minimum rung
+(0.783) sits below true (0.944) and median (0.972); asking for the
+cheapest path degrades validity even where achievable, the
+return-conditioning non-extrapolation signature, muted but present.

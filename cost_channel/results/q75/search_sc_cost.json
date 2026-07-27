@@ -1,0 +1,3918 @@
+{
+ "system": "q75",
+ "arm": "sc_cost",
+ "skipped_single_cost": 42,
+ "n_items": 108,
+ "rungs": {
+  "true": {
+   "n": 108,
+   "reaches": 0.4074,
+   "valid_and_cost": 0.3981
+  },
+  "median": {
+   "n": 108,
+   "reaches": 0.4444,
+   "valid_and_cost": 0.4352
+  },
+  "min": {
+   "n": 108,
+   "reaches": 0.4074,
+   "valid_and_cost": 0.3796
+  },
+  "impossible": {
+   "n": 108,
+   "reaches": 0.1111,
+   "valid_and_cost": 0.0
+  }
+ },
+ "items": [
+  {
+   "i": 0,
+   "rung": "true",
+   "asked": 117798,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 0,
+   "rung": "median",
+   "asked": 122502,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 0,
+   "rung": "min",
+   "asked": 117702,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 0,
+   "rung": "impossible",
+   "asked": 117700,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 1,
+   "rung": "true",
+   "asked": 2850,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 1,
+   "rung": "median",
+   "asked": 3438,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 1,
+   "rung": "min",
+   "asked": 2754,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 1,
+   "rung": "impossible",
+   "asked": 2752,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 2,
+   "rung": "true",
+   "asked": 137550,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 2,
+   "rung": "median",
+   "asked": 137550,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 2,
+   "rung": "min",
+   "asked": 136866,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 2,
+   "rung": "impossible",
+   "asked": 136864,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 3,
+   "rung": "true",
+   "asked": 7602,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 3,
+   "rung": "median",
+   "asked": 3486,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 3,
+   "rung": "min",
+   "asked": 2802,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 3,
+   "rung": "impossible",
+   "asked": 2800,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 4,
+   "rung": "true",
+   "asked": 120744,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 4,
+   "rung": "median",
+   "asked": 120744,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 4,
+   "rung": "min",
+   "asked": 120060,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 4,
+   "rung": "impossible",
+   "asked": 120058,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 5,
+   "rung": "true",
+   "asked": 829374,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 5,
+   "rung": "median",
+   "asked": 828690,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 5,
+   "rung": "min",
+   "asked": 823890,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 5,
+   "rung": "impossible",
+   "asked": 823888,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 7,
+   "rung": "true",
+   "asked": 1080450,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 7,
+   "rung": "median",
+   "asked": 1076334,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 7,
+   "rung": "min",
+   "asked": 1075650,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 7,
+   "rung": "impossible",
+   "asked": 1075648,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 8,
+   "rung": "true",
+   "asked": 122508,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 8,
+   "rung": "median",
+   "asked": 118392,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 8,
+   "rung": "min",
+   "asked": 117708,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 8,
+   "rung": "impossible",
+   "asked": 117706,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 11,
+   "rung": "true",
+   "asked": 118098,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 11,
+   "rung": "median",
+   "asked": 118686,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 11,
+   "rung": "min",
+   "asked": 118002,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 11,
+   "rung": "impossible",
+   "asked": 118000,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 12,
+   "rung": "true",
+   "asked": 134904,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 12,
+   "rung": "median",
+   "asked": 135492,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 12,
+   "rung": "min",
+   "asked": 134808,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 12,
+   "rung": "impossible",
+   "asked": 134806,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 14,
+   "rung": "true",
+   "asked": 826008,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 14,
+   "rung": "median",
+   "asked": 826680,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 14,
+   "rung": "min",
+   "asked": 825996,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 14,
+   "rung": "impossible",
+   "asked": 825994,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 15,
+   "rung": "true",
+   "asked": 5586,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 15,
+   "rung": "median",
+   "asked": 5586,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 15,
+   "rung": "min",
+   "asked": 6,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 15,
+   "rung": "impossible",
+   "asked": 4,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 16,
+   "rung": "true",
+   "asked": 3144,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 16,
+   "rung": "median",
+   "asked": 3144,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 16,
+   "rung": "min",
+   "asked": 2460,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 16,
+   "rung": "impossible",
+   "asked": 2458,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 17,
+   "rung": "true",
+   "asked": 19614,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 17,
+   "rung": "median",
+   "asked": 20286,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 17,
+   "rung": "min",
+   "asked": 19602,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 17,
+   "rung": "impossible",
+   "asked": 19600,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 19,
+   "rung": "true",
+   "asked": 118434,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 19,
+   "rung": "median",
+   "asked": 122454,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 19,
+   "rung": "min",
+   "asked": 117654,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 19,
+   "rung": "impossible",
+   "asked": 117652,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 21,
+   "rung": "true",
+   "asked": 2460,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 21,
+   "rung": "median",
+   "asked": 3144,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 21,
+   "rung": "min",
+   "asked": 2460,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 21,
+   "rung": "impossible",
+   "asked": 2458,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 23,
+   "rung": "true",
+   "asked": 21966,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 23,
+   "rung": "median",
+   "asked": 21954,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 23,
+   "rung": "min",
+   "asked": 17154,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 23,
+   "rung": "impossible",
+   "asked": 17152,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 24,
+   "rung": "true",
+   "asked": 826050,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 24,
+   "rung": "median",
+   "asked": 826638,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 24,
+   "rung": "min",
+   "asked": 825954,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 24,
+   "rung": "impossible",
+   "asked": 825952,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 25,
+   "rung": "true",
+   "asked": 19602,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 25,
+   "rung": "median",
+   "asked": 20286,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 25,
+   "rung": "min",
+   "asked": 19602,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 25,
+   "rung": "impossible",
+   "asked": 19600,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 27,
+   "rung": "true",
+   "asked": 408,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 27,
+   "rung": "median",
+   "asked": 5196,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 27,
+   "rung": "min",
+   "asked": 396,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 27,
+   "rung": "impossible",
+   "asked": 394,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 28,
+   "rung": "true",
+   "asked": 876372,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 28,
+   "rung": "median",
+   "asked": 843444,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 28,
+   "rung": "min",
+   "asked": 842760,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 28,
+   "rung": "impossible",
+   "asked": 842758,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 29,
+   "rung": "true",
+   "asked": 960414,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 29,
+   "rung": "median",
+   "asked": 961086,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 29,
+   "rung": "min",
+   "asked": 960402,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 29,
+   "rung": "impossible",
+   "asked": 960400,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 30,
+   "rung": "true",
+   "asked": 252168,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 30,
+   "rung": "median",
+   "asked": 252840,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 30,
+   "rung": "min",
+   "asked": 252156,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 30,
+   "rung": "impossible",
+   "asked": 252154,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 31,
+   "rung": "true",
+   "asked": 235740,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 31,
+   "rung": "median",
+   "asked": 236328,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 31,
+   "rung": "min",
+   "asked": 235644,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 31,
+   "rung": "impossible",
+   "asked": 235642,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 32,
+   "rung": "true",
+   "asked": 841134,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 32,
+   "rung": "median",
+   "asked": 841722,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 32,
+   "rung": "min",
+   "asked": 841038,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 32,
+   "rung": "impossible",
+   "asked": 841036,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 34,
+   "rung": "true",
+   "asked": 826974,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 34,
+   "rung": "median",
+   "asked": 826974,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 34,
+   "rung": "min",
+   "asked": 826290,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 34,
+   "rung": "impossible",
+   "asked": 826288,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 35,
+   "rung": "true",
+   "asked": 828702,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 35,
+   "rung": "median",
+   "asked": 828690,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 35,
+   "rung": "min",
+   "asked": 823890,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 35,
+   "rung": "impossible",
+   "asked": 823888,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 36,
+   "rung": "true",
+   "asked": 5502,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 36,
+   "rung": "median",
+   "asked": 5586,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 36,
+   "rung": "min",
+   "asked": 6,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 36,
+   "rung": "impossible",
+   "asked": 4,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 37,
+   "rung": "true",
+   "asked": 235356,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 37,
+   "rung": "median",
+   "asked": 236040,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 37,
+   "rung": "min",
+   "asked": 235356,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 37,
+   "rung": "impossible",
+   "asked": 235354,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 38,
+   "rung": "true",
+   "asked": 2808,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 38,
+   "rung": "median",
+   "asked": 3480,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 38,
+   "rung": "min",
+   "asked": 2796,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 38,
+   "rung": "impossible",
+   "asked": 2794,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 39,
+   "rung": "true",
+   "asked": 842814,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 39,
+   "rung": "median",
+   "asked": 843486,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 39,
+   "rung": "min",
+   "asked": 842802,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 39,
+   "rung": "impossible",
+   "asked": 842800,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 41,
+   "rung": "true",
+   "asked": 19218,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 41,
+   "rung": "median",
+   "asked": 19902,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 41,
+   "rung": "min",
+   "asked": 19218,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 41,
+   "rung": "impossible",
+   "asked": 19216,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 42,
+   "rung": "true",
+   "asked": 17550,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 42,
+   "rung": "median",
+   "asked": 17550,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 42,
+   "rung": "min",
+   "asked": 16866,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 42,
+   "rung": "impossible",
+   "asked": 16864,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 43,
+   "rung": "true",
+   "asked": 134562,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 43,
+   "rung": "median",
+   "asked": 135150,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 43,
+   "rung": "min",
+   "asked": 134466,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 43,
+   "rung": "impossible",
+   "asked": 134464,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 44,
+   "rung": "true",
+   "asked": 135492,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 44,
+   "rung": "median",
+   "asked": 135492,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 44,
+   "rung": "min",
+   "asked": 134808,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 44,
+   "rung": "impossible",
+   "asked": 134806,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 45,
+   "rung": "true",
+   "asked": 141708,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 45,
+   "rung": "median",
+   "asked": 137592,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 45,
+   "rung": "min",
+   "asked": 136908,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 45,
+   "rung": "impossible",
+   "asked": 136906,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 46,
+   "rung": "true",
+   "asked": 118398,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 46,
+   "rung": "median",
+   "asked": 122502,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 46,
+   "rung": "min",
+   "asked": 117702,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 46,
+   "rung": "impossible",
+   "asked": 117700,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 47,
+   "rung": "true",
+   "asked": 235788,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 47,
+   "rung": "median",
+   "asked": 236376,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 47,
+   "rung": "min",
+   "asked": 235692,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 47,
+   "rung": "impossible",
+   "asked": 235690,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 48,
+   "rung": "true",
+   "asked": 826386,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 48,
+   "rung": "median",
+   "asked": 826974,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 48,
+   "rung": "min",
+   "asked": 826290,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 48,
+   "rung": "impossible",
+   "asked": 826288,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 49,
+   "rung": "true",
+   "asked": 240108,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 49,
+   "rung": "median",
+   "asked": 235992,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 49,
+   "rung": "min",
+   "asked": 235308,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 49,
+   "rung": "impossible",
+   "asked": 235306,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 51,
+   "rung": "true",
+   "asked": 36408,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 51,
+   "rung": "median",
+   "asked": 3480,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 51,
+   "rung": "min",
+   "asked": 2796,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 51,
+   "rung": "impossible",
+   "asked": 2794,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 52,
+   "rung": "true",
+   "asked": 17250,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 52,
+   "rung": "median",
+   "asked": 21954,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 52,
+   "rung": "min",
+   "asked": 17154,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 52,
+   "rung": "impossible",
+   "asked": 17152,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 54,
+   "rung": "true",
+   "asked": 151410,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 54,
+   "rung": "median",
+   "asked": 151998,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 54,
+   "rung": "min",
+   "asked": 151314,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 54,
+   "rung": "impossible",
+   "asked": 151312,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 56,
+   "rung": "true",
+   "asked": 120738,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 56,
+   "rung": "median",
+   "asked": 124854,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 56,
+   "rung": "min",
+   "asked": 120054,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 56,
+   "rung": "impossible",
+   "asked": 120052,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 57,
+   "rung": "true",
+   "asked": 946680,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 57,
+   "rung": "median",
+   "asked": 946680,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 57,
+   "rung": "min",
+   "asked": 945996,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 57,
+   "rung": "impossible",
+   "asked": 945994,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 59,
+   "rung": "true",
+   "asked": 153666,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 59,
+   "rung": "median",
+   "asked": 124854,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 59,
+   "rung": "min",
+   "asked": 120054,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 59,
+   "rung": "impossible",
+   "asked": 120052,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 62,
+   "rung": "true",
+   "asked": 4824,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 62,
+   "rung": "median",
+   "asked": 4812,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 62,
+   "rung": "min",
+   "asked": 12,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 62,
+   "rung": "impossible",
+   "asked": 10,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 65,
+   "rung": "true",
+   "asked": 17838,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 65,
+   "rung": "median",
+   "asked": 21954,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 65,
+   "rung": "min",
+   "asked": 17154,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 65,
+   "rung": "impossible",
+   "asked": 17152,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 66,
+   "rung": "true",
+   "asked": 33960,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 66,
+   "rung": "median",
+   "asked": 5148,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 66,
+   "rung": "min",
+   "asked": 348,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 66,
+   "rung": "impossible",
+   "asked": 346,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 67,
+   "rung": "true",
+   "asked": 840708,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 67,
+   "rung": "median",
+   "asked": 841380,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 67,
+   "rung": "min",
+   "asked": 840696,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 67,
+   "rung": "impossible",
+   "asked": 840694,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 68,
+   "rung": "true",
+   "asked": 2556,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 68,
+   "rung": "median",
+   "asked": 3144,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 68,
+   "rung": "min",
+   "asked": 2460,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 68,
+   "rung": "impossible",
+   "asked": 2458,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 70,
+   "rung": "true",
+   "asked": 17544,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 70,
+   "rung": "median",
+   "asked": 21660,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 70,
+   "rung": "min",
+   "asked": 16860,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 70,
+   "rung": "impossible",
+   "asked": 16858,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 71,
+   "rung": "true",
+   "asked": 36366,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 71,
+   "rung": "median",
+   "asked": 3438,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 71,
+   "rung": "min",
+   "asked": 2754,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 71,
+   "rung": "impossible",
+   "asked": 2752,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 72,
+   "rung": "true",
+   "asked": 120456,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 72,
+   "rung": "median",
+   "asked": 121128,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 72,
+   "rung": "min",
+   "asked": 120444,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 72,
+   "rung": "impossible",
+   "asked": 120442,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 74,
+   "rung": "true",
+   "asked": 857598,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 74,
+   "rung": "median",
+   "asked": 828690,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 74,
+   "rung": "min",
+   "asked": 823890,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 74,
+   "rung": "impossible",
+   "asked": 823888,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 76,
+   "rung": "true",
+   "asked": 847560,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 76,
+   "rung": "median",
+   "asked": 843444,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 76,
+   "rung": "min",
+   "asked": 842760,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 76,
+   "rung": "impossible",
+   "asked": 842758,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 78,
+   "rung": "true",
+   "asked": 843192,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 78,
+   "rung": "median",
+   "asked": 843780,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 78,
+   "rung": "min",
+   "asked": 843096,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 78,
+   "rung": "impossible",
+   "asked": 843094,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 79,
+   "rung": "true",
+   "asked": 826044,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 79,
+   "rung": "median",
+   "asked": 830748,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 79,
+   "rung": "min",
+   "asked": 825948,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 79,
+   "rung": "impossible",
+   "asked": 825946,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 82,
+   "rung": "true",
+   "asked": 845250,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 82,
+   "rung": "median",
+   "asked": 845154,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 82,
+   "rung": "min",
+   "asked": 840354,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 82,
+   "rung": "impossible",
+   "asked": 840352,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 85,
+   "rung": "true",
+   "asked": 862008,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 85,
+   "rung": "median",
+   "asked": 857892,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 85,
+   "rung": "min",
+   "asked": 857208,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 85,
+   "rung": "impossible",
+   "asked": 857206,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 88,
+   "rung": "true",
+   "asked": 134820,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 88,
+   "rung": "median",
+   "asked": 135492,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 88,
+   "rung": "min",
+   "asked": 134808,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 88,
+   "rung": "impossible",
+   "asked": 134806,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 93,
+   "rung": "true",
+   "asked": 845208,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 93,
+   "rung": "median",
+   "asked": 841092,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 93,
+   "rung": "min",
+   "asked": 840408,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 93,
+   "rung": "impossible",
+   "asked": 840406,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 94,
+   "rung": "true",
+   "asked": 17172,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 94,
+   "rung": "median",
+   "asked": 17844,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 94,
+   "rung": "min",
+   "asked": 17160,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 94,
+   "rung": "impossible",
+   "asked": 17158,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 97,
+   "rung": "true",
+   "asked": 1059870,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 97,
+   "rung": "median",
+   "asked": 1059870,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 97,
+   "rung": "min",
+   "asked": 1059186,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 97,
+   "rung": "impossible",
+   "asked": 1059184,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 98,
+   "rung": "true",
+   "asked": 2898,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 98,
+   "rung": "median",
+   "asked": 3486,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 98,
+   "rung": "min",
+   "asked": 2802,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 98,
+   "rung": "impossible",
+   "asked": 2800,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 100,
+   "rung": "true",
+   "asked": 826974,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 100,
+   "rung": "median",
+   "asked": 826974,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 100,
+   "rung": "min",
+   "asked": 826290,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 100,
+   "rung": "impossible",
+   "asked": 826288,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 101,
+   "rung": "true",
+   "asked": 252840,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 101,
+   "rung": "median",
+   "asked": 252840,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 101,
+   "rung": "min",
+   "asked": 252156,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 101,
+   "rung": "impossible",
+   "asked": 252154,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 103,
+   "rung": "true",
+   "asked": 137592,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 103,
+   "rung": "median",
+   "asked": 137592,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 103,
+   "rung": "min",
+   "asked": 136908,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 103,
+   "rung": "impossible",
+   "asked": 136906,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 104,
+   "rung": "true",
+   "asked": 7254,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 104,
+   "rung": "median",
+   "asked": 7254,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 104,
+   "rung": "min",
+   "asked": 2454,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 104,
+   "rung": "impossible",
+   "asked": 2452,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 105,
+   "rung": "true",
+   "asked": 38808,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 105,
+   "rung": "median",
+   "asked": 5196,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 105,
+   "rung": "min",
+   "asked": 396,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 105,
+   "rung": "impossible",
+   "asked": 394,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 106,
+   "rung": "true",
+   "asked": 828402,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 106,
+   "rung": "median",
+   "asked": 824286,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 106,
+   "rung": "min",
+   "asked": 823602,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 106,
+   "rung": "impossible",
+   "asked": 823600,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 108,
+   "rung": "true",
+   "asked": 840366,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 108,
+   "rung": "median",
+   "asked": 841038,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 108,
+   "rung": "min",
+   "asked": 840354,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 108,
+   "rung": "impossible",
+   "asked": 840352,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 109,
+   "rung": "true",
+   "asked": 958686,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 109,
+   "rung": "median",
+   "asked": 958686,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 109,
+   "rung": "min",
+   "asked": 958002,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 109,
+   "rung": "impossible",
+   "asked": 958000,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 110,
+   "rung": "true",
+   "asked": 824334,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 110,
+   "rung": "median",
+   "asked": 828354,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 110,
+   "rung": "min",
+   "asked": 823554,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 110,
+   "rung": "impossible",
+   "asked": 823552,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 111,
+   "rung": "true",
+   "asked": 826140,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 111,
+   "rung": "median",
+   "asked": 826728,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 111,
+   "rung": "min",
+   "asked": 826044,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 111,
+   "rung": "impossible",
+   "asked": 826042,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 112,
+   "rung": "true",
+   "asked": 5202,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 112,
+   "rung": "median",
+   "asked": 1086,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 112,
+   "rung": "min",
+   "asked": 402,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 112,
+   "rung": "impossible",
+   "asked": 400,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 113,
+   "rung": "true",
+   "asked": 120,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 113,
+   "rung": "median",
+   "asked": 4812,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 113,
+   "rung": "min",
+   "asked": 12,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 113,
+   "rung": "impossible",
+   "asked": 10,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 114,
+   "rung": "true",
+   "asked": 977214,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 114,
+   "rung": "median",
+   "asked": 944286,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 114,
+   "rung": "min",
+   "asked": 943602,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 114,
+   "rung": "impossible",
+   "asked": 943600,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 115,
+   "rung": "true",
+   "asked": 1650174,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 115,
+   "rung": "median",
+   "asked": 1650174,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 115,
+   "rung": "min",
+   "asked": 1649490,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 115,
+   "rung": "impossible",
+   "asked": 1649488,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 117,
+   "rung": "true",
+   "asked": 958734,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 117,
+   "rung": "median",
+   "asked": 958734,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 117,
+   "rung": "min",
+   "asked": 958050,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 117,
+   "rung": "impossible",
+   "asked": 958048,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 118,
+   "rung": "true",
+   "asked": 842754,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 118,
+   "rung": "median",
+   "asked": 843438,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 118,
+   "rung": "min",
+   "asked": 842754,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 118,
+   "rung": "impossible",
+   "asked": 842752,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 119,
+   "rung": "true",
+   "asked": 118434,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 119,
+   "rung": "median",
+   "asked": 122454,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 119,
+   "rung": "min",
+   "asked": 117654,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 119,
+   "rung": "impossible",
+   "asked": 117652,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 120,
+   "rung": "true",
+   "asked": 828450,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 120,
+   "rung": "median",
+   "asked": 824334,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 120,
+   "rung": "min",
+   "asked": 823650,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 120,
+   "rung": "impossible",
+   "asked": 823648,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 121,
+   "rung": "true",
+   "asked": 841380,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 121,
+   "rung": "median",
+   "asked": 841380,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 121,
+   "rung": "min",
+   "asked": 840696,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 121,
+   "rung": "impossible",
+   "asked": 840694,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 122,
+   "rung": "true",
+   "asked": 19602,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 122,
+   "rung": "median",
+   "asked": 20286,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 122,
+   "rung": "min",
+   "asked": 19602,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 122,
+   "rung": "impossible",
+   "asked": 19600,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 123,
+   "rung": "true",
+   "asked": 828408,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 123,
+   "rung": "median",
+   "asked": 829080,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 123,
+   "rung": "min",
+   "asked": 828396,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 123,
+   "rung": "impossible",
+   "asked": 828394,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 124,
+   "rung": "true",
+   "asked": 3780,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 124,
+   "rung": "median",
+   "asked": 7212,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 124,
+   "rung": "min",
+   "asked": 2412,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 124,
+   "rung": "impossible",
+   "asked": 2410,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 125,
+   "rung": "true",
+   "asked": 2492238,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 125,
+   "rung": "median",
+   "asked": 2488122,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 125,
+   "rung": "min",
+   "asked": 2487438,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 125,
+   "rung": "impossible",
+   "asked": 2487436,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 127,
+   "rung": "true",
+   "asked": 118440,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 127,
+   "rung": "median",
+   "asked": 119028,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 127,
+   "rung": "min",
+   "asked": 118344,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 127,
+   "rung": "impossible",
+   "asked": 118342,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 128,
+   "rung": "true",
+   "asked": 134508,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 128,
+   "rung": "median",
+   "asked": 135192,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 128,
+   "rung": "min",
+   "asked": 134508,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 128,
+   "rung": "impossible",
+   "asked": 134506,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 129,
+   "rung": "true",
+   "asked": 19356,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 129,
+   "rung": "median",
+   "asked": 19944,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 129,
+   "rung": "min",
+   "asked": 19260,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 129,
+   "rung": "impossible",
+   "asked": 19258,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 130,
+   "rung": "true",
+   "asked": 4914,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 130,
+   "rung": "median",
+   "asked": 5586,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 130,
+   "rung": "min",
+   "asked": 6,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 130,
+   "rung": "impossible",
+   "asked": 4,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 131,
+   "rung": "true",
+   "asked": 34644,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 131,
+   "rung": "median",
+   "asked": 5148,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 131,
+   "rung": "min",
+   "asked": 348,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 131,
+   "rung": "impossible",
+   "asked": 346,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 133,
+   "rung": "true",
+   "asked": 117762,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 133,
+   "rung": "median",
+   "asked": 122454,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 133,
+   "rung": "min",
+   "asked": 117654,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 133,
+   "rung": "impossible",
+   "asked": 117652,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 134,
+   "rung": "true",
+   "asked": 135486,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 134,
+   "rung": "median",
+   "asked": 135486,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 134,
+   "rung": "min",
+   "asked": 134802,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 134,
+   "rung": "impossible",
+   "asked": 134800,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 135,
+   "rung": "true",
+   "asked": 235656,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 135,
+   "rung": "median",
+   "asked": 236328,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 135,
+   "rung": "min",
+   "asked": 235644,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 135,
+   "rung": "impossible",
+   "asked": 235642,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 136,
+   "rung": "true",
+   "asked": 842754,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 136,
+   "rung": "median",
+   "asked": 843438,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 136,
+   "rung": "min",
+   "asked": 842754,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 136,
+   "rung": "impossible",
+   "asked": 842752,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 137,
+   "rung": "true",
+   "asked": 841134,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 137,
+   "rung": "median",
+   "asked": 845154,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 137,
+   "rung": "min",
+   "asked": 840354,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 137,
+   "rung": "impossible",
+   "asked": 840352,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 138,
+   "rung": "true",
+   "asked": 134562,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 138,
+   "rung": "median",
+   "asked": 135150,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 138,
+   "rung": "min",
+   "asked": 134466,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 138,
+   "rung": "impossible",
+   "asked": 134464,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 140,
+   "rung": "true",
+   "asked": 156114,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 140,
+   "rung": "median",
+   "asked": 122502,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 140,
+   "rung": "min",
+   "asked": 117702,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 140,
+   "rung": "impossible",
+   "asked": 117700,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 141,
+   "rung": "true",
+   "asked": 546,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 141,
+   "rung": "median",
+   "asked": 5154,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 141,
+   "rung": "min",
+   "asked": 354,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 141,
+   "rung": "impossible",
+   "asked": 352,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 143,
+   "rung": "true",
+   "asked": 134466,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 143,
+   "rung": "median",
+   "asked": 135150,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 143,
+   "rung": "min",
+   "asked": 134466,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 143,
+   "rung": "impossible",
+   "asked": 134464,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 144,
+   "rung": "true",
+   "asked": 153720,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 144,
+   "rung": "median",
+   "asked": 120792,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 144,
+   "rung": "min",
+   "asked": 120108,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 144,
+   "rung": "impossible",
+   "asked": 120106,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 145,
+   "rung": "true",
+   "asked": 21960,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 145,
+   "rung": "median",
+   "asked": 17844,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 145,
+   "rung": "min",
+   "asked": 17160,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 145,
+   "rung": "impossible",
+   "asked": 17158,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 146,
+   "rung": "true",
+   "asked": 826350,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 146,
+   "rung": "median",
+   "asked": 827022,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 146,
+   "rung": "min",
+   "asked": 826338,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 1
+  },
+  {
+   "i": 146,
+   "rung": "impossible",
+   "asked": 826336,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 147,
+   "rung": "true",
+   "asked": 826308,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 147,
+   "rung": "median",
+   "asked": 826980,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 147,
+   "rung": "min",
+   "asked": 826296,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 147,
+   "rung": "impossible",
+   "asked": 826294,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 148,
+   "rung": "true",
+   "asked": 826644,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 148,
+   "rung": "median",
+   "asked": 830748,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 148,
+   "rung": "min",
+   "asked": 825948,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 1,
+   "cheaper": 0
+  },
+  {
+   "i": 148,
+   "rung": "impossible",
+   "asked": 825946,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 149,
+   "rung": "true",
+   "asked": 185220,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 149,
+   "rung": "median",
+   "asked": 122796,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 149,
+   "rung": "min",
+   "asked": 117996,
+   "parsed": true,
+   "reaches": 0,
+   "cost_match": 0,
+   "cheaper": 0
+  },
+  {
+   "i": 149,
+   "rung": "impossible",
+   "asked": 117994,
+   "parsed": true,
+   "reaches": 1,
+   "cost_match": 0,
+   "cheaper": 0
+  }
+ ]
+}
