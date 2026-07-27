@@ -1,4 +1,4 @@
-"""search_cost.py: [FRIEND NAME]'s search procedure, measured.
+"""search_cost.py: Sebastien Seboih's search procedure, measured.
 
 Take a trained cost-conditioned model, fix (start, end), and ask it for
 progressively CHEAPER paths. Then verify each generation by running it

@@ -4,7 +4,7 @@ Commit before running. Deviations get dated lines at the bottom.
 
 ## Origin and credit
 
-The construction is [FRIEND NAME]'s: give every action a unique nonzero
+The construction is Sebastien Seboih's: give every action a unique nonzero
 cost, integrate along the path, keep (start, end, cost), then delete the
 path and try to reverse-engineer it. Because the cost is summed over
 actions, it depends only on how many times each action occurs, never on
@@ -134,7 +134,7 @@ assume it away.
 
 ## Addendum, registered before running: the search evaluation
 
-[FRIEND NAME]'s follow-on procedure: fix (start, end), ask the trained
+Sebastien Seboih's follow-on procedure: fix (start, end), ask the trained
 cost-conditioned model for progressively cheaper paths, and verify each
 generation by running it forward. Generation is unreliable, verification
 is cheap, so invalid candidates are discarded rather than trusted. This

@@ -1,6 +1,6 @@
 # The cost channel: an intermediate supervision rung
 
-Idea credit: [FRIEND NAME]. Commit PREREGISTRATION.md before running.
+Idea credit: Sebastien Seboih. Commit PREREGISTRATION.md before running.
 
 ## Check the theory first (no GPU, seconds)
 
