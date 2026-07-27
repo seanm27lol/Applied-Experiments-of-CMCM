@@ -1,0 +1,8 @@
+[2026-07-26 21:51:24] gen readable
+Traceback (most recent call last):
+  File "/home/seanjazm27/Applied-Experiments-of-CMCM/cost_channel/gen_cost.py", line 22, in <module>
+    import ops as O
+  File "/home/seanjazm27/Applied-Experiments-of-CMCM/cost_channel/ops.py", line 18, in <module>
+    import fiber as F
+ModuleNotFoundError: No module named 'fiber'
+GEN FAIL readable

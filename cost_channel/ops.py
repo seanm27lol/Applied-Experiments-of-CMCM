@@ -13,10 +13,8 @@ Costs are per-ACTION, distinct primes, summed along the path. The cost
 scalar therefore reveals the operation multiset (up to collisions,
 measured below) and carries no information about order.
 """
-import os
 import sys
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                                "..", "part_iv"))
+sys.path.insert(0, "/home/claude/partiv")
 import fiber as F
 
 NBITS, MASK = F.NBITS, F.MASK
