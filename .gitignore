@@ -20,3 +20,5 @@ proof_witness/ckpt/
 .venv/
 __pycache__/
 proof_witness/ckpt_s1/
+cost_channel/data/
+cost_channel/ckpt/
