@@ -174,3 +174,12 @@ R3 primary, no threshold committed: the valid-and-cost-matching rate at
 R4 direction: R3 is higher in systems with more co-optimal paths, since
    more distinct targets satisfy the request. Ordering prediction:
    abelian > q75 > q50.
+
+## A1 verdict, 2026-07-26: PASS
+All four arms at 1.0000 token accuracy (exact match 1.0000) on the
+readable copy task, against the registered 0.90 bar (script:
+stats_cost.py, results/readable/*.json). The hex rendering repairs
+Part IV's P4c failure mode — the pipeline can measure. C2 on readable
+is +0.0000, as the design requires (sc_cost and sc_counts carry
+identical information and the task is a copy). The queue continued to
+the remaining five systems at 22:14 local.

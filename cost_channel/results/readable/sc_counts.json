@@ -1,0 +1,1509 @@
+{
+ "system": "readable",
+ "arm": "sc_counts",
+ "n": 300,
+ "tok_acc": 1.0,
+ "exact": 1.0,
+ "items": [
+  {
+   "i": 0,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 1,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 2,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 3,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 4,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 5,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 6,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 7,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 8,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 9,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 10,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 11,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 12,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 13,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 14,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 15,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 16,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 17,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 18,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 19,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 20,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 21,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 22,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 23,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 24,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 25,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 26,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 27,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 28,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 29,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 30,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 31,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 32,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 33,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 34,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 35,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 36,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 37,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 38,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 39,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 40,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 41,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 42,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 43,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 44,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 45,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 46,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 47,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 48,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 49,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 50,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 51,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 52,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 53,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 54,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 55,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 56,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 57,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 58,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 59,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 60,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 61,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 62,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 63,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 64,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 65,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 66,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 67,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 68,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 69,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 70,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 71,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 72,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 73,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 74,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 75,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 76,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 77,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 78,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 79,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 80,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 81,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 82,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 83,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 84,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 85,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 86,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 87,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 88,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 89,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 90,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 91,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 92,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 93,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 94,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 95,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 96,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 97,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 98,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 99,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 100,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 101,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 102,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 103,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 104,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 105,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 106,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 107,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 108,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 109,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 110,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 111,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 112,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 113,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 114,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 115,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 116,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 117,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 118,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 119,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 120,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 121,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 122,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 123,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 124,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 125,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 126,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 127,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 128,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 129,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 130,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 131,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 132,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 133,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 134,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 135,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 136,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 137,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 138,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 139,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 140,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 141,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 142,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 143,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 144,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 145,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 146,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 147,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 148,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 149,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 150,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 151,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 152,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 153,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 154,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 155,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 156,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 157,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 158,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 159,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 160,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 161,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 162,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 163,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 164,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 165,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 166,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 167,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 168,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 169,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 170,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 171,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 172,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 173,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 174,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 175,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 176,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 177,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 178,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 179,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 180,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 181,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 182,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 183,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 184,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 185,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 186,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 187,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 188,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 189,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 190,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 191,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 192,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 193,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 194,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 195,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 196,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 197,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 198,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 199,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 200,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 201,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 202,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 203,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 204,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 205,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 206,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 207,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 208,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 209,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 210,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 211,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 212,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 213,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 214,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 215,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 216,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 217,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 218,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 219,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 220,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 221,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 222,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 223,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 224,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 225,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 226,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 227,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 228,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 229,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 230,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 231,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 232,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 233,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 234,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 235,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 236,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 237,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 238,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 239,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 240,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 241,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 242,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 243,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 244,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 245,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 246,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 247,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 248,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 249,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 250,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 251,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 252,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 253,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 254,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 255,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 256,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 257,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 258,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 259,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 260,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 261,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 262,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 263,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 264,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 265,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 266,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 267,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 268,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 269,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 270,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 271,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 272,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 273,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 274,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 275,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 276,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 277,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 278,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 279,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 280,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 281,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 282,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 283,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 284,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 285,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 286,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 287,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 288,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 289,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 290,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 291,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 292,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 293,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 294,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 295,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 296,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 297,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 298,
+   "tok_acc": 1.0,
+   "exact": 1
+  },
+  {
+   "i": 299,
+   "tok_acc": 1.0,
+   "exact": 1
+  }
+ ]
+}
