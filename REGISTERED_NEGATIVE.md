@@ -42,3 +42,25 @@ features: n * eps / (variance x rank) = 1.81/1.21/1.28/1.03 across the
 same systems, consistent within a factor of two. Status: the two-factor
 law holds for linear learners by construction and simulation; whether
 neural learners obey it is open and would need its own registration.
+
+## Addendum 2, 2026-07-26: committed reproducing scripts
+The computations above now have committed generating scripts.
+part_iv/variance.py reproduces the variance table exactly
+(0.0004/0.1395/0.2792/0.3978/0.5534; readable = 0 as a built-in
+anchor). Convention: cost direction uniform on the unit sphere in
+closed form (trace of the within-fiber covariance / 28), unbiased
+per-fiber variance, fiber-size weighted.
+part_iv/ols_sample_complexity.py re-implements the OLS simulation
+(vectorized exact enumeration; 400 reps; minimum-norm OLS; exact
+excess risk). It reproduces the direction inversion (abelian: highest
+variance, lowest n/variance, because its endpoint features span only
+9 of 28 dimensions) and matches three of four registered cells within
+~9%: n/variance = 789/663/654/199 vs the registered 1014/680/716/185.
+The q25 cell reproduces 22% low under every convention tried; that
+system has the smallest crossing n (~110), where the constant is
+dominated by finite-n effects, so the registered value likely reflects
+a noisier crossing statistic. The reproduced two-factor constants are
+1.41/1.18/1.17/1.10: spread 1.3x, tighter than the registered 1.8x.
+Verdict: conclusion unchanged and strengthened; the corrected law
+holds, and its constants are now script-backed rather than
+registration-only.
