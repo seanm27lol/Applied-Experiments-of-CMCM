@@ -1,0 +1,110 @@
+\documentclass[11pt,letterpaper]{article}
+
+% ---- base packages ----
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric, calc}
+
+% superscript numeric citations
+\usepackage[numbers,super,sort&compress]{natbib}
+\bibliographystyle{unsrtnat}
+
+% hyperref LAST; hidden links (no colored text in the report)
+\usepackage[
+    hidelinks,
+    bookmarks=true,
+    bookmarksnumbered=true,
+    unicode=true
+]{hyperref}
+
+% ---- STS formatting: 1in margins, 1.5 spacing, page numbers bottom right ----
+\geometry{letterpaper, margin=1in}
+\onehalfspacing
+\emergencystretch=2em
+\captionsetup{font=small, labelfont=bf, skip=4pt}
+\setlist[itemize]{itemsep=0.2em, leftmargin=1.5em}
+\AtBeginEnvironment{table}{\singlespacing}
+\AtBeginEnvironment{figure}{\singlespacing}
+
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[R]{\thepage}
+\pagestyle{fancy}
+
+\hypersetup{
+    pdftitle={When Does the Record of a Computation Matter?},
+    pdfauthor={Sean Mahdavian},
+    pdfsubject={Witness structure across substrates: proofs, edits, and circuits},
+    pdfkeywords={witness supervision, process supervision, ZX calculus, Lean 4, quantum computing}
+}
+
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newcommand{\simminus}{\mathrm{sim}-\mathrm{echo}}
+\newcommand{\W}{\mathbf{W}}
+\newcommand{\E}{\mathbf{E}}
+
+\begin{document}
+
+% ===================== TITLE PAGE (not counted) =====================
+\thispagestyle{empty}
+\begin{center}
+\vspace*{2.2in}
+{\LARGE\bfseries When Does the Record of a Computation Matter?\\[0.35em]}
+{\large Witness structure across substrates: proofs, edits, and circuits\\[2.2em]}
+{\large Sean Mahdavian\\[0.6em]}
+{\normalsize Research Report (working draft)}
+\vfill
+\end{center}
+\clearpage
+
+% ===================== ABSTRACT PAGE (not counted) =====================
+\thispagestyle{empty}
+\begin{center}{\large\bfseries Abstract}\end{center}
+\noindent
+A transformation has endpoints and a record of how it was made.
+Call that record the witness.
+This paper asks when keeping the witness is worth it, and measures the answer on three substrates, the systems that carry a computation: gradient-descent training of a small language model (in two domains) and a superconducting quantum device.
+The hypothesis under test: witness supervision pays exactly where the witness is not recoverable from the endpoints.
+On 10{,}925 edits mined from Mathlib, a small language model trained with explicit diffs transfers no better than one trained with (before, after) endpoint pairs: the diff is cheap to recover from the endpoints, so writing it out adds nothing (Part~I).
+On IBM \texttt{ibm\_fez}, four machine-verified ZX-optimized circuit pairs beat their baselines by up to $+0.067$ exact-answer probability, but the noise model's predicted ordering is wrong, and drift, routing, and dynamical-decoupling controls show the gain tracks circuit duration rather than gate counts (Part~II).
+On LeanDojo tactic prediction, where recovering a proof step from its goal states is search, trace supervision beats endpoint pairing by $+0.024$ to $+0.050$ across three seeds, with 68 to 76\% of the gap from witness content rather than format exposure (Part~III).
+The naive information-theoretic predictor of this contrast is the witness fiber, formalized in Lean and computed exactly.
+It is provably wrong for the family tested.
+Exact Bayes ceilings collapse at both ends of the fiber axis, so no monotone law from fiber size to the supervision gap can exist (Part~IV).
+A budget sweep then shows the proof-step gap does not close across a $32\times$ range of endpoint data; the extrapolated zero-crossing sits near eight million examples, and the content share survives (Part~V).
+A registered verification experiment stopped at its own anchor, so whether the advantage extends to checking witnesses is open at this scale.
+I pre-registered all fifteen protocols with timestamped commits and recorded every verdict before interpretation; a public \texttt{verify.py} re-derives every table.
+Trace supervision transfers something that endpoint data cannot buy at any budget tested, and the naive information-theoretic predictor of when this happens is provably wrong.
+\clearpage
+
+% ===================== BODY: page numbering starts here =====================
+\setcounter{page}{1}
+
+\input{sec_intro}
+\input{sec_formal}
+\input{sec_part1}
+\input{sec_part2}
+\input{sec_part3}
+\input{sec_part45}
+\input{sec_end}
+
+{\singlespacing
+\bibliography{refs}
+}
+
+\end{document}

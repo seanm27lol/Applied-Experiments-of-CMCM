@@ -1,0 +1,61 @@
+\section{Part I: Code Edits, Where the Record Is Cheap}\label{sec:part1}
+
+\subsection{Design}
+
+The cheap-recovery case is the code edit: given the before and after states, computing the diff is a polynomial-time operation. If the recoverability hypothesis is right, supervising a model on the explicit diff should add nothing over supervising on the endpoint pair. The original protocol registered four predictions: P1, a diff-trained arm shows a zero-shot lead when asked to predict edits; P2, the headline, a durable advantage after a small shared adaptation; P3, a null on a control comparison; P4, protocol hygiene on both ends.
+
+I mined 10{,}925 single-file edit records from the most recent 20{,}000 commits of the community \texttt{mathlib4} repository (shallow clone, 2026-07-18), sorted them by date, and held out the final 5\%; evaluation scores the first 300 held-out items. The model is Pythia-410M with LoRA adapters (rank 16), bf16 on a GB10, seed 0~\cite{biderman2023pythia}. Stage~1 trains three arms on identical data, budget (20M tokens each), and seed. Only the format differs: \texttt{ck\_diff} sees \textsc{before} + \textsc{diff} (the record), \texttt{ck\_after} sees \textsc{before} + \textsc{after} (the endpoint pair), \texttt{ck\_endpoint} sees \textsc{after} alone. Stage~2 adapts each checkpoint on the same small diff-format dose (1M tokens), giving \texttt{ad\_diff}, \texttt{ad\_after}, \texttt{ad\_endpoint}. The question: which stage-1 supervision best supports the shared downstream task of predicting edits?
+
+\subsection{The metric error, first-class}
+
+The v1 run returned an apparent confirmation that a skeptical second read took apart, and that correction matters as much as anything that remained. The v1 metric, mean character similarity to the gold diff, rewards echoing the before-window, because a diff mostly repeats its context. Every adapted arm scored at the context-echo ceiling ($\approx 0.243$), indistinguishable on actual edit content; v1 also saved means rather than per-item scores, blocking audit after the fact. The repair is the \emph{echo ceiling}: for each item, score the similarity of the before-window itself to the gold diff, which is what pure copying earns, and report $\simminus$, the per-item difference. Copying scores zero by construction. The repair removed the original claim. Pre-registration plus the audit habit caught the error, and I report both the failure and the fix rather than editing them away.
+
+\subsection{Results}
+
+The v2 suite scores every checkpoint per item on six measures: raw similarity (the v1 metric, kept for continuity), edit-line-only similarity, the echo ceiling, $\simminus$, applicability (does the generation's implied pre-image occur contiguously in the before-window), and implied-after similarity, which resists echo. Table~\ref{tab:part1full} gives the headline metrics; Table~\ref{tab:part1} gives the surviving paired comparisons, recomputed independently by \texttt{verify.py} from the committed per-item scores (paired Wilcoxon signed-rank, $n = 300$).
+
+\begin{table}[htbp]
+\centering\footnotesize
+\caption{Part I metric suite, all six checkpoints (seed 0, $n = 300$). The echo ceiling is identical across arms by construction; every arm scores below it on raw similarity, which confirms the v1 error a second time. The full six-metric suite is committed in the repository. \emph{Source: project data~\cite{appliedrepo2026}.}}
+\label{tab:part1full}
+\begin{tabular}{lcccc}
+\toprule
+arm & sim (v1) & echo & $\simminus$ & applies \\
+\midrule
+\texttt{ck\_diff} & 0.2311 & 0.2636 & $-0.033$ & 7.7\% \\
+\texttt{ck\_after} & 0.1455 & 0.2636 & $-0.118$ & 6.3\% \\
+\texttt{ck\_endpoint} & 0.0887 & 0.2636 & $-0.175$ & 0.7\% \\
+\texttt{ad\_diff} & 0.2184 & 0.2636 & $-0.045$ & 9.7\% \\
+\texttt{ad\_after} & 0.2046 & 0.2636 & $-0.059$ & 8.0\% \\
+\texttt{ad\_endpoint} & 0.1706 & 0.2636 & $-0.093$ & 5.3\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering\small
+\caption{Part I surviving results (v2 metrics, seed 0, $n=300$). The headline comparison is a null; both paired-format arms beat the endpoint-only arm decisively. \emph{Source: project data~\cite{appliedrepo2026}.}}
+\label{tab:part1}
+\begin{tabular}{lllcl}
+\toprule
+comparison & metric & mean $\Delta$ & wins to losses & $p$ \\
+\midrule
+\texttt{ad\_diff} $-$ \texttt{ad\_after} & $\simminus$ & $+0.014$ & 159 to 140 & $0.152$ \\
+\texttt{ad\_diff} $-$ \texttt{ad\_endpoint} & $\simminus$ & $+0.048$ & 187 to 113 & $1.6\times10^{-5}$ \\
+\texttt{ad\_after} $-$ \texttt{ad\_endpoint} & $\simminus$ & $+0.034$ & 184 to 116 & $2.4\times10^{-4}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The bootstrap 95\% interval for the headline is $[-0.006, +0.034]$, which includes zero. The pattern is consistent across the artifact-proof metrics: the two paired-format arms are statistically indistinguishable from each other and both sit clearly above the endpoint-only arm. For edit-line similarity the diff arm holds a marginal lead ($p = 0.063$, interval $[+0.002, +0.042]$), the one thread a seed-1 run would settle.
+
+Two secondary observations sharpen the picture. Zero-shot, the record arm's lead is real edit content: \texttt{ck\_diff} emits at least one edit line on 95\% of items, against 8\% and 18\% for the pair and endpoint arms, replicating at full $n$ the five-sample autopsy that flagged the effect in v1. After adaptation, the endpoint arm's behavior is diagnostic: it over-produces edit lines (mean 18.2 per item) with a 5\% applicable rate. That is format without content.
+
+\subsection{Verdict}
+
+P1 confirmed again: the zero-shot lead is genuine edit content, not echo. P2, strong form (explicit diff format beats paired endpoints): not supported; after identical adaptation the two arms are indistinguishable. P2, weak form (paired path structure beats endpoint-only): strongly supported, on every artifact-proof metric. Pairing transfers; serialization does not. Training on \textsc{before} + \textsc{after}, which keeps both states of the transformation in context, transfers to diff prediction statistically indistinguishably from training on the explicit diff. Removing the before-state is decisively harmful. This is exactly what recoverability predicts: the diff is recoverable from the endpoints, so writing it out adds nothing. In the program's framing: keep the section, not its integral. The section turns out to be the (before, after) pair itself, and the explicit diff is one way of writing it down, not a privileged form.
+
+One note on independence: v1 ran remotely (fp32, T4); this run rebuilt the pipeline locally (bf16, GB10) with one day of commit drift, an independent draw that reached the same verdict on the repaired metric.
+
+\medskip
+\noindent\emph{Limitations carried forward.} Single training seed; 410M scale; one-day commit drift against the v1 window; results specific to Mathlib-style single-file edits.

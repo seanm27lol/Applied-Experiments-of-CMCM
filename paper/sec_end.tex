@@ -1,0 +1,66 @@
+\section{Synthesis}\label{sec:synthesis}
+
+\begin{table}[htbp]
+\centering\small
+\caption{The whole result in one table. Recoverability, not fiber size, separates the domains; the mechanism evidence comes from the controls, not the headlines.}
+\label{tab:synthesis}
+\begin{tabular}{llll}
+\toprule
+domain & witness recoverable? & supervision gap & mechanism evidence \\
+\midrule
+code diffs & yes (determined) & null ($p = 0.152$) & n/a (echo-repaired) \\
+proof steps & 0.003 verbatim & $+0.024$ to $+0.050$ & 68 to 76\% content; not buyable (Part~V) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The honest general statement: where the record of a computation is recoverable from its endpoints, supervising on it adds nothing measurable. Where recovery is search, trace supervision transfers something that endpoint data does not supply at any budget tested, and most of what transfers is content, not format. The non-claims are part of the result, listed rather than implied: nothing here bears on P versus NP; the fiber is falsified as the predictor of when trace supervision pays, and the correct predictor is open; larger models are untested; the hardware result is one device, one calibration era, one registered seed.
+
+\section{Methods, Rigor, and Disclosure}\label{sec:methods}
+
+\paragraph{Pre-registration ledger.} I registered fifteen protocols as timestamped commits to the project repository before the corresponding runs, and recorded verdicts against them before interpretation. Two registered designs (R1, R2) are reported as confounded alongside their corrected reruns.
+
+\begin{table}[htbp]
+\centering\scriptsize
+\caption{Pre-registration ledger. Short hashes refer to the project repository~\cite{appliedrepo2026}.}
+\label{tab:prereg}
+\begin{tabular}{@{}lll >{\raggedright\arraybackslash}p{5.2cm}@{}}
+\toprule
+protocol & registered (UTC) & commit & verdict status \\
+\midrule
+Part I: edit-witness P1 to P4 & 2026-07-18 & \texttt{89da3fc} & complete; v1 metric error repaired \\
+Part II: hardware ladder + control & 2026-07-18 & \texttt{89da3fc} & direction confirmed; ordering falsified \\
+Part III: P1/P2/P3 & 2026-07-24 & \texttt{dc3dcaa} & P1 confirmed; P2 falsified \\
+Part III addendum: shuffle C1/C2 & 2026-07-24 & \texttt{930b2b2} & C1 confirmed; C2 observed positive \\
+Mirror M1 to M3 (hardware witness) & 2026-07-24 & \texttt{59a1385} & M3 confirmed; M2 failed low on all four \\
+Round 2 R1 (DD mirror) & 2026-07-24 & \texttt{671ac0d} & confounded (cross-job); rerun as R1$'$ \\
+Round 2 R2 (seed-11 rerun) & 2026-07-24 & \texttt{671ac0d} & confounded (layout); rerun as R2$'$ \\
+Round 2 R3 (Part III multi-seed) & 2026-07-24 & \texttt{671ac0d} & R3a/b/c all confirmed \\
+Round 3 R1$'$ (drift-controlled DD) & 2026-07-24 & \texttt{563edcd} & DD uniformly harmful; dephasing rejected \\
+Round 3 R2$'$ (matched layout) & 2026-07-24 & \texttt{563edcd} & R2$'$a/b/c all confirmed \\
+Part IV: fiber law P4a to P4d & 2026-07-24 & \texttt{75f0e4c} & P4c failed; design retired by exact ceilings \\
+Part V: budget curve P5a to P5c + cond. & 2026-07-25 & \texttt{ae895f7} & P5c passed; P5a/b failed; conditional ran \\
+Verification V0$'$ to V5 (dissociation) & 2026-07-26 & \texttt{7c7f87b} & V0$'$ passed; V1 failed twice (masked retry); closed uninterpretable \\
+Cost-function registered negative & 2026-07-26 & \texttt{2ead38e} & identifiability falsified; variance-alone falsified in addendum \\
+Cost-channel experiment (intermediate rung) & 2026-07-26 & \texttt{7058507} & A1/A2 passed; C1 falsified as registered; search R1--R4 passed \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Verification and reproduction.} \texttt{verify.py} runs 39 checks and re-derives every table in this paper from committed artifacts~\cite{appliedrepo2026}: pair equality from the committed QASM, transpile identity against the recorded runs, aer reproduction, hardware-delta significance, ceiling saturation, and the Part~I statistics from per-item scores. Every part reruns from the repository root with the committed scripts, smoke-tested on CPU first as registered. The reader is invited to run it.
+
+\paragraph{Tool disclosure, specific.} Lean proof search across the broader formal program used Aristotle (Harmonic). Claude (Anthropic) contributed engineering scaffolding, analysis drafting, and the initial drafts of the error-budget analysis, \texttt{verify.py}, the recoverability formalization, the ceiling derivation, and the identifiability and sample-complexity computations. Every experimental design decision, every verdict call against the pre-registrations, and every sentence of prose in this paper is mine. I rederived by hand: the two faithfulness proofs, the ceiling bound, the error-budget computation, and the OLS excess-risk scaling argument. Where this paper states a result, I can defend the derivation. The bias throughout is to underclaim rather than overclaim.
+
+\paragraph{Data and code availability.} All experiments, pre-registrations, raw JSON artifacts, and \texttt{verify.py} are public in the project repository~\cite{appliedrepo2026}. The formal mathematics behind the ZX rewrite rules is developed in the companion Lean repositories~\cite{liquidtqft2026}: 12{,}777 lines across 33 files, no proof placeholders, no custom axioms, machine-checked against Mathlib v4.28.0~\cite{mathlib2020,demoura2021lean}.
+
+\section{Limitations and Future Work}\label{sec:limitations}
+
+One quantum device and one calibration era. One model scale, 160M parameters. A single-seed budget curve with a factor-of-two cross-seed magnitude uncertainty. The metric-blindness hypothesis for the mirror undershoot remains untested, labeled rather than carried. Registered hardware follow-ups, in order of information per dollar: the transpile-seed sweep on \texttt{mod\_mult\_55} (done, Section~\ref{sec:part2}); a second device on a different day, to test whether the ordering scrambles identically; optimization level 3, to test whether the vendor transpiler equalizes the arms, which is itself a finding; and the mirror protocol at larger package sizes.
+
+\paragraph{The verification experiment, run and closed.} Parts I to V measure whether trace supervision helps \emph{generation}; the registered follow-up asked whether it helps \emph{checking}, a dissociation test (search versus checking) on the Part~III stems: 598 balanced instances, five negative strata, labels audited by hand (tallies 0/15, 1/15, 1/15, 0/8, 0/8; two flagged negatives dropped). It stopped at its own anchor twice. V1 required every arm at $\geq 0.90$ on the surface stratum; unmasked training gave 0.860 / 0.581 / 0.860 (trace / pair / shuffle) with an always-no lean (VALID 0.53 to 0.66), and the registered masked-loss retry gave 0.581 / 0.605 / 0.512 with the opposite lean (VALID 0.75 to 0.92). One diagnostic pattern is worth reporting: under masking, the after-swap stratum hit 1.000 in two arms (0.992 in the third) while all tactic-swap strata sat near chance, so the models judged state-pair coherence and ignored the tactic, the shortcut the fifth stratum existed to expose. The only supported claim is one sentence: at 160M parameters and these budgets, tactic-level witness verification does not get off the ground, so the search/checking dissociation remains open.
+
+Two questions are registered as open, each requiring a new registration: the search/checking dissociation, and the two-factor (variance $\times$ rank) predictor for neural learners. Sebastien Seboih is the source of both threads. His third thread was registered, run, and closed: the cost-channel ceiling table did not predict learned usage, and the full report is in the repository~\cite{appliedrepo2026}.
+
+\section*{Acknowledgments}
+
+I thank Sebastien Seboih for the cost-function conjecture of Section~\ref{sec:secondneg} and for the search-versus-checking framing that Section~\ref{sec:limitations} closes.

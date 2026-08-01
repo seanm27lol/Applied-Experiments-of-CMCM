@@ -1,0 +1,38 @@
+\section{Part III: Proof Steps, Where Recovery Is Search}\label{sec:part3}
+
+\subsection{From Part I to Part III}
+
+Part~I's null says explicit record supervision adds nothing where the record is determined by the endpoints. The measured diagnostic for the other end: in the proof-step domain, the fraction of gold tactics appearing anywhere as a substring of the concatenated input states is $0.003$. Diffs in Part~I are fully determined by their endpoints; tactics are, for practical purposes, absent from them. Checking a tactic is cheap, since Lean's kernel does it, but reconstructing one from the goal states is search. If recoverability is the variable, this is where trace supervision should pay.
+
+\subsection{Design}
+
+Data: LeanDojo benchmark 4, mathlib4 tactic steps, split by theorem name so no held-out theorem leaks into training~\cite{yang2023leandojo}. Model: Pythia-160M, fp32, seed 0 for the registered run and seeds 1 and 2 as replicates~\cite{biderman2023pythia}. Three stage-1 corpora at matched token budget: \texttt{pw\_trace} (state-before + tactic + state-after, the full record), \texttt{pw\_pair} (the two endpoint states), \texttt{pw\_endpoint} (the after-state alone). Stage~2 is an identical small fine-tune for every arm on the eval format: given both states, predict the tactic. Metrics: exact match, normalized similarity, and $\simminus$ as repaired in Part~I. I registered three predictions. P1: \texttt{pw\_trace} beats \texttt{pw\_pair} on $\simminus$ (paired Wilcoxon $p<0.05$, mean $\geq +0.02$), the registered \emph{reversal} of Part~I's null. P2: \texttt{pw\_pair} beats \texttt{pw\_endpoint}. P3, the falsification branch: a \texttt{pw\_trace} $\approx$ \texttt{pw\_pair} tie would drop the complexity framing from the writeup, not soften it. A registered addendum added the format-exposure control: \texttt{pw\_shuffle} trains on \textsc{before} + a real but \emph{wrong} tactic (a derangement over training steps) + \textsc{after}, so it sees tactic-format text with no valid content. C1: \texttt{pw\_trace} beats \texttt{pw\_shuffle}, meaning the gain is witness content. C2: \texttt{pw\_shuffle} vs.\ \texttt{pw\_pair}, reported as observed.
+
+\subsection{Results across three seeds}
+
+\begin{table}[htbp]
+\centering\footnotesize
+\caption{Part III, multi-seed replication. The headline is the range, not a point estimate. \emph{Source: project data~\cite{appliedrepo2026}.}}
+\label{tab:part3}
+\begin{tabular}{lccc}
+\toprule
+ & seed 0 & seed 1 & seed 2 \\
+\midrule
+C1: trace $-$ shuffle & $+0.0393$ ($p = 1.4\!\times\!10^{-5}$) & $+0.0500$ ($p = 3.3\!\times\!10^{-9}$) & $+0.0240$ ($p = 0.0055$) \\
+C2: shuffle $-$ pair & \multicolumn{3}{c}{mean $+0.0122$, all $p < 0.05$} \\
+P2: pair $-$ endpoint & \multicolumn{3}{c}{null in all seeds ($p = 0.60,\ 0.28,\ 0.77$)} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+At the registered seed, P1 confirmed at $+0.0540$ (202 to 87, $p = 3.4\times10^{-13}$). The multi-seed round registered three checks before running: R3a, C1 stays positive with $p < 0.05$ in every seed; R3b, the across-seed standard deviation of the C1 mean delta stays below 0.02; R3c, P2 remains null in every seed. All three confirmed. C1 holds at $+0.0393$, $+0.0500$, $+0.0240$ across seeds 0, 1, 2 (sd 0.0131); C2 averages $+0.0122$ (sd 0.0046), significant in every seed; P2 stays null ($p = 0.60$, $0.28$, $0.77$). But the C1 magnitude ranges from $+0.024$ to $+0.050$, a factor of two. Sign and significance are robust; magnitude is not, so the range is the reported quantity. The decomposition is stable: content (C1) dominates format (C2), with content share 76\% across seeds (73\% at the Part~III operating point, $N = 2000$ stage-2 examples).
+
+\subsection{Honest limitation, and a logged deviation}
+
+All arms score below the copy baseline in absolute terms: $\simminus$ is negative throughout, because at 160M parameters the model cannot actually do tactic prediction. Every comparison in this section is therefore a valid comparison \emph{among models that cannot perform the task}. The effect is real, paired, replicated, and content-dominated, and it lives in a regime where the absolute capability is zero. Larger models are untested.
+
+One protocol deviation is logged in the repository and belongs in the paper: the first registered training run diverged (loss spike, unrecovered). Per the registration's deviation rule, I committed the fix (a lowered stage-1 learning rate, $5\!\times\!10^{-5}$, unchanged across arms) and the rerun with dated notes before any evaluation ran. Every number reported here comes from the rerun.
+
+\subsection{The tautology objection}
+
+Isn't ``training on tactics helps predict tactics'' a tautology? Three registered controls stand between the claim and that objection. Stage~2 equalizes task exposure: every arm receives the identical fine-tune on the identical eval format, so all arms have seen what the task \emph{is}. The shuffle arm equalizes format: it too saw tactic-shaped text in stage~1, and it loses to the trace arm by the full C1 margin. Seeing the format is not what transfers. What remains is content, and Part~V shows volume does not equalize that either: $32\times$ more stage-2 examples do not close the gap.

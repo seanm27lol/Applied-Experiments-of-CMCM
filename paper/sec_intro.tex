@@ -1,0 +1,99 @@
+\section{Introduction}\label{sec:intro}
+
+Every nontrivial computation produces two things: a pair of endpoints, an input and an output, and a record of how the second was obtained from the first. Call that record the \emph{witness}. In a proof it is the tactic sequence. In a refactor it is the diff. In a quantum computation it is the circuit that ran. Modern learning pipelines mostly keep the endpoints and discard the witness, on the quiet assumption that anything it could teach can be re-derived from the endpoints when needed. This paper asks when that assumption holds, and measures the answer on three substrates, the systems that carry a computation: gradient-descent training of a small language model, in two domains, and a superconducting quantum device.
+
+The motivation is the search/verification asymmetry. For some transformations the witness is cheap to recover from the endpoints: the diff of two files is determined by them, up to a polynomial-time computation. For others, recovery is search: reconstructing the tactic that carries one Lean goal state to another means exploring a combinatorial space, while checking the tactic is cheap. If the endpoints determine the witness, supervising a model on the witness should add nothing to supervising it on the endpoints. If they do not, the witness carries information no endpoint pair can supply, and supervising on it should help. The ``if'' is the experiment: Part~I tests a domain where recovery is provably cheap, and Part~III tests one where recovery is search. One disclaimer belongs here: this asymmetry has the same shape as the definition of $\mathrm{NP}$, but the paper claims nothing about P versus NP. The asymmetry serves only to rank domains by recovery cost; nothing later should be read as evidence about complexity classes.
+
+\begin{center}
+\fbox{\parbox{0.94\textwidth}{\textbf{Hypothesis.} Supervision with the record pays exactly where the record is \emph{not} recoverable from the endpoints. Where recovery is cheap (code diffs), explicit witness supervision should add nothing over the endpoint pair. Where recovery is search (proof steps), it should transfer an advantage that endpoint data cannot supply at any budget.}}
+\end{center}
+
+The paper proceeds as follows. Section~\ref{sec:formal} defines the terms formally, in Lean: a witnessed transformation, the forgetful map to endpoint pairs, recoverability as faithfulness of that map, and the fiber as its quantitative version. These definitions do one job: they turn ``the witness adds something'' from an intuition into a quantity each experiment can measure. Part~I gives the null result: on Mathlib code edits, explicit diff supervision adds nothing once a metric error is repaired. Part~II gives the physical test: four machine-certified ZX circuit pairs on IBM \texttt{ibm\_fez} show a real, replicated fidelity gain, with the noise model's predicted ordering wrong and the mechanism shown to be duration, not gate count. Part~III gives the positive effect: on Lean tactic prediction, where measured gold-tactic recoverability is $0.003$, trace supervision wins by a large, content-dominated margin across three seeds. Part~IV gives the negative result: it tests the natural candidate law, that the gap grows with the witness fiber, and exact computation overturns it. The law is natural because more witnesses per endpoint pair means more hidden information; it still fails, because the evaluation's own ceilings cap any gap, and the ceilings are computable before any training runs. Part~V gives the mechanism: across a $32\times$ range of stage-2 budgets, the gap remains.
+
+A second contribution is methodological. I pre-registered every experiment in a public repository before running it: fifteen protocols, each with explicit falsification clauses, each verdict timestamped before interpretation. Three designs stopped at their own registered checks, one of them twice, and all are reported as failures. One script, \texttt{verify.py}, re-derives every number in every table from committed artifacts~\cite{appliedrepo2026}.
+
+\section{Background}\label{sec:background}
+
+\paragraph{Certificates.} A decision problem is in $\mathrm{NP}$ when its yes-instances carry witnesses checkable in polynomial time. I use the find-versus-check gap only to choose domains; the paper proves no complexity result.
+
+\paragraph{Lenses: backpropagation as keeping the record.} The categorical account of backpropagation models a supervised learner as a \emph{lens}: a forward map paired with a backward update, composed so that gradients flow through composites functorially~\cite{fong2019backprop,cruttwell2022categorical}. The backward pass is exactly the record: the computation keeps the trace of the forward sweep, so the update costs one backward pass instead of $2P$ forward passes (Figure~\ref{fig:lens}). Section~\ref{sec:formal} formalizes this in Lean and proves the seven laws that license treating a deep composite as a single lens.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    box/.style={draw, rounded corners=2pt, minimum width=3.1cm, minimum height=1.05cm, align=center},
+    lbl/.style={font=\footnotesize\itshape},
+    arr/.style={-{Stealth[length=2.2mm]}, thick}]
+  \node[box] (A) {parameters $P$};
+  \node[box, right=3.4cm of A] (B) {loss $\mathbb{R}$};
+  \draw[arr] ([yshift=3pt]A.east) -- node[lbl, above=1pt]{forward (get)} ([yshift=3pt]B.west);
+  \draw[arr, dashed] ([yshift=-3pt]B.west) -- node[lbl, below=1pt, fill=white, inner sep=1.5pt]{backward (put): one $O(P)$ sweep} ([yshift=-3pt]A.east);
+  \node[font=\footnotesize, text=gray!55] at ($(A)!0.5!(B) + (0,-1.35)$) {finite differences: $2P$ forward passes; the lens keeps the record instead};
+\end{tikzpicture}
+\caption{A learner as a lens. The forward pass is the endpoints; the backward pass exists because the record of the forward sweep was kept. \emph{Source: figure created by the author.}}
+\label{fig:lens}
+\end{figure}
+
+\paragraph{ZX calculus: circuits as diagrams, rewriting as compilation.} The ZX calculus represents quantum circuits as diagrams built from two kinds of nodes, called spiders, where each node is a linear map carrying a phase and each edge is a wire that contracts tensor indices. Rewriting the diagram, by spider fusion and the bialgebra (Frobenius) equations, is sound for linear-algebraic equality~\cite{coecke2011interacting}. Kissinger and van de Wetering showed that full diagrammatic reduction followed by circuit extraction cuts non-Clifford (T) counts substantially on standard benchmark suites, and released the method as PyZX's \texttt{full\_reduce}~\cite{kissinger2020reducing,kissinger2019pyzx}. The benchmark circuits come from the T-par and optimization literature~\cite{amy2014tpar,nam2018automated}. Part~II will ask hardware to trust this pipeline's output, so I first reran the pipeline end to end. It reproduces the published profile: a 46\% aggregate T-count reduction across the 30-circuit suite (6019 to 3253), within 3\% of the shipped T-par outputs head to head (2753 vs.\ 2829: five wins, eighteen ties, one loss), with a machine-checked equality witness for every circuit small enough to verify. That rerun is a reproduction with certificates, not a discovery, and the certificates are exactly what Part~II needs: every optimized circuit it ships must be provably the same computation as its baseline. Table~\ref{tab:tracka} gives representative rows; Figure~\ref{fig:zx} shows the pipeline on one pair.
+
+\begin{table}[htbp]
+\centering\footnotesize
+\caption{Representative rows from the 30-circuit benchmark rerun (T-counts; \texttt{tpar} = published T-par outputs). Extraction after full reduction inflates two-qubit counts, so hardware runs use phase teleportation: same 46\% T-count win, two-qubit structure preserved, all witnesses green. \emph{Source: project data~\cite{appliedrepo2026}.}}
+\label{tab:tracka}
+\begin{tabular}{lccccc}
+\toprule
+circuit & qubits & T in & T out & T (T-par) & verified \\
+\midrule
+\texttt{mod5\_4} & 5 & 28 & \textbf{8} & 16 & PASS \\
+\texttt{mod\_mult\_55} & 9 & 49 & \textbf{35} & 37 & PASS \\
+\texttt{tof\_3} & 5 & 21 & 15 & 15 & PASS \\
+\texttt{barenco\_tof\_3} & 5 & 28 & 16 & 16 & PASS \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    cbox/.style={draw, rounded corners=2pt, minimum width=2.5cm, minimum height=1.25cm, align=center, font=\footnotesize},
+    zsp/.style={circle, draw, thick, fill=green!55!black!28, inner sep=2.6pt},
+    xsp/.style={circle, draw, thick, fill=red!55!black!25, inner sep=2.6pt},
+    wire/.style={thick, gray!60},
+    arr/.style={-{Stealth[length=2.2mm]}, thick},
+    lbl/.style={font=\footnotesize}]
+  % baseline circuit
+  \node[cbox] (base) at (0,0) {baseline\\ \texttt{mod5\_4}};
+  \node[font=\scriptsize, below=2pt of base] {28 T\; $\cdot$\; 28 2q\; $\cdot$\; depth 48};
+  % ZX graph panel
+  \draw[rounded corners=4pt, dashed, gray!60] (3.1,-1.05) rectangle (6.9,1.25);
+  \node[font=\scriptsize\itshape, gray!45] at (5.0,1.45) {ZX graph};
+  \node[zsp] (g1) at (3.55,0.75) {};
+  \node[xsp] (r1) at (4.25,0.95) {};
+  \node[zsp] (g2) at (4.95,0.7) {};
+  \node[xsp] (r2) at (3.75,-0.25) {};
+  \node[zsp] (g3) at (4.55,-0.5) {};
+  \node[xsp] (r3) at (5.35,-0.2) {};
+  \node[zsp] (g4) at (6.05,0.55) {};
+  \node[zsp] (g5) at (6.45,-0.35) {};
+  \draw[wire] (g1)--(r1); \draw[wire] (r1)--(g2); \draw[wire] (g1)--(r2);
+  \draw[wire] (r2)--(g3); \draw[wire] (g3)--(r3); \draw[wire] (r3)--(g4);
+  \draw[wire] (g2)--(r3); \draw[wire] (r3)--(g5); \draw[wire] (g3)--(g5);
+  % extracted circuit
+  \node[cbox] (opt) at (9.6,0) {extracted\\ circuit};
+  \node[font=\scriptsize, below=2pt of opt] {8 T\; $\cdot$\; 20 2q\; $\cdot$\; depth 20};
+  % arrows
+  \draw[arr] (base.east) -- node[lbl, above=1pt]{\texttt{full\_reduce}} (3.1,0.1);
+  \draw[arr] (6.9,0.1) -- node[lbl, above=1pt]{extraction} (opt.west);
+  % witness badge
+  \node[draw, rounded corners=2pt, fill=blue!6, font=\footnotesize, align=center] at (4.9,-1.75)
+    {equality witness: ZX reduction of $B\cdot O^{-1}$ to identity, \textbf{PASS} (pyzx)};
+\end{tikzpicture}
+\caption{Circuit $\to$ graph $\to$ smaller circuit, on the \texttt{mod5\_4} pair. Nodes are spiders (linear maps with phases), edges are wires; rewriting fuses connected spiders of the same color. The layout is schematic, the counts are not: they are the certified pre-transpile numbers of Part~II. \emph{Source: figure created by the author from project data~\cite{appliedrepo2026}.}}
+\label{fig:zx}
+\end{figure}
+
+\paragraph{Process versus outcome supervision.} The distinction between supervising on intermediate steps and supervising on outcomes is well studied. Lightman et al.\ found process supervision substantially outperformed outcome supervision on competition mathematics, reaching 78\% on a MATH subset~\cite{lightman2023verify}; Uesato et al.\ reported related findings~\cite{uesato2022solving}. On the theory side, Jia, Rakhlin, and Xie prove that under standard coverage assumptions, outcome supervision is no more statistically difficult than process supervision up to polynomial factors in the horizon~\cite{jia2025verify}; any real gap is algorithmic, not an intrinsic statistical barrier. Parts~I and III rediscover a known phenomenon at small scale, and say so. The intended contribution is the controls: Part~I's metric repair, Part~III's shuffle and multi-seed controls, Part~V's mechanism test, and Part~IV's negative result.
+
+\paragraph{Mirror circuits: the device checks itself.} Mirror circuits, which run a circuit followed by its inverse and check the return, were developed by Proctor and collaborators as a scalable benchmark of quantum computer capability~\cite{proctor2022measuring}. This project uses them as an application, not an invention: mirrors composed of a baseline circuit and its optimized partner make the hardware itself check the equality witnesses, with deranged (mismatched-pair) mirrors as a control against accidental returns (Section~\ref{sec:part2}).
+
+Lenses, ZX diagrams, and mirror circuits are the vocabulary this paper needs. The next section puts the central distinction itself into formal form.

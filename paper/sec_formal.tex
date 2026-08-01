@@ -1,0 +1,93 @@
+\section{The Formal Layer}\label{sec:formal}
+
+When does keeping the record pay? Before experiment can answer, the question needs a precise object: a formal definition of the record, of what it means for the endpoints to determine it, and of how much it can carry. This section builds that object, and states exactly what the machine-checked layer does and does not do for the paper.
+
+\subsection{Categorical preliminaries: the record as a morphism}\label{sec:prelim}
+
+Start with states and the operations that change them. Fix a set $S$ of states and an alphabet $\mathrm{Op}$ of operations acting by $\mathrm{act}\colon \mathrm{Op}\times S\to S$. A \emph{witness} of length $L$ is a word $w=(o_1,\dots,o_L)\in\mathrm{Op}^L$; write $\mathrm{run}(w,s)$ for the iterated action. The witnessed transformations form a category $\W_L$: objects are states, a morphism $s\to t$ is a word $w$ with $\mathrm{run}(w,s)=t$, composition is concatenation, which is legal because $\mathrm{run}(w_1 w_2, s)=\mathrm{run}\!\bigl(w_2,\mathrm{run}(w_1,s)\bigr)$, and the identity is the empty word. Forgetting the word yields the \emph{endpoint category} $\E_L$ (same objects; a unique morphism $s\to t$ whenever some length-$L$ word runs $s$ to $t$) and a forgetful functor $U\colon \W_L\to\E_L$, the identity on objects and $w\mapsto(s,t)$ on morphisms.
+
+\begin{definition}[Recoverability and the fiber]\label{def:fiber}
+The system is \emph{recoverable} at $(s,L)$ when $U$ is faithful on morphisms out of $s$: any two length-$L$ words with the same action on $s$ are equal. The \emph{fiber} over an endpoint pair is the count $\varphi(s,t)=\bigl|U^{-1}(s\!\to\!t)\bigr|$ of length-$L$ words running $s$ to $t$. Recoverability is $\varphi\leq 1$ everywhere; otherwise $\log_2\varphi$ measures, in bits, the witness information the endpoints cannot supply.
+\end{definition}
+
+The supervision reading is immediate. When $\varphi=1$, the witness is a deterministic function of the endpoints, so any training signal it carries is already carried implicitly by the endpoint pair. Explicit witness supervision can then add nothing. Part~I's diffs are of this kind. When $\varphi>1$ and inversion is search, the witness carries information no endpoint pair supplies. Part~III's tactics are of this kind. Part~IV promotes $\varphi$ to a candidate predictor and refutes it on its own terms.
+
+Two further structures support the gradient and hardware sides. \emph{Lenses.} A lens $(A,A')\rightleftarrows(B,B')$ is a pair $f\colon A\to B$ (forward) and $f'\colon A\times B'\to A'$ (backward); composition with $(g,g')$ has forward $g\circ f$ and backward $(a,c')\mapsto f'\bigl(a,\,g'(f(a),c')\bigr)$, so the backward pass of a composite decomposes through recorded intermediate values. This is exactly reverse-mode differentiation. \emph{Frobenius algebras.} A commutative Frobenius algebra $(A,\mu,\eta,\delta,\varepsilon)$ carries multiplication $\mu\colon A\otimes A\to A$ and comultiplication $\delta\colon A\to A\otimes A$ with (co)units, satisfying associativity and the Frobenius identity
+\begin{equation}\label{eq:frob}
+(\mathrm{id}\otimes\mu)\circ(\delta\otimes\mathrm{id}) \;=\; \delta\circ\mu \;=\; (\mu\otimes\mathrm{id})\circ(\mathrm{id}\otimes\delta).
+\end{equation}
+In the ZX calculus the two spider colors are two such algebras, fused by a bialgebra law; spider fusion is associativity, and every rewrite the compiler of Part~II applies is one of these equations. The companion Lean development formalizes the cobordism presentation $\mathrm{Cob}_2$ and its symmetric monoidal quotient, and proves the connected-spider composition law
+\begin{equation}\label{eq:spider}
+\mathrm{spider}(a,b,g)\circ \mathrm{spider}(b,c,h) \;=\; \mathrm{spider}\bigl(a,c,\; g+(b-1)+h\bigr),
+\end{equation}
+where $b$ is the shared boundary count and $g,h$ the genera~\cite{liquidtqft2026}. This is the equation that turns diagrammatic simplification from a heuristic into a certified compiler pass. With the objects in place, the rest of the section says what has been proved about them.
+
+\subsection{What is machine-checked, and where}
+
+Two Lean files and one companion repository carry the proofs. \texttt{LensLean.lean} (Mathlib-free) proves the seven category and monoidal laws for lenses: two identity laws, associativity, and four coherence equations. Every one is proved by \texttt{rfl}, which means the two sides are \emph{definitionally} equal: the categorical structure was already present in the definitions, not imposed on top. The laws matter operationally, because they license fusing a deep composite of lenses into one backward sweep. A companion benchmark (\texttt{bench\_lens.lean}) measures what the license buys: at 1024 components, one fused sweep against central finite differences separates by a factor of $10^6$, and the lens gradient matches the analytic gradient exactly (Table~\ref{tab:lensbench}).
+
+\begin{table}[htbp]
+\centering\footnotesize
+\caption{One reverse-mode lens sweep vs.\ central finite differences, timed under the Lean interpreter on a degree-$P$ Horner polynomial (shapes meaningful, absolute values interpreter-bound). \emph{Source: project data~\cite{appliedrepo2026}.}}
+\label{tab:lensbench}
+\begin{tabular}{rccccc}
+\toprule
+$P$ & lens (ms) & FD (ms) & FD / lens & lens vs.\ analytic & FD vs.\ analytic \\
+\midrule
+8 & 0.00045 & 0.068 & 154 & 0.0 & 0.0 \\
+256 & 0.00122 & 34.5 & 28{,}224 & 0.0 & $3\times10^{-6}$ \\
+1024 & 0.00466 & 4{,}698 & 1{,}007{,}930 & 0.0 & $3\times10^{-6}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\texttt{WitnessRecoverability.lean} formalizes Section~\ref{sec:prelim}'s axis. \texttt{free\_faithful} proves one end case: in the free system (states are stacks, operations push), the endpoint literally contains the witness, so $U$ is faithful at every length. Recovering the witness is reading. \texttt{abelian\_not\_faithful} proves the other end case: for two commuting bit flips, the two orderings are distinct witnesses with identical endpoints. The proof runs by kernel computation: \texttt{decide} evaluates the counterexample mechanically, with zero axioms. The counterexample is not argued; the kernel evaluates it. Part~IV's conditions interpolate between these two cases by mixing free and commuting generators, and \texttt{fiber.py} computes $\varphi$ for them by exhaustive enumeration, matching the Lean \texttt{\#eval} outputs on small systems. The companion repository holds the Frobenius side: the $\mathrm{Cob}_2$ presentation, its quotients, and \eqref{eq:spider}, all machine-checked against Mathlib v4.28.0~\cite{liquidtqft2026}.
+
+\begin{table}[htbp]
+\centering\footnotesize
+\caption{The paper's informal notions, their formal objects, and where each is machine-checked.}
+\label{tab:map}
+\begin{tabular}{@{}lll@{}}
+\toprule
+informal notion & formal object & Lean file \\
+\midrule
+record of a computation & morphism of $\W_L$ & \texttt{WitnessRecoverability.lean} \\
+``the record adds nothing'' & $U$ faithful ($\varphi = 1$) & \texttt{free\_faithful} \\
+``the record carries bits'' & fiber $\varphi > 1$ & \texttt{abelian\_not\_faithful} (by \texttt{decide}) \\
+compiler rewrite rule & Frobenius / spider equation & \texttt{Cob2*.lean}~\cite{liquidtqft2026} \\
+gradient witness & lens composition laws & \texttt{LensLean.lean} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Axiom audit and provenance}
+
+An audit with \texttt{\#print axioms} finds only \texttt{propext} and \texttt{Quot.sound} anywhere in the formal layer, Lean's standard logical infrastructure. There are no \texttt{sorry} placeholders and no custom axioms. Every theorem kernel-checks in seconds.
+
+Provenance disclosure, stated here rather than buried: Claude (Anthropic) drafted the recoverability file and the ceiling derivation of Part~IV inside my categorical framework. I validated every definition, extended the file with the fiber layer and the demo computations, and I have rederived both proofs by hand. Lean proof search elsewhere in the broader program used Aristotle (Harmonic). I made every decision about what to formalize and every verdict call about what the formalization settles.
+
+\subsection{What work the Lean actually does}\label{sec:leanwork}
+
+Two concrete answers, both used later. First, the formal layer \emph{defines the axis}: the fiber of Section~\ref{sec:part4} is not a heuristic score but Definition~\ref{def:fiber}'s quantity, computed exactly. Second, its exact consequences \emph{stopped registered experiments}: the ceiling arithmetic of Section~\ref{sec:part4}, run before the full sweep, showed that design could not see the effect it was built to measure, and I stopped it after its sanity check; and the rank computation of Section~\ref{sec:secondneg} showed the conjectured endpoint-versus-trace gap cannot occur in these systems, stopping that design before registration. That is the work the Lean does: it made conjectures precise enough to refute cheaply.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    node distance=0.26cm,
+    stage/.style={draw, rounded corners=3pt, align=center, font=\scriptsize, inner sep=4pt, text width=2.12cm, minimum height=1.5cm},
+    arr/.style={-{Stealth[length=2.2mm]}, thick, gray!65}]
+  \node[stage, fill=blue!7] (lean) {\textbf{Lean layer}\\[1pt] Frobenius, lenses, fibers};
+  \node[stage, fill=blue!7, right=of lean] (pyzx) {\textbf{ZX rewriting}\\[1pt] \texttt{full\_reduce} (pyzx)};
+  \node[stage, fill=blue!7, right=of pyzx] (cert) {\textbf{certified pairs}\\[1pt] $B\equiv O$ witnesses};
+  \node[stage, fill=orange!12, right=of cert] (prereg) {\textbf{pre-registration}\\[1pt] 15 protocols, timestamped};
+  \node[stage, fill=green!9, right=of prereg] (hw) {\textbf{IBM \texttt{ibm\_fez}}\\[1pt] interleaved jobs};
+  \node[stage, fill=green!9, right=of hw] (verdict) {\textbf{verdicts}\\[1pt] ceilings; \texttt{verify.py}};
+  \draw[arr] (lean) -- (pyzx);
+  \draw[arr] (pyzx) -- (cert);
+  \draw[arr] (cert) -- (prereg);
+  \draw[arr] (prereg) -- (hw);
+  \draw[arr] (hw) -- (verdict);
+\end{tikzpicture}
+\caption{Provenance chain, redrawn from the repository. Every hardware number descends from a machine-checked equality witness and a pre-registered prediction; \texttt{verify.py} re-derives every table from committed artifacts. \emph{Source: figure created by the author.}}
+\label{fig:provenance}
+\end{figure}
