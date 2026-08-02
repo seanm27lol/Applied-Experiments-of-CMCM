@@ -87,6 +87,7 @@ The naive information-theoretic predictor of this contrast is the witness fiber,
 It is provably wrong for the family tested.
 Exact Bayes ceilings collapse at both ends of the fiber axis, so no monotone law from fiber size to the supervision gap can exist (Part~IV).
 A budget sweep then shows the proof-step gap does not close across a $32\times$ range of endpoint data; the extrapolated zero-crossing sits near eight million examples, and the content share survives (Part~V).
+A fourth predictor, an intermediate supervision channel whose exact ceilings \emph{are} monotone in the fiber, then fails its own registered test in the opposite direction (Spearman $-0.80$): available information does not predict used information (Part~VI).
 A registered verification experiment stopped at its own anchor, so whether the advantage extends to checking witnesses is open at this scale.
 I pre-registered all fifteen protocols with timestamped commits and recorded every verdict before interpretation; a public \texttt{verify.py} re-derives every table.
 Trace supervision transfers something that endpoint data cannot buy at any budget tested, and the naive information-theoretic predictor of when this happens is provably wrong.
@@ -101,6 +102,7 @@ Trace supervision transfers something that endpoint data cannot buy at any budge
 \input{sec_part2}
 \input{sec_part3}
 \input{sec_part45}
+\input{sec_part6}
 \input{sec_end}
 
 {\singlespacing

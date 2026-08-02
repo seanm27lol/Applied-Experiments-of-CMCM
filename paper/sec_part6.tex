@@ -1,0 +1,77 @@
+\section{Part VI: The Cost Channel, and What Ceilings Do Not Predict}\label{sec:part6}
+
+\subsection{Why a third rung}
+
+Parts~I and III are the two ends of a binary: the witness is either determined by the endpoints or it is not. Sebastien Seboih's construction supplies the rung between them. Give every operation a unique nonzero cost, sum it along the path, and keep $(\text{start}, \text{end}, \text{cost})$. Because the cost is a sum over operations, it depends only on how many times each operation occurs, never on their order. The scalar therefore reveals the operation \emph{multiset} and nothing more, which places it strictly between endpoint-only and full witness supervision. Section~\ref{sec:secondneg} reports the identifiability version of his conjecture, which exact computation falsified before any run. This section reports the version that survived to an experiment.
+
+The design is testable precisely where Part~IV's was not. Part~IV died because its quantity vanished at both ends of its axis. The channel advantage does not: the exact Bayes ceilings (Table~\ref{tab:ccceil}, all $8^6$ witnesses enumerated per system) show the cost-channel ceiling rising \emph{faster} than the endpoint ceiling falls as fibers widen. The ceiling difference is strictly monotone in $\log_2$ fiber, Spearman $+1.00$. That difference is the maximum advantage the channel can confer, and it is largest exactly where the endpoints are least informative.
+
+\begin{table}[htbp]
+\centering\footnotesize
+\caption{Exact Bayes ceilings for the cost channel, by full enumeration of all $8^6 = 262{,}144$ witnesses per system. \textsc{diff} is the maximum advantage the cost channel can confer over endpoint pairing; it is strictly monotone in $\log_2$ fiber. \emph{Source: project data~\cite{appliedrepo2026}.}}
+\label{tab:ccceil}
+\begin{tabular}{lccccc}
+\toprule
+system & $\log_2$ fiber & ceiling (pair) & ceiling (cost) & ceiling (cost+dist) & \textsc{diff} \\
+\midrule
+readable & 0.00 & 1.000 & 1.000 & 1.000 & 0.000 \\
+free & 0.00 & 1.000 & 1.000 & 1.000 & 0.000 \\
+q25 & 1.51 & 0.915 & 0.921 & 0.977 & 0.006 \\
+q50 & 4.89 & 0.739 & 0.781 & 0.886 & 0.041 \\
+q75 & 8.45 & 0.514 & 0.587 & 0.699 & 0.074 \\
+abelian & 11.33 & 0.190 & 0.363 & 0.393 & 0.173 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Design}
+
+Six systems, the algebra unchanged from Part~IV. One rendering change repairs Part~IV's fatal flaw: states render as hex digits rather than 28 binary characters, so the model can parse them. Under hex rendering \texttt{readable} becomes a literal copy task, which is what makes it usable as an anchor. Four arms at identical budget, single stage, examples matched: \texttt{sc\_pair} (start + end), \texttt{sc\_cost} (start + end + cost), \texttt{sc\_costd} (adds the running distance-to-goal sum, an order-\emph{sensitive} term), and \texttt{sc\_counts} (the same action information spelled out as eight per-operation counts). Costs are powers of seven, verified collision-free over all six-draw multisets, so the scalar determines the multiset exactly.
+
+The \texttt{sc\_cost}/\texttt{sc\_counts} pair is the instrument that makes the result interpretable: the two arms carry \emph{identical information} and differ only in how much arithmetic it takes to read. Model Pythia-160M, fp32, seed 0, 30{,}000 witnesses per system, metric token accuracy over the six operation slots against a chance level of $0.125$. The witness alphabet is disjoint from the state alphabet, so copying cannot beat chance. Twenty-four runs.
+
+Registered predictions. A1, the anchor: all arms $\geq 0.90$ on \texttt{readable}, with an explicit abort rule if it fails. A2, accessibility: on \texttt{abelian}, \texttt{sc\_counts} exceeds \texttt{sc\_pair} by $\geq 0.05$, without which C1 is untestable. C1, primary: the measured advantage is positively rank-correlated with the ceiling difference. C2: \texttt{sc\_counts} minus \texttt{sc\_cost}, the decoding cost of identical information, no direction committed. C3: the order term is largest in the middle systems and smaller at \texttt{abelian} than at \texttt{q75} --- a non-monotone shape predicted from the ceilings, because for commuting flips the distance to the goal is the same in every order, so the order-sensitive term goes order-blind exactly where order is the only remaining unknown.
+
+The registered falsification clause: if C1 fails while A1 and A2 both pass, then models do not extract available information in proportion to how much is present, and the ceiling table does not predict learned behavior.
+
+\subsection{Results: the clause fired}
+
+\begin{table}[htbp]
+\centering\footnotesize
+\caption{Part VI, measured token accuracy by system and arm (seed 0, $n=300$ held out). The advantage the cost channel actually confers runs \emph{opposite} to the advantage it could confer. \emph{Source: project data~\cite{appliedrepo2026}.}}
+\label{tab:ccmain}
+\begin{tabular}{lcccccc}
+\toprule
+system & \texttt{sc\_pair} & \texttt{sc\_cost} & \texttt{sc\_costd} & \texttt{sc\_counts} & cost $-$ pair & ceiling \textsc{diff} \\
+\midrule
+readable & 1.000 & 1.000 & 1.000 & 1.000 & $+0.000$ & 0.000 \\
+free & 0.183 & 0.348 & 0.331 & 0.341 & $+0.166$ & 0.000 \\
+q25 & 0.143 & 0.319 & 0.351 & 0.329 & $+0.176$ & 0.006 \\
+q50 & 0.201 & 0.301 & 0.363 & 0.301 & $+0.100$ & 0.041 \\
+q75 & 0.249 & 0.300 & 0.362 & 0.297 & $+0.051$ & 0.074 \\
+abelian & 0.185 & 0.257 & 0.268 & 0.256 & $+0.073$ & 0.173 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+A1 \textbf{passed}: all four arms at $1.0000$ on \texttt{readable} against the $0.90$ bar, so the hex rendering repairs Part~IV's failure mode and the pipeline can measure. A2 \textbf{passed}: \texttt{abelian} counts $-$ pair $= +0.0716$ against the $0.05$ bar, so the model can use fully explicit multiset information where the ceiling difference is largest.
+
+C1 \textbf{failed, in the registered direction of falsification}. Measured advantages run $+0.166$, $+0.176$, $+0.100$, $+0.051$, $+0.073$ across free, q25, q50, q75, abelian, against ceiling differences of $0.000$, $0.006$, $0.041$, $0.074$, $0.173$: Spearman $\rho = -0.80$, and \texttt{abelian} does not exceed \texttt{free} but sits $0.093$ below it. With both anchors passing, the falsification clause fires as written. The cost channel helps everywhere, and least where it should help most.
+
+C2 is \textbf{null everywhere} --- \texttt{sc\_counts} and \texttt{sc\_cost} differ by at most $0.011$ in absolute value across all systems --- and that null is what makes the C1 failure interpretable. The aggregate scalar is as accessible to the model as the spelled-out counts, so the failure is not an arithmetic-reading artifact: the information was present, legible, and demonstrably usable, and the model still did not use it in proportion to how much there was.
+
+C3 \textbf{confirmed}. The order term (\texttt{costd} $-$ \texttt{cost}) measures $+0.032$, $+0.062$, $+0.062$, $+0.011$ across q25, q50, q75, abelian: largest in the middle, smaller at \texttt{abelian} than at \texttt{q75}, matching the ceiling analysis ($+0.056$, $+0.105$, $+0.112$, $+0.029$) in shape at roughly half magnitude. The one prediction in this experiment derived from exact structure rather than from an information count is the one that held.
+
+\subsection{The search evaluation}
+
+A registered addendum tests the construction's intended use: fix the endpoints, ask the cost-conditioned model for progressively cheaper paths, and verify each candidate by running it forward. Generation is unreliable and verification is cheap, so invalid candidates are discarded rather than trusted --- return-conditioned generation with a soundness guarantee bolted on. Only costs \emph{achievable} for that endpoint pair are requested, enumerated exactly, so a miss means the model failed rather than that the request was impossible. The ladder per item is the true cost, the median achievable cost, the minimum achievable cost, and one value below the minimum as an impossible control.
+
+R1, the control, \textbf{passed}: the impossible rung scores $0.000$ valid-and-cost-matching in all three searchable systems, so the models read the cost field and the rest of the table is interpretable. R2 \textbf{passed} in all three. R3, the primary number with no threshold committed, is $0.102$ (q50), $0.380$ (q75), $0.783$ (abelian) at the minimum-cost rung. R4 \textbf{passed}: that ordering follows the co-optimal path counts ($1.59$, $3.25$, $296.3$ mean minima), so uniqueness \emph{failure} helps the search --- more distinct valid targets, easier hits.
+
+That last point has a consequence worth stating plainly. Exact computation shows the fraction of endpoint pairs with a unique minimum-cost path falls from $100\%$ (free) to $0.8\%$ (abelian), with 296 co-optimal paths on average in the commuting case. Existence of an optimal path is trivial; uniqueness fails structurally wherever operations commute, because any reordering of a minimum-cost path is another minimum-cost path to the same endpoint. Quantum gate sets commute extensively, so an existence-and-uniqueness result for optimal circuits should be expected to fail on the uniqueness half for exactly this reason. One post-hoc note, not a registered check: on \texttt{abelian} the minimum rung ($0.783$) sits below both true ($0.944$) and median ($0.972$), the documented non-extrapolation signature of return conditioning --- muted here, but present.
+
+\subsection{What this part adds}
+
+Part~IV showed that an information-theoretic quantity can be falsified by its own exact consequences before any model is trained. Part~VI is the sharper case, because here the quantity survived that test. Its ceilings are monotone, its ceiling difference is largest exactly where endpoint supervision is weakest, and the accessibility anchor confirms the model can use the information when it is spelled out. The prediction still failed, and failed with a negative rank correlation rather than a flat one.
+
+The claim, exactly sized: for this family and this evaluation, available information does not predict used information, and a correct ceiling calculation is not a forecast of learned behavior. Three of the four predictors this project registered were killed by exact computation before training; this is the one that had to be killed by the experiment. Sizing the negative honestly, it is single-seed, one model scale, and synthetic --- the same limitations Part~IV carries, and they bound this conclusion the same way.
